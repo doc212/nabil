@@ -128,13 +128,13 @@ Les traitements informatiques seront faits à l'aide du programme R où nous utili
 \newpage
 
 
-\subsection{Définition d'un réseaux Bayésien}
+\subsection{Définition d'un réseau Bayésien}
 
-Un \definition{réseaux Bayésien} B(X,$\Theta$)  est un Graphe non-orienté acyclique  où les noeuds re\-pré\-sen\-tent des variables aléatoires $x_{i=1...n} \in X$
+Un \definition{réseau Bayésien} B(X,$\Theta$)  est un Graphe non-orienté acyclique  où les noeuds re\-pré\-sen\-tent des variables aléatoires $x_{i=1...n} \in X$
 auxquelles nous attribuons  un ensemble de paramètres $\theta_{i=1,...,n} \in \Theta$,
 correspondant aux probabilités conditionnelles des variables courantes étant donnés les parents.
 
-Ce réseaux est représenté par  une loi de probabilité  $P$:
+Ce réseau est représenté par  une loi de probabilité  $P$:
 
 \begin{center}
 $X\ci_{B}Y|Z\Longrightarrow X\ci_{B}Y|Z$
@@ -144,7 +144,7 @@ $X\ci_{B}Y|Z\Longrightarrow X\ci_{B}Y|Z$
 \subsection{Théorème de factorisation de Verma}
 
 \begin{theorem}{Théorème}
-:B(X,$\Theta$) est un réseaux bayésien pour une loi de probabilité P ssi la probabilité jointe $P(X)$ peut s'écrire :
+:B(X,$\Theta$) est un réseau bayésien pour une loi de probabilité P ssi la probabilité jointe $P(X)$ peut s'écrire :
 $$P(X)=\prod_{i=1}^n P(X_i|Pa(X_i))$$
 \label{factoverma}
 \end{theorem}
@@ -154,17 +154,17 @@ Les variables $Pa(X_{i})$ correspondent aux parents du noeud courant $X_{i}$.
 Ce théorème est intéressant car il nous donne un nombre  minimum de  paramètres à se fixer   pour déduire des probabilités jointes.
 \paragraph{Exemple:}
 
-Considérons un ensemble de variables binaires ${X_{i=1...5}}$ pouvant être re\-pré\-sen\-tées par le réseau suivants:
+Considérons un ensemble de variables binaires ${X_{i=1...5}}$ pouvant être re\-pré\-sen\-tées par le réseau suivant:
 \begin{figure}[!ht] 
     \center 
    \fbox{ \includegraphics[width=5cm]{graphevermaexemple.eps} }
     \caption{Réseau} 
 \end{figure} 
  
-Si on voulait calculer une  probabilité jointe sans la propriété de factorisation, nous aurions besoin de connaître $2^{5}$ états, c'est à dire 32 états.
+Si on voulait calculer une  probabilité jointe sans la propriété de factorisation, nous aurions besoin de connaître $2^{5}$ états, c'est-à-dire 32 états.
 
 
- Maintenant en tenant compte du théorème de la factorisation, nous n'avons plus besoin que des 10 données cité ci-dessous:  
+Maintenant en tenant compte du théorème de la factorisation, nous n'avons plus besoin que des 10 données citées ci-dessous:  
 $$\left\lbrace 
 \begin{array}{lcl} 
   P(X_  1)  \\ 
@@ -173,7 +173,7 @@ P(X_3)    \\
 P(X_4|X_2) ,\  P(X_4|\overline{X_2})\\
 P(X_5|X_3) ,\ P(X_5|\overline{X_3})\\
 \end{array}\right.$$
-Le produit de ces éléments nous donnera alors  la probabilité jointe. Cette propriété sera utilisé lorsqu'on parlera de génération de valeurs.
+Le produit de ces éléments nous donnera alors  la probabilité jointe. Cette propriété sera utilisée lorsqu'on parlera de génération de valeurs.
 
 \subsection{Structures en séries, divergentes et convergentes}
 
