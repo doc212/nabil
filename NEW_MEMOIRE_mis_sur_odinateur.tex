@@ -36,14 +36,14 @@
 
 
 L\textquotesingle aide à la décision est l\textquotesingle ensemble des techniques permettant, pour une personne donnée, d\textquotesingle opter pour la meilleure prise de décision possible par rapport à certaines alternatives évaluées sur plusieurs critères.
-Par exemple le problème consistant à acheter une voiture est un problème multicritère où l'ensemble des voitures jouent le rôle d'alternatives.
- Le choix d'un décideur pourra dépendre des critères tel que le prix, le confort ou  la tenue de route du véhicule etc.
-Le principe est alors de ranger les alternatives en construisant un modèle qui intègre à la fois les évaluations objectives des voitures  et les préférences du décideur.
-Il existe différentes méthodes pour évaluer la meilleur prise de décision tel que l\textquotesingle utilisation d\textquotesingle une fonction à valeur ajoutée, la méthode ELECTRE, la méthode Saaty  etc.
+Par exemple, le problème consistant à acheter une voiture est un problème multicritère où l'ensemble des voitures jouent le rôle d'alternatives.
+Le choix d'un décideur pourra dépendre de critères tels que le prix, le confort ou la tenue de route du véhicule etc.
+Le principe est alors de ranger les alternatives en construisant un modèle qui intègre à la fois les évaluations objectives des voitures et les préférences du décideur.
+Il existe différentes méthodes pour évaluer la meilleure prise de décision telles que l\textquotesingle utilisation d\textquotesingle une fonction à valeur ajoutée, la méthode ELECTRE, la méthode Saaty  etc.
 
-Quand on propose de nouvelles méthodes on souhaite tester leurs  propriétés. Pour que les propriétés soit statistiquement significatives, nous devons utiliser de grand jeux de données, or les jeux de données rencontrées dans les problèmes d\textquotesingle aides à la décision sont de petites tailles. Il faut alors les créer artificiellement. 
+Quand on propose de nouvelles méthodes, on souhaite tester leurs propriétés. Pour que les propriétés soient statistiquement significatives, nous devons utiliser de grands jeux de données, or les jeux de données rencontrés dans les problèmes d\textquotesingle aide à la décision sont de petites tailles. Il faut alors les créer artificiellement. 
 
-Nous pourrions générer les jeux aléatoirement mais les résultat serait peu réaliste. En effet dans les jeux de données multicritères réalistes, nous retrouvons des corrélations ; par exemple la voiture la plus cher est souvent la plus rapide et  la plus confortable.
+Nous pourrions générer les jeux aléatoirement mais les résultats seraient peu réalistes. En effet dans les jeux de données multicritères réalistes, nous retrouvons des corrélations: par exemple, la voiture la plus chère est souvent la plus rapide et la plus confortable.
 L\textquotesingle objectifs final de ce travail est alors de générer des grands jeux de données corrélées qui ressemblent à des données multicritères réaliste.
 
 
@@ -1100,7 +1100,7 @@ Les deux représentations  sont obtenus par la projection des nuages de points de
 \begin{figure}[H]
 \fbox{\includegraphics[width=6cm]{cubedata.eps}}\hfill
 \fbox{\includegraphics[width=6cm]{cubegener.eps}}
-\caption{Projection du jeux de données initial et du jeux de 1000 valeurs dans le sous-espace munis du repère $(\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs dans le sous-espace munis du repère $(\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel1}
 \end{figure}
 
 
@@ -1108,19 +1108,19 @@ Afin de mieux voir la proximité des deux jeux de données, nous projetons les deu
 \begin{figure}[H]
 \includegraphics[width=6cm]{proj12data.eps}\hfill
 \includegraphics[width=6cm]{proj12gener.eps}
-\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{2}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{2}})$}\label{fig:somefiglabel2}
 \end{figure}
 
 \begin{figure}[H]
 \includegraphics[width=6cm]{proj13data.eps}\hfill
 \includegraphics[width=6cm]{proj13gener.eps}
-\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{3}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{3}})$}\label{fig:somefiglabel3}
 \end{figure}
 
 \begin{figure}[H]
 \includegraphics[width=5cm]{proj23data.eps}\hfill
 \includegraphics[width=5cm]{proj23gener.eps}
-\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel4}
 \end{figure}
 
 \newpage
@@ -1129,13 +1129,13 @@ Le diagramme en boîte des nuages de points pour les 5  dimensions sont  représen
 \begin{figure}[H]
 \fbox{\includegraphics[width=6cm,height=5cm]{mousdata.eps}}\hfill
 \fbox{\includegraphics[width=6cm,height=5cm]{mousgener.eps}}
-\caption{Représentation par un diagramme en boîte du jeux de données initial(gauche) et du jeux de données obtenu par génération de 1000 valeurs(droite)}\label{fig:somefiglabel}
+\caption{Représentation par un diagramme en boîte du jeux de données initial(gauche) et du jeux de données obtenu par génération de 1000 valeurs(droite)}\label{fig:somefiglabel5}
 \end{figure}
 
 \begin{figure}[H]
 \fbox{\includegraphics[width=6cm,height=5cm]{boxplotzoomdata.eps}}\hfill
 \fbox{\includegraphics[width=6cm,height=5cm]{boxplotzoomgener.eps}}
-\caption{Représentation par un diagramme en boîte du jeux de données initial(gauche) et du jeux de données obtenu par génération de 1000 valeurs(droite) avec un zoom }\label{fig:somefiglabel}
+\caption{Représentation par un diagramme en boîte du jeux de données initial(gauche) et du jeux de données obtenu par génération de 1000 valeurs(droite) avec un zoom }\label{fig:somefiglabel6}
 \end{figure}
 
 
@@ -1675,7 +1675,7 @@ La corrélation $\rho_{CA}$ en fonction de $\sigma_{A}$, pour $0\le \sigma_{A} \l
 \begin{figure}[H]
 \centering
 \fbox{\includegraphics[width=6cm]{abc_divergent.eps}}
-\caption{   $\rho_{CA}=f(\sigma_{A})$ }\label{fig:somefiglabel}
+\caption{   $\rho_{CA}=f(\sigma_{A})$ }\label{fig:somefiglabel7}
 \end{figure}
 
 Dans ce cas si la structure divergente se trouve au extrémité d'une chaîne, elle ne fera pas apparaître de V-structure et la corrélation diminuera dans la partie divergente pour ensuite augmenter dans la partie en série.
@@ -1958,7 +1958,7 @@ La projection des individus dans le sous-espace munis du repère ($\vec{G},\vec{x
 \begin{figure}[H]
 \centering
 \fbox{\includegraphics[width=8cm]{cubecreat.eps}}
-\caption{Projection du nuage de points sur sous-espace munis du repère ($\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}}$)}\label{fig:somefiglabel}
+\caption{Projection du nuage de points sur sous-espace munis du repère ($\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}}$)}\label{fig:somefiglabel8}
 \end{figure}
 \newpage
 En projetant les nuages de points associés aux deux jeux  sur les plans principaux : 
@@ -1966,14 +1966,14 @@ En projetant les nuages de points associés aux deux jeux  sur les plans principa
 \begin{figure}[H]
 \fbox{\includegraphics[width=5cm]{proj12data.eps}}\hfill
 \fbox{\includegraphics[width=5cm]{projcreat12.eps}}
-\caption{Projection du nuage de points sur le plan ($\vec{G},\vec{x_{1}},\vec{x_{2}}$)}\label{fig:somefiglabel}
+\caption{Projection du nuage de points sur le plan ($\vec{G},\vec{x_{1}},\vec{x_{2}}$)}\label{fig:somefiglabel9}
 \end{figure}
 
 
 \begin{figure}[H]
 \fbox{\includegraphics[width=5cm]{proj13data.eps}}\hfill
 \fbox{\includegraphics[width=5cm]{projcreat13.eps}}
-\caption{Projection du nuage de points sur le plan ($\vec{G},\vec{x_{1}},\vec{x_{3}}$) }\label{fig:somefiglabel}
+\caption{Projection du nuage de points sur le plan ($\vec{G},\vec{x_{1}},\vec{x_{3}}$) }\label{fig:somefiglabel10}
 \end{figure}
 
 
@@ -1981,7 +1981,7 @@ En projetant les nuages de points associés aux deux jeux  sur les plans principa
 \begin{figure}[H]
 \fbox{\includegraphics[width=5cm]{proj23data.eps}}\hfill
 \fbox{\includegraphics[width=5cm]{projcreat23.eps}}
-\caption{Projection du nuage de points sur le plan ($\vec{G},\vec{x_{2}},\vec{x_{3}}$) }\label{fig:somefiglabel}
+\caption{Projection du nuage de points sur le plan ($\vec{G},\vec{x_{2}},\vec{x_{3}}$) }\label{fig:somefiglabel11}
 \end{figure}
 
 \end{enumerate}
@@ -2364,7 +2364,7 @@ L'ACP 3D donne:
 \begin{figure}[H]
 \fbox{\includegraphics[width=6cm]{cubedataex1.eps}}\hfill
 \fbox{\includegraphics[width=6cm]{cubegenerex1.eps}}
-\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le sous-espace munis du repère $(\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le sous-espace munis du repère $(\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel12}
 \end{figure}
 
 
@@ -2393,7 +2393,7 @@ On obtient pour l'ensemble des points, dans les 5 dimensions, le diagramme en bo
 \begin{figure}[H]
 \fbox{\includegraphics[width=6cm]{boxdataex1.eps}}\hfill
 \fbox{\includegraphics[width=6cm]{boxgenerex1.eps}}
-\caption{Diagramme en boîte pour le jeux initial (gauche) et le jeux obtenu après avoir généré1000 valeurs }\label{fig:somefiglabel}
+\caption{Diagramme en boîte pour le jeux initial (gauche) et le jeux obtenu après avoir généré1000 valeurs }\label{fig:somefiglabel13}
 \end{figure}
 
 
@@ -2533,7 +2533,7 @@ Projection dans le sous-espace munis du repère $(\vec{G},\vec{x_{1}},\vec{x_{2}}
  \begin{figure}[H]
 \fbox{\includegraphics[width=6cm]{cubeex3.eps}}\hfill
 \fbox{\includegraphics[width=6cm]{cubeex3g.eps}}
-\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur sous-espace munis du repère $(\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur sous-espace munis du repère $(\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel14}
 \end{figure}
 
 Les projections du jeux initial et du jeux de données générés sur les plans principaux sont les suivantes:
@@ -2541,20 +2541,20 @@ Les projections du jeux initial et du jeux de données générés sur les plans prin
 \begin{figure}[H]
 \includegraphics[width=6cm]{prdata12ex3.eps}\hfill
 \includegraphics[width=6cm]{prgener12ex3.eps}
-\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{2}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{2}})$}\label{fig:somefiglabel15}
 \end{figure}
 
 
 \begin{figure}[H]
 \includegraphics[width=6cm]{prdata13ex3.eps}\hfill
 \includegraphics[width=6cm]{prgener13ex3.eps}
-\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{3}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{3}})$}\label{fig:somefiglabel16}
 \end{figure}
 
 \begin{figure}[H]
 \includegraphics[width=6cm]{prdata23ex3.eps}\hfill
 \includegraphics[width=6cm]{prgener23ex3.eps}
-\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel17}
 \end{figure}
 
  \begin{figure}[H] 
@@ -2949,7 +2949,7 @@ Nous remarquons une proximité des moyennes et des écarts-types par rapport à ceu
 \begin{figure}[H]
 \fbox{\includegraphics[width=6cm]{boxplot1zoom.eps}}\hfill
 \fbox{\includegraphics[width=6cm]{boxplot2zoom.eps}}
-\caption{Diagramme en boîte du problème}\label{fig:somefiglabel}
+\caption{Diagramme en boîte du problème}\label{fig:somefiglabel18}
 \end{figure}
 
 La matrice de corrélation du jeux de valeurs généré est :
@@ -3119,26 +3119,26 @@ A partir de la paramétrisation \ref{param} , nous faisons évoluer $\eta(\sigma_{
 \begin{figure}[H]
 \fbox{\includegraphics[width=5cm]{coefficient_annexe1.eps}}\hfill
 \fbox{\includegraphics[width=5cm]{coefficient_annexe2.eps}}
-\caption{            $\vert\frac{A_{1}.S_{n}}{S_{1}}\vert=f(\sigma_{1})$ et  $\vert\frac{A_{2}.S_{n}}{S_{2}}\vert=f(\sigma_{2})$     }\label{fig:somefiglabel}
+\caption{            $\vert\frac{A_{1}.S_{n}}{S_{1}}\vert=f(\sigma_{1})$ et  $\vert\frac{A_{2}.S_{n}}{S_{2}}\vert=f(\sigma_{2})$     }\label{fig:somefiglabel19}
 \end{figure}
 
 \begin{figure}[H]
 \fbox{\includegraphics[width=5cm]{coefficient_annexe3.eps}}\hfill
 \fbox{\includegraphics[width=5cm]{coefficient_annexe4.eps}}
-\caption{   $\vert\frac{A_{3}.S_{n}}{S_{3}}\vert=f(\sigma_{3})$ et  $\vert\frac{A_{4}.S_{n}}{S_{4}}\vert=f(\sigma_{4})$       }\label{fig:somefiglabel}
+\caption{   $\vert\frac{A_{3}.S_{n}}{S_{3}}\vert=f(\sigma_{3})$ et  $\vert\frac{A_{4}.S_{n}}{S_{4}}\vert=f(\sigma_{4})$       }\label{fig:somefiglabel20}
 \end{figure}
 
 \begin{figure}[H]
 \fbox{\includegraphics[width=5cm]{coefficient_annexe5.eps}}\hfill
 \fbox{\includegraphics[width=5cm]{coefficient_annexe6.eps}}
-\caption{    $\vert\frac{A_{5}.S_{n}}{S_{5}}\vert=f(\sigma_{5})$ et  $\vert\frac{A_{6}.S_{n}}{S_{6}}\vert=f(\sigma_{6})$      }\label{fig:somefiglabel}
+\caption{    $\vert\frac{A_{5}.S_{n}}{S_{5}}\vert=f(\sigma_{5})$ et  $\vert\frac{A_{6}.S_{n}}{S_{6}}\vert=f(\sigma_{6})$      }\label{fig:somefiglabel21}
 \end{figure}
 
 
 \begin{figure}[H]
 \fbox{\includegraphics[width=5cm]{coefficient_annexe7.eps}}\hfill
 \fbox{\includegraphics[width=5cm]{coefficient_annexe8.eps}}
-\caption{    $\vert\frac{A_{7}.S_{n}}{S_{7}}\vert=f(\sigma_{7})$ et  $\vert\frac{A_{8}.S_{n}}{S_{8}}\vert=f(\sigma_{8})$       }\label{fig:somefiglabel}
+\caption{    $\vert\frac{A_{7}.S_{n}}{S_{7}}\vert=f(\sigma_{7})$ et  $\vert\frac{A_{8}.S_{n}}{S_{8}}\vert=f(\sigma_{8})$       }\label{fig:somefiglabel22}
 \end{figure}
 
 \newpage
