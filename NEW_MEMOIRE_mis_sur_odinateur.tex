@@ -23,7 +23,7 @@
 \newenvironment{theorem}[1]{\textbf{#1}$\quad$\begin{itshape}}{\end{itshape}}
 
 \author{Ait-taleb nabil}
-\title{GÃ©nÃ©ration de jeux de donnÃ©es multicritÃ¨res rÃ©alistes Ã  partir de rÃ©seaux BayÃ©siens}
+\title{Génération de jeux de données multicritères réalistes à partir de réseaux Bayésiens}
 
 \maketitle
 
@@ -35,16 +35,16 @@
 
 
 
-L\textquotesingle aide Ã  la dÃ©cision est l\textquotesingle ensemble des techniques permettant, pour une personne donnÃ©e, d\textquotesingle opter pour la meilleure prise de dÃ©cision possible par rapport Ã  certaines alternatives Ã©valuÃ©es sur plusieurs critÃ¨res.
-Par exemple le problÃ¨me consistant Ã  acheter une voiture est un problÃ¨me multicritÃ¨re oÃ¹ l'ensemble des voitures jouent le rÃ´le d'alternatives.
- Le choix d'un dÃ©cideur pourra dÃ©pendre des critÃ¨res tel que le prix, le confort ou  la tenue de route du vÃ©hicule etc.
-Le principe est alors de ranger les alternatives en construisant un modÃ¨le qui intÃ¨gre Ã  la fois les Ã©valuations objectives des voitures  et les prÃ©fÃ©rences du dÃ©cideur.
-Il existe diffÃ©rentes mÃ©thodes pour Ã©valuer la meilleur prise de dÃ©cision tel que l\textquotesingle utilisation d\textquotesingle une fonction Ã  valeur ajoutÃ©e, la mÃ©thode ELECTRE, la mÃ©thode Saaty  etc.
+L\textquotesingle aide à la décision est l\textquotesingle ensemble des techniques permettant, pour une personne donnée, d\textquotesingle opter pour la meilleure prise de décision possible par rapport à certaines alternatives évaluées sur plusieurs critères.
+Par exemple le problème consistant à acheter une voiture est un problème multicritère où l'ensemble des voitures jouent le rôle d'alternatives.
+ Le choix d'un décideur pourra dépendre des critères tel que le prix, le confort ou  la tenue de route du véhicule etc.
+Le principe est alors de ranger les alternatives en construisant un modèle qui intègre à la fois les évaluations objectives des voitures  et les préférences du décideur.
+Il existe différentes méthodes pour évaluer la meilleur prise de décision tel que l\textquotesingle utilisation d\textquotesingle une fonction à valeur ajoutée, la méthode ELECTRE, la méthode Saaty  etc.
 
-Quand on propose de nouvelles mÃ©thodes on souhaite tester leurs  propriÃ©tÃ©s. Pour que les propriÃ©tÃ©s soit statistiquement significatives, nous devons utiliser de grand jeux de donnÃ©es, or les jeux de donnÃ©es rencontrÃ©es dans les problÃ¨mes d\textquotesingle aides Ã  la dÃ©cision sont de petites tailles. Il faut alors les crÃ©er artificiellement. 
+Quand on propose de nouvelles méthodes on souhaite tester leurs  propriétés. Pour que les propriétés soit statistiquement significatives, nous devons utiliser de grand jeux de données, or les jeux de données rencontrées dans les problèmes d\textquotesingle aides à la décision sont de petites tailles. Il faut alors les créer artificiellement. 
 
-Nous pourrions gÃ©nÃ©rer les jeux alÃ©atoirement mais les rÃ©sultat serait peu rÃ©aliste. En effet dans les jeux de donnÃ©es multicritÃ¨res rÃ©alistes, nous retrouvons des corrÃ©lations ; par exemple la voiture la plus cher est souvent la plus rapide et  la plus confortable.
-L\textquotesingle objectifs final de ce travail est alors de gÃ©nÃ©rer des grands jeux de donnÃ©es corrÃ©lÃ©es qui ressemblent Ã  des donnÃ©es multicritÃ¨res rÃ©aliste.
+Nous pourrions générer les jeux aléatoirement mais les résultat serait peu réaliste. En effet dans les jeux de données multicritères réalistes, nous retrouvons des corrélations ; par exemple la voiture la plus cher est souvent la plus rapide et  la plus confortable.
+L\textquotesingle objectifs final de ce travail est alors de générer des grands jeux de données corrélées qui ressemblent à des données multicritères réaliste.
 
 
 
@@ -52,19 +52,19 @@ L\textquotesingle objectifs final de ce travail est alors de gÃ©nÃ©rer des grand
 \textbf{Comment faire ?}
 
 \begin{itemize}
-\item On pourrait analyser la matrice des corrÃ©lations et puis gÃ©nÃ©rer alÃ©atoirement des variables corrÃ©lÃ©es deux Ã  deux  mais il est difficile de reconstituer  totalement la matrice de dÃ©part.
+\item On pourrait analyser la matrice des corrélations et puis générer aléatoirement des variables corrélées deux à deux  mais il est difficile de reconstituer  totalement la matrice de départ.
 
 
-\item L\textquotesingle analyse en composante principale donne aussi une indication sur les dÃ©pendances mais elle  ne donne aucune piste pour gÃ©nÃ©rer des valeurs.
-Dans le cadre de ce travail, nous opterons de gÃ©nÃ©rer nos jeux de donnÃ©es multicritÃ¨reres Ã  l'aide des rÃ©seaux bayÃ©siens.
+\item L\textquotesingle analyse en composante principale donne aussi une indication sur les dépendances mais elle  ne donne aucune piste pour générer des valeurs.
+Dans le cadre de ce travail, nous opterons de générer nos jeux de données multicritèreres à l'aide des réseaux bayésiens.
 
 \end{itemize}
-Les rÃ©seaux BayÃ©siens possÃ¨dent de nos jours  un champ d'application assez vaste, par exemple:
+Les réseaux Bayésiens possèdent de nos jours  un champ d'application assez vaste, par exemple:
 
 \begin{enumerate}
-  \item Diagnostic mÃ©dical et industriel.
+  \item Diagnostic médical et industriel.
   \item L'analyse de risque.
-  \item La dÃ©tection de spam.
+  \item La détection de spam.
   \item Le data mining.
   \item L'intelligence artificielle.
 \end{enumerate}
@@ -73,7 +73,7 @@ Les rÃ©seaux BayÃ©siens possÃ¨dent de nos jours  un champ d'application assez va
 
 
 \newpage
-Le modÃ¨le mathÃ©matique attribuÃ© Ã  un jeux de donnÃ©es expliquant les dÃ©pendances inter-critÃ¨res  sera une application d'un ensemble de critÃ¨res $C_{i=1..m}$ via un systÃ¨me relationnel du type:
+Le modèle mathématique attribué à un jeux de données expliquant les dépendances inter-critères  sera une application d'un ensemble de critères $C_{i=1..m}$ via un système relationnel du type:
 
 \[
 \{C_{1},C{2},...,C_{m}\}\Longrightarrow\left\lbrace 
@@ -85,85 +85,85 @@ Le modÃ¨le mathÃ©matique attribuÃ© Ã  un jeux de donnÃ©es expliquant les dÃ©pend
 \end{array}\right.
 \]
 
-Ce modÃ¨le sera appelÃ©e \textit{modÃ¨le de dÃ©pendance $\not\ci$ et d'indÃ©pendance $\ci$}
+Ce modèle sera appelée \textit{modèle de dépendance $\not\ci$ et d'indépendance $\ci$}
 
-Une reprÃ©sentation BayÃ©sienne sera alors associÃ©e aux relations.
-Nous pourrons alors gÃ©nÃ©rer des jeux de donnÃ©es et la validation des donnÃ©es  se fera de maniÃ¨re statistique.
+Une représentation Bayésienne sera alors associée aux relations.
+Nous pourrons alors générer des jeux de données et la validation des données  se fera de manière statistique.
 
 Ce travail comprend 5 grandes sections:
 
 \begin{enumerate}
 
-  \item Une introduction thÃ©orique sur les rÃ©seaux bayÃ©siens: nous exposerons dans ce point les Ã©lÃ©ments fondamentaux concernant les rÃ©seaux bayÃ©siens permettant de mener Ã  bien la comprÃ©hension du travail.
+  \item Une introduction théorique sur les réseaux bayésiens: nous exposerons dans ce point les éléments fondamentaux concernant les réseaux bayésiens permettant de mener à bien la compréhension du travail.
 
-  \item Une section concernant l'apprentissage: il y sera briÃ¨vement  exposÃ© les deux mÃ©triques utilisÃ©es Ã  postÃ©riori:
+  \item Une section concernant l'apprentissage: il y sera brièvement  exposé les deux métriques utilisées à postériori:
 \begin{itemize}	
     \item BIC-Gaussienne.
 
-   \item BGE mÃ©trique.
+   \item BGE métrique.
 
 \end{itemize}
-  \item Une section sur l'analyse de donnÃ©es:
-    nous prÃ©senterons les  trois outils statistiques (ACP 2D, test d'hypothÃ¨se Student et le diagramme en boÃ®te ) que nous utiliserons dans la validation de nos jeux de donnÃ©es.
+  \item Une section sur l'analyse de données:
+    nous présenterons les  trois outils statistiques (ACP 2D, test d'hypothèse Student et le diagramme en boîte ) que nous utiliserons dans la validation de nos jeux de données.
 
 
 
-  \item Apprentissage sur des donnÃ©es rÃ©alistes:
+  \item Apprentissage sur des données réalistes:
 
-    Nous Ã©tudierons la lÃ©gitimitÃ© des mÃ©thodes d'apprentissages dÃ©crites dans la deuxiÃ¨me section.
-    Deux mÃ©thodes de bruitages agissant directement sur le jeu de donnÃ©es brut seront utilisÃ©e.
-    Ceci permettra de tester la robustesse du rÃ©seau appris et de dÃ©corrÃ©ler nos critÃ¨res.
+    Nous étudierons la légitimité des méthodes d'apprentissages décrites dans la deuxième section.
+    Deux méthodes de bruitages agissant directement sur le jeu de données brut seront utilisée.
+    Ceci permettra de tester la robustesse du réseau appris et de décorréler nos critères.
 
-  \item Une section traitera la crÃ©ation des jeux de donnÃ©es gÃ©nÃ©rÃ© Ã  partir de rÃ©seaux bayÃ©siens:
+  \item Une section traitera la création des jeux de données généré à partir de réseaux bayésiens:
 
-    A partir d'une modÃ©lisation,
-    nous serons amenÃ©s Ã  gÃ©nÃ©rer des donnÃ©es.
-    On testera la vraisemblance des rÃ©sultats par rapport Ã  la modÃ©lisation mathÃ©matique de dÃ©part et le rÃ©alisme des donnÃ©es artificiels par rapport aux donnÃ©es rÃ©alistes.
+    A partir d'une modélisation,
+    nous serons amenés à générer des données.
+    On testera la vraisemblance des résultats par rapport à la modélisation mathématique de départ et le réalisme des données artificiels par rapport aux données réalistes.
 
 \end{enumerate}
    
-Les traitements informatiques seront faits Ã  l'aide du programme R oÃ¹ nous utiliserons les librairies "bnlearn" et "FactoMineR" .
+Les traitements informatiques seront faits à l'aide du programme R où nous utiliserons les librairies "bnlearn" et "FactoMineR" .
   
 \newpage
 
 
-\subsection{DÃ©finition d'un rÃ©seaux BayÃ©sien}
+\subsection{Définition d'un réseaux Bayésien}
 
-Un \definition{rÃ©seaux BayÃ©sien} B(X,$\Theta$)  est un Graphe non-orientÃ© acyclique  oÃ¹ les noeuds reprÃ©sentent des variables alÃ©atoires $x_{i=1...n} \in X$
-auxquelles nous attribuons  un ensemble de paramÃ¨tres $\theta_{i=1,...,n} \in \Theta$,
-correspondant aux probabilitÃ©s conditionnelles des variables courantes Ã©tant donnÃ©s les parents.
+Un \definition{réseaux Bayésien} B(X,$\Theta$)  est un Graphe non-orienté acyclique  où les noeuds représentent des variables aléatoires $x_{i=1...n} \in X$
+auxquelles nous attribuons  un ensemble de paramètres $\theta_{i=1,...,n} \in \Theta$,
+correspondant aux probabilités conditionnelles des variables courantes étant donnés les parents.
 
-Ce rÃ©seaux est reprÃ©sentÃ© par  une loi de probabilitÃ©  $P$:
+Ce réseaux est représenté par  une loi de probabilité  $P$:
 
 \begin{center}
 $X\ci_{B}Y|Z\Longrightarrow X\ci_{B}Y|Z$
 \end{center}
 
 
-\subsection{ThÃ©orÃ¨me de factorisation de Verma}
+\subsection{Théorème de factorisation de Verma}
 
-\begin{theorem}{ThÃ©orÃ¨me}
-:B(X,$\Theta$) est un rÃ©seaux bayÃ©sien pour une loi de probabilitÃ© P ssi la probabilitÃ© jointe $P(X)$ peut s'Ã©crire :
+\begin{theorem}{Théorème}
+:B(X,$\Theta$) est un réseaux bayésien pour une loi de probabilité P ssi la probabilité jointe $P(X)$ peut s'écrire :
 $$P(X)=\prod_{i=1}^n P(X_i|Pa(X_i))$$
 \label{factoverma}
 \end{theorem}
 
 Les variables $Pa(X_{i})$ correspondent aux parents du noeud courant $X_{i}$.
 
-Ce thÃ©orÃ¨me est intÃ©ressant car il nous donne un nombre  minimum de  paramÃ¨tres Ã  se fixer   pour dÃ©duire des probabilitÃ©s jointes.
+Ce théorème est intéressant car il nous donne un nombre  minimum de  paramètres à se fixer   pour déduire des probabilités jointes.
 \paragraph{Exemple:}
 
-ConsidÃ©rons un ensemble de variables binaires ${X_{i=1...5}}$ pouvant  Ãªtre reprÃ©sentÃ©es par le rÃ©seau suivants:
+Considérons un ensemble de variables binaires ${X_{i=1...5}}$ pouvant  être représentées par le réseau suivants:
 \begin{figure}[!ht] 
     \center 
    \fbox{ \includegraphics[width=5cm]{graphevermaexemple.eps} }
-    \caption{RÃ©seau} 
+    \caption{Réseau} 
 \end{figure} 
  
-Si on voulait calculer une  probabilitÃ© jointe sans la propriÃ©tÃ© de factorisation, nous aurions besoin de connaÃ®tre $2^{5}$ Ã©tats, c'est Ã  dire 32 Ã©tats.
+Si on voulait calculer une  probabilité jointe sans la propriété de factorisation, nous aurions besoin de connaître $2^{5}$ états, c'est à dire 32 états.
 
 
- Maintenant en tenant compte du thÃ©orÃ¨me de la factorisation, nous n'avons plus besoin que des 10 donnÃ©es citÃ© ci-dessous:  
+ Maintenant en tenant compte du théorème de la factorisation, nous n'avons plus besoin que des 10 données cité ci-dessous:  
 $$\left\lbrace 
 \begin{array}{lcl} 
   P(X_  1)  \\ 
@@ -172,42 +172,42 @@ P(X_3)    \\
 P(X_4|X_2) ,\  P(X_4|\overline{X_2})\\
 P(X_5|X_3) ,\ P(X_5|\overline{X_3})\\
 \end{array}\right.$$
-Le produit de ces Ã©lÃ©ments nous donnera alors  la probabilitÃ© jointe. Cette propriÃ©tÃ© sera utilisÃ© lorsqu'on parlera de gÃ©nÃ©ration de valeurs.
+Le produit de ces éléments nous donnera alors  la probabilité jointe. Cette propriété sera utilisé lorsqu'on parlera de génération de valeurs.
 
-\subsection{Structures en sÃ©ries, divergentes et convergentes}
+\subsection{Structures en séries, divergentes et convergentes}
 
-Avant de passer au thÃ©orÃ¨me fondamental qui va nous permettre d'interprÃ©ter les graphes,
-nous devons dÃ©finir 3 types de sous-structures particuliÃ¨res.
+Avant de passer au théorème fondamental qui va nous permettre d'interpréter les graphes,
+nous devons définir 3 types de sous-structures particulières.
 
-\subsubsection{Composantes en sÃ©ries}
+\subsubsection{Composantes en séries}
 
-Supposons que nous ayons les Ã©vÃ©nements en cascades  suivants:
+Supposons que nous ayons les événements en cascades  suivants:
 
 -$X$ ="l'ensoleillement".
 
--$Y$="Prix du blÃ©".
+-$Y$="Prix du blé".
 
--$Z$="l'Ã©tat de la rÃ©colte".
+-$Z$="l'état de la récolte".
 
-La structure va donc Ãªtre mise  sous la forme: $X\longrightarrow Z \longrightarrow Y$.
+La structure va donc être mise  sous la forme: $X\longrightarrow Z \longrightarrow Y$.
 
 Si nous supposons dans un premier temps  que la variable $Z$ est inconnue,
-alors le fait que le temps soit ensoleillÃ© aura une implication directe  sur le prix du blÃ© et inversement.
+alors le fait que le temps soit ensoleillé aura une implication directe  sur le prix du blé et inversement.
 
-$\Longrightarrow$ les variables  $X$ et $Y$ sont dÃ©pendantes.
+$\Longrightarrow$ les variables  $X$ et $Y$ sont dépendantes.
 
 Si maintenant nous fixons la variable $Z$,
-alors l'Ã©tat de la  rÃ©colte  aura une implication directe sur le prix du blÃ©.
+alors l'état de la  récolte  aura une implication directe sur le prix du blé.
 Dans ce cas de figure,
-la connaissance de l'ensoleillement $X$ n'influencera plus le prix du blÃ©.  
+la connaissance de l'ensoleillement $X$ n'influencera plus le prix du blé.  
 
-$\Longrightarrow$ les variables  $X$ et $Y$ deviennent indÃ©pendantes.
+$\Longrightarrow$ les variables  $X$ et $Y$ deviennent indépendantes.
 
 
-Nous dirons alors que \emph{le noeud $Z$ Ã  l'interstice de deux variables $X$ et $Y$ bloque l'information pour une \definition{composante en sÃ©rie}}.
+Nous dirons alors que \emph{le noeud $Z$ à l'interstice de deux variables $X$ et $Y$ bloque l'information pour une \definition{composante en série}}.
 
 \subsubsection{Composante divergente}
-ConsidÃ©rons  les Ã©vÃ©nements suivants:
+Considérons  les événements suivants:
 
 -$X$="La pelouse de mon jardin est humide".
 
@@ -215,21 +215,21 @@ ConsidÃ©rons  les Ã©vÃ©nements suivants:
 
 -$Z$="Il a plu cette nuit".
 
-La structure va donc Ãªtre mise  sous la forme: $X\longleftarrow Z \longrightarrow Y$.
+La structure va donc être mise  sous la forme: $X\longleftarrow Z \longrightarrow Y$.
 
 Si la pelouse de mon jardin est humide,
 il y a de fortes chances de croire que la pelouse de mon voisin sera aussi humide.
 
 Maintenant si je sais qu'il a plu cette nuit,
-l'information concernant ma pelouse n'apportera plus aucun renseignement sur l'Ã©tat de la pelouse de mon voisin:
+l'information concernant ma pelouse n'apportera plus aucun renseignement sur l'état de la pelouse de mon voisin:
 elle sera automatiquement humide.
 
 
-Nous dirons que \emph{le noeud $Z$ Ã  l'interstice de deux variable $X$ et $Y$ bloque l'information pour une \definition{composante divergente}}
+Nous dirons que \emph{le noeud $Z$ à l'interstice de deux variable $X$ et $Y$ bloque l'information pour une \definition{composante divergente}}
 
 \subsubsection{Composante convergente ou V-structure}
 
-ConsidÃ©rons les Ã©vÃ©nements suivants:
+Considérons les événements suivants:
 
 -$X$="il y a eu un tremblement de terre ".
 
@@ -237,85 +237,85 @@ ConsidÃ©rons les Ã©vÃ©nements suivants:
 
 -$Y$="l'existence d'un cambriolage au sein de mon domicile".
 
-La structure va donc Ãªtre mise  sous la forme $X\longrightarrow Z \longleftarrow Y$.
+La structure va donc être mise  sous la forme $X\longrightarrow Z \longleftarrow Y$.
 
-A priori un lien de dÃ©pendance entre le tremblement de terre et le dÃ©roulement d'un cambriolage n'a pas lieu d'Ãªtre.
+A priori un lien de dépendance entre le tremblement de terre et le déroulement d'un cambriolage n'a pas lieu d'être.
 Cependant si  l'alarme sonne,
-la corrÃ©lation entre $X$ et $Y$ apparait.
+la corrélation entre $X$ et $Y$ apparait.
 En effet, si je sais qu'il y a eu un tremblement de terre,
-automatiquement je diminue la plausibilitÃ© qu'il y ait eu un cambriolage.
+automatiquement je diminue la plausibilité qu'il y ait eu un cambriolage.
 
-Nous dirons que \emph{le noeud $Z$ Ã  l'interstice de deux variables $X$ et $Y$ laisse passer l'information pour une \definition{composante convergente}}.
+Nous dirons que \emph{le noeud $Z$ à l'interstice de deux variables $X$ et $Y$ laisse passer l'information pour une \definition{composante convergente}}.
 
 \textbf{Remarque:} 
 
-Pour des causalitÃ© directes, il va de soi que l'information passe toujours.
+Pour des causalité directes, il va de soi que l'information passe toujours.
 
-L'union de ces trois composantes peut dÃ©jÃ   nous donner une idÃ©e sur le dÃ©placement de l'information pour un rÃ©seau simple.
-Nous utiliserons la notation \textit{on($Z$)} et \textit{off($Z$)} pour stipuler que la variable $Z$ est respectivement connue ou mÃ©connue.
+L'union de ces trois composantes peut déjà  nous donner une idée sur le déplacement de l'information pour un réseau simple.
+Nous utiliserons la notation \textit{on($Z$)} et \textit{off($Z$)} pour stipuler que la variable $Z$ est respectivement connue ou méconnue.
 
 
-ConsidÃ©rons le cas suivant:
+Considérons le cas suivant:
 
 
 $$X_1\longrightarrow off(X_2) \longrightarrow on(X_3) \longrightarrow off(X_4) \longleftarrow X_5$$
 
 
-La premiÃ¨re sous-structure $X_1\longrightarrow off(X_2) \longrightarrow on(X_3)$ est en sÃ©rie, l'information passe alors  de $X_1$ Ã  $X_3$ .
+La première sous-structure $X_1\longrightarrow off(X_2) \longrightarrow on(X_3)$ est en série, l'information passe alors  de $X_1$ à $X_3$ .
      
-L'information partie de $X_1$ arrivÃ©e  en $X_3$ va pouvoir continuer son chemin jusque $X_5$ car la sous-structure  $X_3 \longrightarrow off(X_4) \longleftarrow X_5$  est convergente.  
+L'information partie de $X_1$ arrivée  en $X_3$ va pouvoir continuer son chemin jusque $X_5$ car la sous-structure  $X_3 \longrightarrow off(X_4) \longleftarrow X_5$  est convergente.  
 
-En conclusion, l'information a pu se dÃ©placer Ã  travers la sous-structure: 
+En conclusion, l'information a pu se déplacer à travers la sous-structure: 
 
   $$X_1\longrightarrow off(X_2) \longrightarrow on(X_3) \longrightarrow off(X_4) \longleftarrow X_5$$  
 
 
-Les rÃ©seaux dÃ©finis prÃ©cÃ©demment sont  assez simple, le thÃ©orÃ¨me nous permettant de traiter des rÃ©seaux du types complexes se nomme \emph{le thÃ©orÃ¨me des D-sÃ©parations}.
+Les réseaux définis précédemment sont  assez simple, le théorème nous permettant de traiter des réseaux du types complexes se nomme \emph{le théorème des D-séparations}.
 
-\subsection{ThÃ©orÃ¨me des D-sÃ©paration}
+\subsection{Théorème des D-séparation}
 
-\begin{theorem}{ThÃ©orÃ¨me}
-Soit le graphe G($\aleph$,$\alpha$)  un Graphe orientÃ© acyclique.
+\begin{theorem}{Théorème}
+Soit le graphe G($\aleph$,$\alpha$)  un Graphe orienté acyclique.
 
-On note $<X|Z|Y>$  et on dit que X et Y sont D-sÃ©parÃ©s par Z si toutes  chaÃ®nes liants  X et Y vÃ©rifient au moins une des deux conditions suivantes:
+On note $<X|Z|Y>$  et on dit que X et Y sont D-séparés par Z si toutes  chaînes liants  X et Y vérifient au moins une des deux conditions suivantes:
 \begin{itemize}
   \item Il existe  une composante convergente en un noeud $S \neq Z$ ou  $Z$ n'est pas une cause directe de $S$.
-  \item Il existe  une composante divergente ou en sÃ©rie avec  $S=Z$.
+  \item Il existe  une composante divergente ou en série avec  $S=Z$.
 \end{itemize}
 \end{theorem}
 
-Ce thÃ©orÃ¨me nous montre la maniÃ¨re dont se dÃ©place l'information dans n'importe quel rÃ©seau Ã©tant donnÃ© l'Ã©tat $(on , off)$ du rÃ©seau.
+Ce théorème nous montre la manière dont se déplace l'information dans n'importe quel réseau étant donné l'état $(on , off)$ du réseau.
 
 En effet lorsque l'on a $<X|Z|Y>$,
 la connaissance de l'interstice $Z$  bloque globalement l'information entre  $X$ et $Y$.
 Dans le cas contraire,
-le fait de ne pas avoir $<X|Z|Y>$ nous annonce que l'on aura au niveau de la chaÃ®ne liant $X$ et $Y$ une convergence V-structure en $Z$.
+le fait de ne pas avoir $<X|Z|Y>$ nous annonce que l'on aura au niveau de la chaîne liant $X$ et $Y$ une convergence V-structure en $Z$.
 
-Cette derniÃ¨re remarque est assez intÃ©ressante dans la mesure oÃ¹ elle nous interprÃ¨te les V-structures comme Ã©tant des \textit{vannes laissant passer l'information Ã  l'Ã©tat $on$}
-tandis que les structures en sÃ©ries et divergentes seront interprÃ©tÃ©es comme des \textit{vannes laissant passer l'information Ã  l'Ã©tat off}.
+Cette dernière remarque est assez intéressante dans la mesure où elle nous interprète les V-structures comme étant des \textit{vannes laissant passer l'information à l'état $on$}
+tandis que les structures en séries et divergentes seront interprétées comme des \textit{vannes laissant passer l'information à l'état off}.
 
-Pour l'instant nous avons utilisÃ© le thÃ©orÃ¨me D-sÃ©paration pour analyser les dÃ©placements d'informations Ã©tant donnÃ© la connaissance de l'Ã©tat $on/off$ d'un rÃ©seau, cependant  nous n'avons Ã  aucun moment parlÃ© de probabilitÃ©.
+Pour l'instant nous avons utilisé le théorème D-séparation pour analyser les déplacements d'informations étant donné la connaissance de l'état $on/off$ d'un réseau, cependant  nous n'avons à aucun moment parlé de probabilité.
 
 Dans le prochain point,
-un lien directe et important entre les D-sÃ©parations  et les indÃ©pendances conditionnelles liÃ© Ã  la probabilitÃ© sera Ã©tabli.
+un lien directe et important entre les D-séparations  et les indépendances conditionnelles lié à la probabilité sera établi.
 
-\subsection{ThÃ©orÃ¨me de Verma et Pearl}
-\begin{theorem}{ThÃ©orÃ¨me}
+\subsection{Théorème de Verma et Pearl}
+\begin{theorem}{Théorème}
 
-Si 2 variables $X$ et $Y$ sont D-sÃ©parÃ©es par une variable $Z$ alors $X$ et $Y$ sont indÃ©pendantes conditionnellement Ã  $Z$:
+Si 2 variables $X$ et $Y$ sont D-séparées par une variable $Z$ alors $X$ et $Y$ sont indépendantes conditionnellement à $Z$:
  $$<X|Z|Y>\Longrightarrow X \ci Y|Z$$
 \end{theorem}
 
 
 
 \newpage
-\subsection{Equivalence de rÃ©seaux bayÃ©siens}
+\subsection{Equivalence de réseaux bayésiens}
 
-\subsubsection{DÃ©finition de l'Ã©quivalence de rÃ©seaux bayÃ©sien}
+\subsubsection{Définition de l'équivalence de réseaux bayésien}
 
-\definition{Deux rÃ©seaux bayÃ©siens $B_1$ et $B_2$ sont dit Ã©quivalents} et notÃ© $B_1\equiv B_2$  ssi ils reprÃ©sentent les mÃªmes indÃ©pendances conditionnelles.
+\definition{Deux réseaux bayésiens $B_1$ et $B_2$ sont dit équivalents} et noté $B_1\equiv B_2$  ssi ils représentent les mêmes indépendances conditionnelles.
 
-ConsidÃ©rons les 2 rÃ©seaux bayÃ©siens  en sÃ©rie suivants :
+Considérons les 2 réseaux bayésiens  en série suivants :
 \[
 \left\lbrace 
 \begin{array}{lcl} 
@@ -323,60 +323,60 @@ B_1 \equiv A \longleftarrow B \longleftarrow C\\
 B_2 \equiv A \longrightarrow B \longrightarrow C
 \end{array}\right.
 \]
-Prouvons que ces deux rÃ©seaux sont bien Ã©quivalents.
+Prouvons que ces deux réseaux sont bien équivalents.
 
 \paragraph{Illustration}
 
-En utilisant le thÃ©orÃ¨me de factorisation de Verma : 
+En utilisant le théorème de factorisation de Verma : 
 \[
 P(A,B,C)_{B_{1}}=P(A / B).P(B/ C).P(C)
 \]
 $$P(A,B,C)_{B_{2}}=P(A).P(B / A).P(C / B)$$
-Partons de la premiÃ¨re relation et remplaÃ§ons Ã  l'aide de la formule de bayes les probabilitÃ©s  $P(A/B)$ et $P(B/C)$ en fonction respectivement des probabilitÃ©s  $P(B/A)$ et $P(C/B)$ :
+Partons de la première relation et remplaçons à l'aide de la formule de bayes les probabilités  $P(A/B)$ et $P(B/C)$ en fonction respectivement des probabilités  $P(B/A)$ et $P(C/B)$ :
 
 $$ P(A,B,C)_{B_{1}}=\frac{P(B/A).P(A)}{P(B)} .\frac{P(C/B).P(B)}{P(C)}.P(C)  \Longrightarrow  P(A,B,C)_{B_{1}}=P(A,B,C)_{B_{2}}$$
 
 $\blacksquare$
 
-Nous pouvons aussi  raisonner de la mÃªme faÃ§on pour une composante en divergence:
+Nous pouvons aussi  raisonner de la même façon pour une composante en divergence:
 $$B_{3}\equiv A \longleftarrow B \longrightarrow C$$
-qui sera alors Ã©quivalente Ã  $B_{1}$ et $B_{2}$.
+qui sera alors équivalente à $B_{1}$ et $B_{2}$.
 
 Seule la composante en V-structure 
 $$B_{4}\equiv A \longrightarrow B \longleftarrow C$$
-ne sera pas Ã©quivalente aux deux rÃ©seaux de dÃ©part.
+ne sera pas équivalente aux deux réseaux de départ.
 
 \begin{align*}
 P(A,B,C)_{B_{4}}&=P(B/A,C).P(A).P(C)\\
 \end{align*}
 
-Remarquons que l'illustration a Ã©tÃ© faite pour des rÃ©seaux BayÃ©siens simples.
-Si maintenant nous avons un rÃ©seau BayÃ©sien possÃ©dant  un grand nombre de noeuds,
-l'analyse d'Ã©quivalence entre rÃ©seaux sera beaucoup moins triviale.
-Il existe un thÃ©orÃ¨me pouvant identifier des rÃ©seaux Ã©quivalents pour des structures complexes. 
+Remarquons que l'illustration a été faite pour des réseaux Bayésiens simples.
+Si maintenant nous avons un réseau Bayésien possédant  un grand nombre de noeuds,
+l'analyse d'équivalence entre réseaux sera beaucoup moins triviale.
+Il existe un théorème pouvant identifier des réseaux équivalents pour des structures complexes. 
 
 
 
 
-\subsubsection{ThÃ©orÃ¨me d'Ã©quivalence de rÃ©seaux}
-\begin{theorem}{ThÃ©orÃ¨me:}
-  Deux rÃ©seaux bayÃ©siens sont Ã©quivalents ssi ils ont le mÃªme squelette et le mÃªme ensemble de V-structures.
+\subsubsection{Théorème d'équivalence de réseaux}
+\begin{theorem}{Théorème:}
+  Deux réseaux bayésiens sont équivalents ssi ils ont le même squelette et le même ensemble de V-structures.
 \end{theorem}
 
 \textbf{Remarque:}
 
 
-Le squelette  d'un graphe orientÃ© acyclique est le graphe non-orientÃ© obtenu en remplaÃ§ant les arcs par des arÃªtes.
-Le squelette munis des V-structure est un graphe partiellement orientÃ©;
-on le nomme souvent \definition{graphe complÃ©tÃ© (CPDAG)} ou \definition{essentiel}.
-Il va de soi alors qu'il existe une multitude de rÃ©seaux bayÃ©sien  Ã©quivalent associÃ©e Ã  un graphe essentiel.
+Le squelette  d'un graphe orienté acyclique est le graphe non-orienté obtenu en remplaçant les arcs par des arêtes.
+Le squelette munis des V-structure est un graphe partiellement orienté;
+on le nomme souvent \definition{graphe complété (CPDAG)} ou \definition{essentiel}.
+Il va de soi alors qu'il existe une multitude de réseaux bayésien  équivalent associée à un graphe essentiel.
 
-Si on veut obtenir un \textbf{CPDAG} Ã  partir d'un graphe, il suffit de renverser des arcs correspondant aux  arrÃªtes du graphe essentiel  sans faire  apparaitre de V-structures.
-Lorsqu'on rÃ©unit l'ensemble des rÃ©seaux Ã©quivalents,
-on parle de \textbf{\textit{classe d'Ã©quivalence}}.
+Si on veut obtenir un \textbf{CPDAG} à partir d'un graphe, il suffit de renverser des arcs correspondant aux  arrêtes du graphe essentiel  sans faire  apparaitre de V-structures.
+Lorsqu'on réunit l'ensemble des réseaux équivalents,
+on parle de \textbf{\textit{classe d'équivalence}}.
 
 
-L'exemple qui suit  nous montre quelques rÃ©seaux Ã©quivalents dÃ©duits d'un graphe essentiels (CPDAG):
+L'exemple qui suit  nous montre quelques réseaux équivalents déduits d'un graphe essentiels (CPDAG):
 
 \begin{figure}[h]
 \centering
@@ -384,17 +384,17 @@ L'exemple qui suit  nous montre quelques rÃ©seaux Ã©quivalents dÃ©duits d'un gra
 \fbox{\includegraphics[width=0.4\textwidth]{IM_EQUIVAL_CPDAG.eps}}%
   }
 $\quad$
-\subfigure[RÃ©seaux $B_1$]{
+\subfigure[Réseaux $B_1$]{
 
  \fbox{ \includegraphics[width=0.4\textwidth]{IM_EQUIVAL_B_1.eps}}%
 }   
 \\
-\subfigure[RÃ©seaux $B_2$]{
+\subfigure[Réseaux $B_2$]{
 
 \fbox{ \includegraphics[width=0.4\textwidth]{IM_EQUIVAL_B_2.eps}}%
  }
 $\quad$
-\subfigure[RÃ©seaux $B_3$]{
+\subfigure[Réseaux $B_3$]{
  \fbox{\includegraphics[width=0.4\textwidth]{IM_EQUIL_B_3.eps}}%
 }
 \end{figure}
@@ -406,49 +406,49 @@ $$CPDAG \Longrightarrow B_1 \Longrightarrow B_2=I_{(a,e)}(B_1) \Longrightarrow B
 
 \newpage
 
-\section{Apprentissage de rÃ©seaux }
+\section{Apprentissage de réseaux }
 
 \subsection{Introduction}
 
 L'espace des structures possibles est super-exponentiel pour le nombre de variables.
-Le nombre $a_{k}$ de structures possibles pour $k$ noeuds (variables) est donnÃ© par la relation suivante :
+Le nombre $a_{k}$ de structures possibles pour $k$ noeuds (variables) est donné par la relation suivante :
 $$a_{k}=\sum_{i=1}^{k}(-1)^{i+1} {k\choose i}2^{i(k-1)} a_{k-i}\approx k^{2^{O(k)}}$$
-Nous avons donc un problÃ¨me NP-complet.
-Nous utiliserons alors des mÃ©thodes heuristiques d'apprentissages.
+Nous avons donc un problème NP-complet.
+Nous utiliserons alors des méthodes heuristiques d'apprentissages.
 
-Nous allons dans cette section dÃ©crire les mÃ©thodes d'apprentissages de maniÃ¨re assez gÃ©nÃ©rale. 
-Nous ne parlerons que des algorithmes d'apprentissages de jeux de donnÃ©es \emph{continues}.
-Il existe deux familles d'algorithmes d'apprentissages de rÃ©seaux bayÃ©siens:
+Nous allons dans cette section décrire les méthodes d'apprentissages de manière assez générale. 
+Nous ne parlerons que des algorithmes d'apprentissages de jeux de données \emph{continues}.
+Il existe deux familles d'algorithmes d'apprentissages de réseaux bayésiens:
 \begin{enumerate}
-  \item Algorithme basÃ© sous-contraintes.
-  \item Algorithme basÃ© sur un score (une mÃ©trique).
+  \item Algorithme basé sous-contraintes.
+  \item Algorithme basé sur un score (une métrique).
 \end{enumerate}
 
-\subsection{Algorithme basÃ© sous contraintes }
+\subsection{Algorithme basé sous contraintes }
 
-Les algorithmes basÃ©s sous-contraintes ont tous en commun les Ã©tapes suivantes:
+Les algorithmes basés sous-contraintes ont tous en commun les étapes suivantes:
 \begin{itemize}
-  \item Construire un graphe non-orientÃ©  contenant les relations entre les variables. Ces relations sont dÃ©duites de tests d'indÃ©pendances.
-  \item DÃ©tecter les V-structures en utilisant les test d'indÃ©pendances.
-  \item DÃ©finir l'orientation des arcs restants en satisfaisant les contraintes de non-cycles.
+  \item Construire un graphe non-orienté  contenant les relations entre les variables. Ces relations sont déduites de tests d'indépendances.
+  \item Détecter les V-structures en utilisant les test d'indépendances.
+  \item Définir l'orientation des arcs restants en satisfaisant les contraintes de non-cycles.
 \end{itemize}
 
-\subsection{Algorithme basÃ© sur un score}
+\subsection{Algorithme basé sur un score}
 
-Dans ce type d'algorithme, une construction itÃ©rative est Ã©valuÃ© Ã  l'aide d'une mÃ©trique mesurant la vraisemblance du rÃ©seaux par rapport Ã  un jeux de donnÃ©.
+Dans ce type d'algorithme, une construction itérative est évalué à l'aide d'une métrique mesurant la vraisemblance du réseaux par rapport à un jeux de donné.
 
-Les deux mÃ©trique que nous allons utiliser dans l'apprentissage sont le suivantes:
+Les deux métrique que nous allons utiliser dans l'apprentissage sont le suivantes:
 
 
 \begin{itemize}
-  \item la BGE-mÃ©trique que l'on peut retrouver dans l'article \textit{Learning Bayesian Network de David Heckerman et Dan Geiger}.
+  \item la BGE-métrique que l'on peut retrouver dans l'article \textit{Learning Bayesian Network de David Heckerman et Dan Geiger}.
 
-  \item La BIC-gaussienne qui est la \textit{bayÃ©sian  information criterion}. Elle est definis de maniÃ¨re gÃ©nÃ©ral de la faÃ§on suivante :
+  \item La BIC-gaussienne qui est la \textit{bayésian  information criterion}. Elle est definis de manière général de la façon suivante :
 
 $$ BIC(B,data)=max_{\Theta}\log P(B|data,\Theta)-\frac{d}{2}\log{n}$$
 
-OÃ¹ $d=\sum_{i=1}^{n} q_{i} (r_{i}-1) $ est la dimension de $B$.
-La probabilitÃ© $P$ est une Gaussienne  multivariable.
+Où $d=\sum_{i=1}^{n} q_{i} (r_{i}-1) $ est la dimension de $B$.
+La probabilité $P$ est une Gaussienne  multivariable.
 
 \end{itemize}
 
@@ -457,26 +457,26 @@ La probabilitÃ© $P$ est une Gaussienne  multivariable.
 
 \newpage
 
-\section{Analyse de donnÃ©e}
+\section{Analyse de donnée}
 
 \subsection{Introduction}
-Dans ce point nous montrerons les trois outils statistiques qui vont Ãªtre utilisÃ© dans  notre analyse de donnÃ©es.
-La validation se fera par des  test d'hypothÃ¨ses sur les corrÃ©lations qui seront de deux types:
+Dans ce point nous montrerons les trois outils statistiques qui vont être utilisé dans  notre analyse de données.
+La validation se fera par des  test d'hypothèses sur les corrélations qui seront de deux types:
 
 \begin{enumerate}
-  \item Les corrÃ©lations globales du type $\rho_{XY}$ liÃ©es  au dÃ©pendances  directes dans la reprÃ©sentation bayÃ©sienne.
+  \item Les corrélations globales du type $\rho_{XY}$ liées  au dépendances  directes dans la représentation bayésienne.
 
-Il est Ã  noter que la corrÃ©lation est parfaitement symÃ©trique $\rho_{XY}=\rho_{YX}$ ,ceci impliquera que l'orientation d'un arc entre deux noeuds adjacents n'aura pas d'influence dans nos interprÃ©tations.    
+Il est à noter que la corrélation est parfaitement symétrique $\rho_{XY}=\rho_{YX}$ ,ceci impliquera que l'orientation d'un arc entre deux noeuds adjacents n'aura pas d'influence dans nos interprétations.    
 
 Formule de $\rho_{XY}$:
 \begin{equation}
 \rho_{XY}=\frac{\sum_{i=1}^{n}(X_i-\overline{X}).(Y_i-\overline{Y})}{\sqrt{\sum_{i=1}^{n}(X_i-\overline{X})^{2}} .\sqrt{\sum_{i=1}^{n}(Y_i-\overline{Y})^{2}}}
 \end{equation}
-Les outils d'analyses statistiques utilisÃ©s seront les test d'indÃ©pendances du types Students ainsi que l'analyse en composantes principales.
+Les outils d'analyses statistiques utilisés seront les test d'indépendances du types Students ainsi que l'analyse en composantes principales.
 
 
 
-\item Les corrÃ©lations partielles $\rho_{XY|Z}$, liÃ©es aux dÃ©pendances indirectes, seront interprÃ©tÃ© par l'utilisation du thÃ©orÃ¨me des D-sÃ©parations et la validation se fera par test d'hypothÃ¨ses de  type Students.
+\item Les corrélations partielles $\rho_{XY|Z}$, liées aux dépendances indirectes, seront interprété par l'utilisation du théorème des D-séparations et la validation se fera par test d'hypothèses de  type Students.
 
 Formule de $\rho_{XY|Z}$ pour une seule variable $Z$:
 \begin{equation}
@@ -493,52 +493,52 @@ Formule de $\rho_{XY|Z}$ pour une seule variable $Z$:
 
 \newpage
 \subsection{Analyse en composantes principales (ACP)}
-ConsidÃ©rons  un systÃ¨me de $p$ variables $X_{1...p}$ oÃ¹ l'on veut Ã©tudier la variabilitÃ©.
+Considérons  un système de $p$ variables $X_{1...p}$ où l'on veut étudier la variabilité.
 
-L'objectif de l' ACP sera d'utiliser un nombre $q$ de variables infÃ©rieurs Ã  $p$ nous permettant d'Ã©tudier au maximum la variabilitÃ© du systÃ¨me.
-Pour cela nous allons chercher un nouveaux systÃ¨me d'axes maximisant la variance $\sigma^{2}$. 
+L'objectif de l' ACP sera d'utiliser un nombre $q$ de variables inférieurs à $p$ nous permettant d'étudier au maximum la variabilité du système.
+Pour cela nous allons chercher un nouveaux système d'axes maximisant la variance $\sigma^{2}$. 
 
-IntÃ©rÃªts la mÃ©thode:
+Intérêts la méthode:
 
 \begin{itemize}
-  \item RÃ©duire le nombre de variables descriptives.
-  \item Obtenir une visualisation inter-variable en  2D(cercle) ou 3D(sphÃ¨re).
+  \item Réduire le nombre de variables descriptives.
+  \item Obtenir une visualisation inter-variable en  2D(cercle) ou 3D(sphère).
 
 \end{itemize}
 
 
 
 
-Lorsque les critÃ¨res suivent des Ã©chelles diffÃ©rentes, on utilise \textit{une analyse en composantes principales normÃ©es}  en remplaÃ§ant les Ã©lÃ©ments $a_{i,j}$ par $a_{i,j}'$:
+Lorsque les critères suivent des échelles différentes, on utilise \textit{une analyse en composantes principales normées}  en remplaçant les éléments $a_{i,j}$ par $a_{i,j}'$:
 $$a_{i,j}'=\frac{a_{ij}-\overline{a_{j}}}{\sqrt{k} .s_{j}}$$
 
-oÃ¹
+où
 $$s_{j}^{2}=\frac{1}{k}\sum_{i=1}^{k}(a_{ij}-\overline{a_{j}})^{2}$$
 
-est la variance de $j^{e}$ caractÃ¨re. 
+est la variance de $j^{e}$ caractère. 
 
 
-Dans le cas d'une ACP 2D, le cercle unitaire dans lequel est projetÃ© le nuage de points se nomme: \textit{le cercle des corrÃ©lations}.
+Dans le cas d'une ACP 2D, le cercle unitaire dans lequel est projeté le nuage de points se nomme: \textit{le cercle des corrélations}.
 
-On peut alors dÃ©montrer que :
+On peut alors démontrer que :
 
 $$||X_{i},X_{j})||=\sqrt{2(1-\rho_{X_{i}X_{j}})}$$
 
-oÃ¹ $X_{i}$ et $X_{j}$ sont les points reprÃ©sentÃ© dans le cercle des corrÃ©lations.
+où $X_{i}$ et $X_{j}$ sont les points représenté dans le cercle des corrélations.
 
 
 
-L'interprÃ©tation du cercle de corrÃ©lation est alors la suivante:
+L'interprétation du cercle de corrélation est alors la suivante:
 
 \begin{itemize}
   \item La distance entre 2 points est toujours comprise entre 0 et 2.
-  \item Si elle est proche de 0, cela signifie que les 2 caractÃ¨res sont fortement corrÃ©lÃ©s positivement.
-   \item Si elle est proche de $\sqrt{2}$, cela signifie que les 2 caractÃ¨res sont peu corrÃ©lÃ©s.
-   \item Si elle est proche de 2, cela signifie que les 2 caractÃ¨res sont fortement corrÃ©lÃ©s nÃ©gativement.
+  \item Si elle est proche de 0, cela signifie que les 2 caractères sont fortement corrélés positivement.
+   \item Si elle est proche de $\sqrt{2}$, cela signifie que les 2 caractères sont peu corrélés.
+   \item Si elle est proche de 2, cela signifie que les 2 caractères sont fortement corrélés négativement.
 
 \end{itemize}
 
-Nous utiliserons dans nos analyses statistiques la quantitÃ© d'information $\delta$ comme Ã©tant le pourcentage de variance expliquÃ© par une reprÃ©sentation 2D ou 3D.
+Nous utiliserons dans nos analyses statistiques la quantité d'information $\delta$ comme étant le pourcentage de variance expliqué par une représentation 2D ou 3D.
 \[
 \left\lbrace 
 \begin{array}{lcl}
@@ -548,34 +548,34 @@ Nous utiliserons dans nos analyses statistiques la quantitÃ© d'information $\del
 
 \end{array}\right.
 \]
-oÃ¹ les $\{\lambda_{i}\}$ correspondent aux valeurs propres de la matrice des corrÃ©lations. Nous estimerons que $\delta$ est raisonnable pour des valeurs $\approx 90\%$ 
+où les $\{\lambda_{i}\}$ correspondent aux valeurs propres de la matrice des corrélations. Nous estimerons que $\delta$ est raisonnable pour des valeurs $\approx 90\%$ 
 
 \newpage
-\subsection{Test statistiques Student pour la corrÃ©lation}
+\subsection{Test statistiques Student pour la corrélation}
 
-Le test d'hypothÃ¨se du coefficient de corrÃ©lation $\rho_{XY}$ et $\rho_{XY|Z}$ est fait de maniÃ¨re classique Ã  l'aide d'un test de Student.{\\}
-Dans le cas oÃ¹ nous sommes dans  l'hypothÃ¨se nulle $H_{0}$, nous avons l'absence de liaison entre $X$ et $Y$. 
+Le test d'hypothèse du coefficient de corrélation $\rho_{XY}$ et $\rho_{XY|Z}$ est fait de manière classique à l'aide d'un test de Student.{\\}
+Dans le cas où nous sommes dans  l'hypothèse nulle $H_{0}$, nous avons l'absence de liaison entre $X$ et $Y$. 
 
-Sous l'hypothÃ¨se nulle, le rapport de l'estimateur du coefficient de corrÃ©lation $r$ sur son Ã©cart-type suit une loi de Student Ã  $(n-2)$ de degrÃ© de libertÃ©:
+Sous l'hypothèse nulle, le rapport de l'estimateur du coefficient de corrélation $r$ sur son écart-type suit une loi de Student à $(n-2)$ de degré de liberté:
 
 $$\frac{r}{s_{r}} \longrightarrow t_{(n-2)ddl}\text{  avec  } s_{r}=\sqrt{\frac{(1-r^{2})}{(n-2)}}$$
 
-Le test consiste Ã  comparer le ratio Ã  une valeur seuil $t_{\alpha}$ sur la table de la lois de Student Ã  $(n-2)$ degrÃ© de libertÃ©.
+Le test consiste à comparer le ratio à une valeur seuil $t_{\alpha}$ sur la table de la lois de Student à $(n-2)$ degré de liberté.
 
-\fbox{\textit{Nous choisirons dans notre cas une hypothÃ¨se nulle Ã  rejetter pour une P-value $\le$ 0.1.}}
+\fbox{\textit{Nous choisirons dans notre cas une hypothèse nulle à rejetter pour une P-value $\le$ 0.1.}}
 
-\subsection{Diagramme en boÃ®te}
+\subsection{Diagramme en boîte}
 
-Ce diagramme nous permettra de  visualiser la position des mÃ©dianes, des quartiles, des minimum et des maximum entre les jeux de donnÃ©es rÃ©alistes et artificiels.
+Ce diagramme nous permettra de  visualiser la position des médianes, des quartiles, des minimum et des maximum entre les jeux de données réalistes et artificiels.
 
-Le diagramme se prÃ©sente comme suite:
+Le diagramme se présente comme suite:
 \begin{figure}[H] 
     \center
     \includegraphics[width=10cm]{boiteanmoustache.eps} 
-    \caption{Diagramme en boÃ®te} 
+    \caption{Diagramme en boîte} 
 \end{figure}
-oÃ¹
-$Q_{1}$ et $Q_{2}$ correspondent respectivement aux premiers et troisiÃ¨mes quartiles.
+où
+$Q_{1}$ et $Q_{2}$ correspondent respectivement aux premiers et troisièmes quartiles.
 
 
 
@@ -587,43 +587,43 @@ $Q_{1}$ et $Q_{2}$ correspondent respectivement aux premiers et troisiÃ¨mes quar
 
 \newpage
 
-\section{Apprentissage des rÃ©seaux bayÃ©siens au problÃ¨mes multicritÃ¨res}
+\section{Apprentissage des réseaux bayésiens au problèmes multicritères}
 
 \subsection{Introduction}
 
-Dans cette section , nous allons apprendre un rÃ©seaux bayÃ©siens Ã  partir d'un jeux de donnÃ©es oÃ¹ les alternatives sont des voiture en fonction de certains critÃ¨res tel que le prix , l'accÃ©lÃ©ration etc.
+Dans cette section , nous allons apprendre un réseaux bayésiens à partir d'un jeux de données où les alternatives sont des voiture en fonction de certains critères tel que le prix , l'accélération etc.
 
 
-La mÃªme analyse sera Ã©tablit pour d'autres jeux de donnÃ©es.( cf. annexe \ref{apprentissage_usine} et annexe \ref{apprentissage_guitare}). 
+La même analyse sera établit pour d'autres jeux de données.( cf. annexe \ref{apprentissage_usine} et annexe \ref{apprentissage_guitare}). 
  
- L'Ã©tude statistique se fera sur le jeux dÃ©part et celui obtenu aprÃ¨s la gÃ©nÃ©ration de \textbf{ 1000 valeurs} infÃ©rÃ©s sur base du rÃ©seaux appris.
+ L'étude statistique se fera sur le jeux départ et celui obtenu après la génération de \textbf{ 1000 valeurs} inférés sur base du réseaux appris.
 
 
-Les deux types d'apprentissage associÃ©s aux deux mÃ©triques (BGE-mÃ©trique et BIC-mÃ©trique) seront appliquÃ©s aux jeux de donnÃ©es et nous procÃ©derons alors Ã  une validation d'une mÃ©trique en vertu de l'autre.
+Les deux types d'apprentissage associés aux deux métriques (BGE-métrique et BIC-métrique) seront appliqués aux jeux de données et nous procéderons alors à une validation d'une métrique en vertu de l'autre.
 
-La validation de la mÃ©trique sera faite en fonction de la cohÃ©rence qu'il existera entre le rÃ©seaux appris et le principe des D-sÃ©parations.
+La validation de la métrique sera faite en fonction de la cohérence qu'il existera entre le réseaux appris et le principe des D-séparations.
 
- Nous ajouterons  ensuite deux types de bruitages brut sur les jeux de donnÃ©es:
+ Nous ajouterons  ensuite deux types de bruitages brut sur les jeux de données:
 
 \begin{itemize}
-  \item Un lÃ©ger bruitage permettant de tester la robustesse du rÃ©seaux appris. Ce type de bruitage sera uniquement  effectuÃ© sur le jeux de donnÃ©es concernant l'achat d'une voiture. 
+  \item Un léger bruitage permettant de tester la robustesse du réseaux appris. Ce type de bruitage sera uniquement  effectué sur le jeux de données concernant l'achat d'une voiture. 
 
-  \item Un grand bruitage permettant d'attÃ©nuer les corrÃ©lations en agissant directement sur le jeux de donnÃ©es.
+  \item Un grand bruitage permettant d'atténuer les corrélations en agissant directement sur le jeux de données.
 
-Nous verrons que cette mÃ©thode n'est pas trÃ¨s efficace dans l'ajustement des corrÃ©lations.
+Nous verrons que cette méthode n'est pas très efficace dans l'ajustement des corrélations.
 
-Vous trouverez en annexe \ref{programme} , les deux programmes en $R$ qui ont Ã©tÃ© utilisÃ©s.   
+Vous trouverez en annexe \ref{programme} , les deux programmes en $R$ qui ont été utilisés.   
 
 \end{itemize}
 
 
 
-Une derniÃ¨re section vÃ©rifiera que le jeux de donnÃ©es gÃ©nÃ©rÃ©s de 1000 valeurs nous donne bien des individus proches de ceux provenant  du jeux de donnÃ©es initial. Pour Ã©tudier la proximitÃ© des individus gÃ©nÃ©rÃ©s par rapport aux individus initiaux, nous utiliserons une ACP ainsi qu'un diagramme en boÃ®te.
+Une dernière section vérifiera que le jeux de données générés de 1000 valeurs nous donne bien des individus proches de ceux provenant  du jeux de données initial. Pour étudier la proximité des individus générés par rapport aux individus initiaux, nous utiliserons une ACP ainsi qu'un diagramme en boîte.
 
 \newpage
-\subsection{ProblÃ¨me: Achat d'une voiture}
-\subsubsection{Tableaux de donnÃ©es}
-Un dÃ©cideur est amenÃ© Ã  choisir une voiture suivants les critÃ¨res dÃ©crits ci-dessous: 
+\subsection{Problème: Achat d'une voiture}
+\subsubsection{Tableaux de données}
+Un décideur est amené à choisir une voiture suivants les critères décrits ci-dessous: 
 
 \begin{figure}[H] 
     \center
@@ -631,26 +631,26 @@ Un dÃ©cideur est amenÃ© Ã  choisir une voiture suivants les critÃ¨res dÃ©crits c
     \label{figdepart}
 \end{figure} 
 
-\subsubsection{Application de la BIC-mÃ©trique}
+\subsubsection{Application de la BIC-métrique}
 
-En appliquant l'algorithme d'apprentissage de type BIC-mÃ©trique, nous obtenons le rÃ©seau suivant:
+En appliquant l'algorithme d'apprentissage de type BIC-métrique, nous obtenons le réseau suivant:
 
 \begin{figure}[H] 
     \center
     \includegraphics[width=5cm]{THIERRY_GRAPHE.eps} 
-    \caption{RÃ©seau obtenu aprÃ¨s l'application de la BIC-mÃ©trique} 
+    \caption{Réseau obtenu après l'application de la BIC-métrique} 
 	\label{bicmetric}
 \end{figure}
 
-Nous allons maintenant vÃ©rifier que le rÃ©seau prÃ©cÃ©dent rÃ©pond correctement de maniÃ¨re statistique au principe des D-sÃ©parations.
-Nous reprÃ©sentons dans les tableaux Fig.\ref{tab1_14} et Fig.\ref{tab1_1000} qui suivent les diffÃ©rentes corrÃ©lations ainsi que la P-value associÃ©e aux test d'hypothÃ¨ses de type Student. 
-Les Ã©valuations sont faites pour le jeux des 14 alternatives de dÃ©part  et pour celui obtenu aprÃ¨s la gÃ©nÃ©ration de 1000 valeurs.
+Nous allons maintenant vérifier que le réseau précédent répond correctement de manière statistique au principe des D-séparations.
+Nous représentons dans les tableaux Fig.\ref{tab1_14} et Fig.\ref{tab1_1000} qui suivent les différentes corrélations ainsi que la P-value associée aux test d'hypothèses de type Student. 
+Les évaluations sont faites pour le jeux des 14 alternatives de départ  et pour celui obtenu après la génération de 1000 valeurs.
 
 \begin{figure}[H]
 \begin{center}
 \begin{tabular}{|l|c|r|}
   \hline
-  Relation & CorrÃ©lation & P-value \\
+  Relation & Corrélation & P-value \\
   \hline
    Road.Holding $\cap$  acceleration&$-0.1266$& =0.6662 \\
    Road.Holding $\cap$  acceleration $|$Braking &$0.3871$& $0.1913$  \\
@@ -665,7 +665,7 @@ Cost $\cap$ Road.Holding $|$ acceleration $\cup$ Braking&-0.1033&0.7493\\
 \hline
 \end{tabular}
 \end{center}
-\caption{Test statistiques pour le jeux de donnÃ©es de 14 alternatives }
+\caption{Test statistiques pour le jeux de données de 14 alternatives }
 \label{tab1_14}
 \end{figure}
 
@@ -677,7 +677,7 @@ Cost $\cap$ Road.Holding $|$ acceleration $\cup$ Braking&-0.1033&0.7493\\
 \begin{center}
 \begin{tabular}{|l|c|r|}
   \hline
-  Relation & CorrÃ©lation & P-value \\
+  Relation & Corrélation & P-value \\
   \hline
    Road.Holding $\cap$  acceleration&$-2.10^{-4}$& =0.9962  \\
    Road.Holding $\cap$  acceleration $|$Braking &$0.4607$& $<2,2.10^{-16}$  \\
@@ -692,7 +692,7 @@ Cost $\cap$ Road.Holding $|$ acceleration $\cup$ Braking&-0.0085&0.7874\\
 \hline
 \end{tabular}
 \end{center}
-\caption{Test statistiques pour le jeux de donnÃ©es de 1000 valeurs }
+\caption{Test statistiques pour le jeux de données de 1000 valeurs }
 \label{tab1_1000}
 \end{figure}
 
@@ -701,7 +701,7 @@ Cost $\cap$ Road.Holding $|$ acceleration $\cup$ Braking&-0.0085&0.7874\\
   \item \underline{Pour les variables  $\{Road.Holding,Braking,acceleration\}$}:{\\}
 
 
-Les deux variables $ Road.Holding$ et $acceleration$ sont liÃ©es par une V-structure, ceci a pour consÃ©quence que la mÃ©connaissance de la variable $Braking$ bloque l'information:
+Les deux variables $ Road.Holding$ et $acceleration$ sont liées par une V-structure, ceci a pour conséquence que la méconnaissance de la variable $Braking$ bloque l'information:
 
  $$Road.Holding \not\ci  acceleration.$$
 
@@ -713,28 +713,26 @@ Les deux variables $ Road.Holding$ et $acceleration$ sont liÃ©es par une V-struc
 \item\underline{ Pour les variables $\{Cost,acceleration,Braking\}$}:{\\}
 
 
-Les variables $Cost$ et $Braking$ sont liÃ©es par une structure en sÃ©rie, ce qui implique que les variables  sont dÃ©pendantes sans conditionnement.
+Les variables $Cost$ et $Braking$ sont liées par une structure en série, ce qui implique que les variables  sont dépendantes sans conditionnement.
 
-La variable $acceleration$ bloque alors l'information de $Cost$ Ã  $Braking$.
+La variable $acceleration$ bloque alors l'information de $Cost$ à $Braking$.
 
 \item\underline{ Pour les variables $\{Cost,acceleration,braking,Road.Holding\}$}{\\}
 
 
-La chaÃ®ne liant $Cost$ et $Road.holding$ passe par les deux noeuds $accelleration$ et $ Braking$.
+La chaîne liant $Cost$ et $Road.holding$ passe par les deux noeuds $accelleration$ et $ Braking$.
 
-Nous avons donc une structure sÃ©rie suivi d'une V-structure.
-En conditionnant  par $Braking$ nous accentuons la dÃ©pendance, en effet  nous sommes dans une configuration de mÃ©connaissance de l'interstice de la structure en sÃ©rie  et de la connaissance de la V-structure.
+Nous avons donc une structure série suivi d'une V-structure.
+En conditionnant  par $Braking$ nous accentuons la dépendance, en effet  nous sommes dans une configuration de méconnaissance de l'interstice de la structure en série  et de la connaissance de la V-structure.
 
-Progressivement en faisant l'opÃ©ration $off(Braking)$ et $on(acceleration$), nous diminuons la circulation d'information et par consÃ©quent la corrÃ©lation.
+Progressivement en faisant l'opération $off(Braking)$ et $on(acceleration$), nous diminuons la circulation d'information et par conséquent la corrélation.
 \end{itemize}
 
-\textbf{En rÃ©sumÃ©}:
+\textbf{En résumé}:
 
-Les rÃ©sultats obtenus du point de vue statistique sont cohÃ©rents avec le principe des D-sÃ©parations.
+Les résultats obtenus du point de vue statistique sont cohérents avec le principe des D-séparations.
 
-Lorsqu'on gÃ©nÃ¨re 1000 valeurs, la P-value vient accentuer la propriÃ©tÃ© des D-sÃ©parations.
-
-
+Lorsqu'on génère 1000 valeurs, la P-value vient accentuer la propriété des D-séparations.
 
 
 
@@ -759,29 +757,31 @@ Lorsqu'on gÃ©nÃ¨re 1000 valeurs, la P-value vient accentuer la propriÃ©tÃ© des D
 
 
 
-\subsubsection{Application de la BGE-mÃ©trique}
-Dans cette section nous appliquerons la BGE-mÃ©trique et nous comparons le rÃ©seau appris par cette mÃ©trique avec le rÃ©seau obtenu au point prÃ©cÃ©dent.
 
-En appliquant le BGE-mÃ©trique Ã  notre jeux de donnÃ©es des 14 valeurs:
+
+\subsubsection{Application de la BGE-métrique}
+Dans cette section nous appliquerons la BGE-métrique et nous comparons le réseau appris par cette métrique avec le réseau obtenu au point précédent.
+
+En appliquant le BGE-métrique à notre jeux de données des 14 valeurs:
  
 \begin{figure}[H] 
     \center
     \includegraphics[width=5cm]{THIERRY_IMAGE_BGE.eps} 
-    \caption{Application de la BGE-mÃ©trique au jeux de donnÃ©es} 
+    \caption{Application de la BGE-métrique au jeux de données} 
 \end{figure} 
 
-Nous remarquons que nous n'avons pas la mÃªme structure bayÃ©sienne qu'au point prÃ©cÃ©dent.
+Nous remarquons que nous n'avons pas la même structure bayésienne qu'au point précédent.
 
- Le rÃ©seaux le plus adaptÃ©e au jeux de valeurs est celui dÃ©crit par la BIC-mÃ©trique.
+ Le réseaux le plus adaptée au jeux de valeurs est celui décrit par la BIC-métrique.
 
 En effet si nous observons  le triplet $(acceleration,Braking,Road.Holding)$, celui-ci se comporte comme une  V-structure.
-Cette observation est dÃ©crite dans le tableaux Fig.\ref{fig2_vstruct}:
+Cette observation est décrite dans le tableaux Fig.\ref{fig2_vstruct}:
 
 \begin{figure}[H]
 \begin{center}
 \begin{tabular}{|l|c|r|}
   \hline
-  Relation & CorrÃ©lation & P-value \\
+  Relation & Corrélation & P-value \\
   \hline
 acceleration $\cap$ Road.Holding & $-0.1266$&=0.662 \\
 acceleration $\cap$ Road.Holding $|$ Braking& 0.3871&$=0.1913$.\\ 
@@ -795,24 +795,24 @@ acceleration $\cap$ Road.Holding $|$ Braking& 0.3871&$=0.1913$.\\
 
 
 
-\subsubsection{Normalisation, ACP 2D et tableaux des corrÃ©lations}
+\subsubsection{Normalisation, ACP 2D et tableaux des corrélations}
 
-En sorti de la fonction du grand bruitage , on obtient un jeux de donnÃ©e normalisÃ© et c'est pour cela que nous travaillerons avec le jeux de dÃ©part normalisÃ© afin faciliter la comparaison.
-
-
-
-Nous utiliserons une ACP 2D et la matrice des corrÃ©lations comme outils de base pour analyser si le jeux est assez bruitÃ©.
-
-Nous ajouterons du bruit si nÃ©cessaire sur les jeux de donnÃ©  de tel sorte Ã  obtenir des corrÃ©lations attÃ©nuÃ©es. 
+En sorti de la fonction du grand bruitage , on obtient un jeux de donnée normalisé et c'est pour cela que nous travaillerons avec le jeux de départ normalisé afin faciliter la comparaison.
 
 
 
-Pour le jeux de dÃ©part, on retrouve le tableaux de donnÃ©es normalisÃ©s Fig.\ref{tab_data1}, la matrice de corrÃ©lation Fig. \ref{matcorr1} ainsi que l' ACP  2D Fig.\ref{acp1}.
+Nous utiliserons une ACP 2D et la matrice des corrélations comme outils de base pour analyser si le jeux est assez bruité.
+
+Nous ajouterons du bruit si nécessaire sur les jeux de donné  de tel sorte à obtenir des corrélations atténuées. 
+
+
+
+Pour le jeux de départ, on retrouve le tableaux de données normalisés Fig.\ref{tab_data1}, la matrice de corrélation Fig. \ref{matcorr1} ainsi que l' ACP  2D Fig.\ref{acp1}.
 
 \begin{figure}[H]
 \begin{tabular}{llllll}
   \hline
-AltÃ©rnatives&  Cost & acccÃ©lÃ©ration & Pick.up&Braking&Road.Holding \\
+Altérnatives&  Cost & acccélération & Pick.up&Braking&Road.Holding \\
   \hline
 1& 0.07604225 &  0.07272595      & 0.07386067    & 0.08239038        &0.096\\
 2&0.06357583   &0.07304037        &0.08259688     &0.07072136        &0.080\\
@@ -832,7 +832,7 @@ AltÃ©rnatives&  Cost & acccÃ©lÃ©ration & Pick.up&Braking&Road.Holding \\
 \hline
 
 \end{tabular}
-\caption{Jeux de donnÃ©es normalisÃ©s}
+\caption{Jeux de données normalisés}
 \label{tab_data1}
 \end{figure}
 
@@ -841,7 +841,7 @@ AltÃ©rnatives&  Cost & acccÃ©lÃ©ration & Pick.up&Braking&Road.Holding \\
 \begin{figure}[H]
 \begin{tabular}{llllll}
   \hline
-                &  Cost & acccÃ©lÃ©ration & Pick.up&Braking&Road.Holding \\
+                &  Cost & acccélération & Pick.up&Braking&Road.Holding \\
   \hline
 Cost          &1.00000000  & -0.6293580& -0.55805385 & 0.35838862 &  0.05223773\\
 acceleration& -0.62935802 &   1.0000000 & 0.52595617 &-0.52243621 & -0.12663539\\
@@ -852,7 +852,7 @@ Road.Holding & 0.05223773  & -0.1266354 & 0.18436969 & 0.69604522 &  1.00000000\
 \hline
 
 \end{tabular}
-\caption{Tableaux des corrÃ©lations}
+\caption{Tableaux des corrélations}
 \label{matcorr1}
 \end{figure}
 
@@ -860,17 +860,17 @@ Road.Holding & 0.05223773  & -0.1266354 & 0.18436969 & 0.69604522 &  1.00000000\
 \begin{figure}[H] 
     \center 
     \includegraphics[width=8cm]{PCA_THIERRY.eps} 
-    \caption{ReprÃ©sentation en  ACP 2D} 
+    \caption{Représentation en  ACP 2D} 
 \label{acp1}
 \end{figure} 
 
 \subsubsection{Test de robustesse par faible bruitage}
 
-Dans cette section  nous observons la petite  variation Ã  ajouter sur le critÃ¨re $Cost$ pour que le rÃ©seau se modifie. Le jeux de donnÃ©es de dÃ©part Fig.\ref{figdepart} devient  :
+Dans cette section  nous observons la petite  variation à ajouter sur le critère $Cost$ pour que le réseau se modifie. Le jeux de données de départ Fig.\ref{figdepart} devient  :
 \begin{figure}[H]
 \begin{tabular}{llllll}
   \hline
-AltÃ©rnatives&  Cost & acccÃ©lÃ©ration & Pick.up&Braking&Road.Holding \\
+Altérnatives&  Cost & acccélération & Pick.up&Braking&Road.Holding \\
   \hline
 1 & 18344.75        &30.07    &37.2    &2.33         &3.00\\
 2  &15337.30        &30.20    &41.6    &2.00         &2.50\\
@@ -890,44 +890,44 @@ AltÃ©rnatives&  Cost & acccÃ©lÃ©ration & Pick.up&Braking&Road.Holding \\
 \hline
 
 \end{tabular}
-\caption{Jeux de donnÃ©es obtenu Ã  partir du faible bruitage}
+\caption{Jeux de données obtenu à partir du faible bruitage}
 \end{figure}
 
 \begin{figure}[H] 
     \center 
    \fbox{ \includegraphics[width=5cm]{GRAPHE_THIERRY_BRUIT_FAIBLE.eps} }
-    \caption{RÃ©seau associÃ© au jeux faiblement bruitÃ©} 
+    \caption{Réseau associé au jeux faiblement bruité} 
 \end{figure} 
 
 \textbf{Commentaire}:
 
-Si nous comparons le tableaux prÃ©cÃ©dent  avec le tableaux de donnÃ©es initial non-normalisÃ©, nous remarquons que la petite variation effectuÃ©e sur le critÃ¨re $Cost$ ne change pas  notre matrice de corrÃ©lation. Par contre l'arc liant les deux noeuds $Cost$ et $Road.holding$ a Ã©tÃ© inversÃ©.
+Si nous comparons le tableaux précédent  avec le tableaux de données initial non-normalisé, nous remarquons que la petite variation effectuée sur le critère $Cost$ ne change pas  notre matrice de corrélation. Par contre l'arc liant les deux noeuds $Cost$ et $Road.holding$ a été inversé.
 
 
-\textit{Cet ajout de faible bruitage caractÃ©rise un rÃ©seaux bayÃ©sien appris comme Ã©tant  fort sensible aux modifications effectuÃ©es sur le jeux de donnÃ©es. }
+\textit{Cet ajout de faible bruitage caractérise un réseaux bayésien appris comme étant  fort sensible aux modifications effectuées sur le jeux de données. }
 
 
 
-\subsubsection{AttÃ©nuation de la corrÃ©lation par grand bruitage du jeux de donnÃ©es}
+\subsubsection{Atténuation de la corrélation par grand bruitage du jeux de données}
 
- L'objectif de cette mÃ©thode est d'attÃ©nuer les corrÃ©lations trop importantes.
+ L'objectif de cette méthode est d'atténuer les corrélations trop importantes.
 
- Cette mÃ©thode reÃ§oit en entrÃ©e : Le jeux de donnÃ©es , le critÃ¨re primaire Ã  bruiter ,le deuxiÃ¨me critÃ¨re par rapport au quelle le premier critÃ¨re sera dÃ©corrÃ©lÃ© , le pourcentage dÃ©corrÃ©lation voulu, deux bornes de variation d'ajout sur le jeux de donnÃ©es initiales.
+ Cette méthode reçoit en entrée : Le jeux de données , le critère primaire à bruiter ,le deuxième critère par rapport au quelle le premier critère sera décorrélé , le pourcentage décorrélation voulu, deux bornes de variation d'ajout sur le jeux de données initiales.
 
-La mÃ©thode nous donne en sortie  un jeux de donnÃ©es \textit{ normalisÃ©}  et corrÃ©lÃ© de faÃ§on dÃ©sirÃ©.
+La méthode nous donne en sortie  un jeux de données \textit{ normalisé}  et corrélé de façon désiré.
 
-Dans notre exemple, nous avons une corrÃ©lation entre la variable  $Cost$ et la variable $acceleration$ qui est trop importante ( =-0.6293580).
+Dans notre exemple, nous avons une corrélation entre la variable  $Cost$ et la variable $acceleration$ qui est trop importante ( =-0.6293580).
 
-Nous allons donc dÃ©corrÃ©ler les variables  en appliquant la mÃ©thode des grand bruitages sur le premier critÃ¨re $Cost$.
+Nous allons donc décorréler les variables  en appliquant la méthode des grand bruitages sur le premier critère $Cost$.
 
-Dans ce cas, nous dirons que $Cost$ est bruitÃ© par rapport Ã  $acceleration$ en utilisant la notation: \textbf{ Cost/acceleration}.
+Dans ce cas, nous dirons que $Cost$ est bruité par rapport à $acceleration$ en utilisant la notation: \textbf{ Cost/acceleration}.
 
-En appliquant le programme d'ajout de grand bruitage  dÃ©finis en annexe \ref{programme} on obtient le tableaux de donnÃ©es Fig.\ref{tabdata2} et la matrice des corrÃ©lations Fig\ref{matcorr2}  :
+En appliquant le programme d'ajout de grand bruitage  définis en annexe \ref{programme} on obtient le tableaux de données Fig.\ref{tabdata2} et la matrice des corrélations Fig\ref{matcorr2}  :
 
 \begin{figure}[H]
 \begin{tabular}{llllll}
   \hline
-AltÃ©rnatives&  Cost & acccÃ©lÃ©ration & Pick.up&Braking&Road.Holding \\
+Altérnatives&  Cost & acccélération & Pick.up&Braking&Road.Holding \\
   \hline
 1 & 0.07492529   &0.07272595   & 0.07386067   &0.08239038        &0.096\\
 2  &0.09082277   &0.07304037    & 0.08259688   &0.07072136        &0.080\\
@@ -947,14 +947,14 @@ AltÃ©rnatives&  Cost & acccÃ©lÃ©ration & Pick.up&Braking&Road.Holding \\
 \hline
 
 \end{tabular}
-\caption{Jeux de donnÃ©es normalisÃ© obtenu avec les paramÃ¨tres d'entrÃ©es:(data,1,2,0.4,100,200)}
+\caption{Jeux de données normalisé obtenu avec les paramètres d'entrées:(data,1,2,0.4,100,200)}
 \label{tabdata2}
 \end{figure}
 
 \begin{figure}[H]
 \begin{tabular}{llllll}
   \hline
-                &  Cost & acccÃ©lÃ©ration & Pick.up&Braking&Road.Holding \\
+                &  Cost & acccélération & Pick.up&Braking&Road.Holding \\
   \hline
 Cost      &    1.0000000  & -0.1910163 & 0.18878857 & 0.43932168  &  0.2794929\\
 acceleration& -0.1910163  &  1.0000000 & 0.52595617& -0.52243621 &  -0.1266354\\
@@ -965,47 +965,47 @@ Road.Holding & 0.2794929  & -0.1266354 & 0.18436969 & 0.69604522  &  1.0000000\\
 \hline
 
 \end{tabular}
-\caption{Tableaux des corrÃ©lations du nouveaux jeux bruitÃ©}
+\caption{Tableaux des corrélations du nouveaux jeux bruité}
 \label{matcorr2}
 \end{figure}
 
 \underline{\textbf{Commentaire}} :
 
 
-Nous avons ajoutÃ© du bruit sur le critÃ¨re nÂ°1 $Cost$ en demandant une attÃ©nuation minimum de 40 \% sur la corrÃ©lation $\rho_{Cost,acceleration}$ . 
+Nous avons ajouté du bruit sur le critère n°1 $Cost$ en demandant une atténuation minimum de 40 \% sur la corrélation $\rho_{Cost,acceleration}$ . 
 
-La nouvelle matrice de corrÃ©lation a Ã©tÃ© modifiÃ© sur la premiÃ¨re ligne et la premiÃ¨re colonne, les autres corrÃ©lations n'ont pas Ã©tÃ© modifiÃ©es.
+La nouvelle matrice de corrélation a été modifié sur la première ligne et la première colonne, les autres corrélations n'ont pas été modifiées.
 
-On obtient aprÃ¨s l'ajout de bruit  l' ACP 2D Fig.\ref{acpbruit}:
+On obtient après l'ajout de bruit  l' ACP 2D Fig.\ref{acpbruit}:
 
 \begin{figure}[H] 
     \center 
     \includegraphics[width=7cm]{GRAP_THIERRY_FORT_BRUIT.eps} 
-    \caption{ReprÃ©sentation d'une ACP 2D du nouveaux jeux de donnÃ©es bruitÃ©} 
+    \caption{Représentation d'une ACP 2D du nouveaux jeux de données bruité} 
 \label{acpbruit}
 \end{figure} 
 
- L' ACP 2D nous montre que nous avons encore une trop grande corrÃ©lation entre les variables  $Cost$ et $Road.Holding$.
+ L' ACP 2D nous montre que nous avons encore une trop grande corrélation entre les variables  $Cost$ et $Road.Holding$.
 
-Nous appliquons alors du bruit sur le critÃ¨re $Cost$ par rapport au critÃ¨re $Road.Holding$ \textbf{ ( Cost/Road.Holding.)}:
+Nous appliquons alors du bruit sur le critère $Cost$ par rapport au critère $Road.Holding$ \textbf{ ( Cost/Road.Holding.)}:
  
 \begin{figure}[H] 
     \center 
     \includegraphics[width=7cm]{GRAPHE_THIERRY_FINAL_ACP.eps} 
-    \caption{ACP 2D aprÃ¨s bruitage de Cost par rapport Ã  Road.Holding. ParamÃ¨tre=(Newdata,1,5,0.4,100,500)} 
+    \caption{ACP 2D après bruitage de Cost par rapport à Road.Holding. Paramètre=(Newdata,1,5,0.4,100,500)} 
 \end{figure} 
 
-Le rÃ©sultat semble assez bruitÃ© et donc satisfaisant.
-Il serait intÃ©ressant de savoir maintenant si nous avons conservÃ© la structure de notre rÃ©seaux bayÃ©sien appris sur le jeux initiale Fig.{figdepart}.
+Le résultat semble assez bruité et donc satisfaisant.
+Il serait intéressant de savoir maintenant si nous avons conservé la structure de notre réseaux bayésien appris sur le jeux initiale Fig.{figdepart}.
 
 
-En apprenant un  rÃ©seaux sur le jeux de donnÃ©es modifiÃ© par $Cost/acceleration$ et $Cost/Road.Holding$:
+En apprenant un  réseaux sur le jeux de données modifié par $Cost/acceleration$ et $Cost/Road.Holding$:
 
 
 \begin{figure}[H] 
     \center 
     \includegraphics[width=8cm]{GRAPHE_FINAL_THIERRY.eps} 
-    \caption{RÃ©seaux obtenu aprÃ¨s bruitage de Cost par rapport Ã  Road.Holding. ParamÃ¨tre=(Newdata,1,5,0.4,100,500)} 
+    \caption{Réseaux obtenu après bruitage de Cost par rapport à Road.Holding. Paramètre=(Newdata,1,5,0.4,100,500)} 
 \label{fig_network}
 \end{figure} 
 
@@ -1014,10 +1014,10 @@ En apprenant un  rÃ©seaux sur le jeux de donnÃ©es modifiÃ© par $Cost/acceleratio
 
 
 \begin{itemize}
-\item Il faut procÃ©der pas Ã  pas et la mÃ©thode peut assez vite devenir laborieuse si l'on veut ajuster de nombreuse corrÃ©lations. Nous verrons par la suite qu'il est bien plus intÃ©ressant d'agir sur les paramÃ¨tres d'un rÃ©seaux. 
+\item Il faut procéder pas à pas et la méthode peut assez vite devenir laborieuse si l'on veut ajuster de nombreuse corrélations. Nous verrons par la suite qu'il est bien plus intéressant d'agir sur les paramètres d'un réseaux. 
 
 
-\item Lorsque nous avons Ã©tudiÃ© la robustesse par faible bruitage, on a pu constater que le rÃ©seaux Ã©tait fort sensible au variations appliquÃ©es sur le jeux de donnÃ©es appris. Il est donc logique que la modification des corrÃ©lations par grand bruitage aura un impact directe sur le rÃ©seaux, ceci est bien  illustrÃ©e par le rÃ©seaux de la Fig.\ref{fig_network}.
+\item Lorsque nous avons étudié la robustesse par faible bruitage, on a pu constater que le réseaux était fort sensible au variations appliquées sur le jeux de données appris. Il est donc logique que la modification des corrélations par grand bruitage aura un impact directe sur le réseaux, ceci est bien  illustrée par le réseaux de la Fig.\ref{fig_network}.
 \end{itemize}
 
 
@@ -1045,11 +1045,11 @@ En apprenant un  rÃ©seaux sur le jeux de donnÃ©es modifiÃ© par $Cost/acceleratio
 
 
 \newpage
-\subsubsection{Validation des valeurs gÃ©nÃ©rÃ©es}
+\subsubsection{Validation des valeurs générées}
 
-Nous allons vÃ©rifier que les individus gÃ©nÃ©rÃ©s sont proches des individus initiaux.
+Nous allons vérifier que les individus générés sont proches des individus initiaux.
 
-Remarquons dans un premier temps  que les centres de gravitÃ©s et les Ã©carts-types rÃ©siduels des deux nuages de points associÃ© aux deux jeux de donnÃ©es sont approximativement les mÃªmes dans  l'espace total de \textbf{5 dimensions} :
+Remarquons dans un premier temps  que les centres de gravités et les écarts-types résiduels des deux nuages de points associé aux deux jeux de données sont approximativement les mêmes dans  l'espace total de \textbf{5 dimensions} :
 \[
 \left\lbrace 
 \begin{array}{lcl} 
@@ -1062,9 +1062,9 @@ Remarquons dans un premier temps  que les centres de gravitÃ©s et les Ã©carts-ty
 \]
 
 
-Avant de procÃ©der Ã  une comparaison visuel, nous allons exposer les valeurs propres, les vecteurs propres normalisÃ©s ainsi que la quantitÃ© d'information reprise par les valeurs propres. 
+Avant de procéder à une comparaison visuel, nous allons exposer les valeurs propres, les vecteurs propres normalisés ainsi que la quantité d'information reprise par les valeurs propres. 
 
-Ces grandeurs sont dÃ©duite d'une analyse en composantes principales \textbf{normalisÃ©e} appliquÃ©e au jeux de donnÃ©es obtenu aprÃ¨s gÃ©nÃ©ration de 1000 valeurs:
+Ces grandeurs sont déduite d'une analyse en composantes principales \textbf{normalisée} appliquée au jeux de données obtenu après génération de 1000 valeurs:
 \[
 \left\lbrace 
 \begin{array}{lcl} 
@@ -1080,13 +1080,13 @@ Ces grandeurs sont dÃ©duite d'une analyse en composantes principales \textbf{nor
 \end{array}\right.
 \]
  
-\underline{QualitÃ© de l'information}:
+\underline{Qualité de l'information}:
 
 $$\delta=\frac{(\lambda_{1}+\lambda_{2})}{(\lambda_{1}+\lambda_{2}+\lambda_{3}+\lambda_{4}+\lambda_{5})}=  0.7272799$$
 
-La qualitÃ© d'information de $\approx$72 $\%$  est insuffisante, c'est pour cela que nous allons utiliser le troisiÃ¨mes vecteurs propres afin d'avoir une comparaison plus fiable.
+La qualité d'information de $\approx$72 $\%$  est insuffisante, c'est pour cela que nous allons utiliser le troisièmes vecteurs propres afin d'avoir une comparaison plus fiable.
 
-La qualitÃ© de l'information devient alors:
+La qualité de l'information devient alors:
 
 $$\delta=\frac{(\lambda_{1}+\lambda_{2}+\lambda_{3})}{(\lambda_{1}+\lambda_{2}+\lambda_{3}+\lambda_{4}+\lambda_{5})}=   0.8764979$$
 
@@ -1094,87 +1094,87 @@ Ce qui est plus acceptable.
 
 
 \newpage
-Nous utilisons maintenant une ACP 3D pour obtenir une reprÃ©sentation gÃ©omÃ©trique de la variabilitÃ© des deux jeux de donnÃ©es.
-Les deux reprÃ©sentations  sont obtenus par la projection des nuages de points des deux jeux de donnÃ©es sur les plans principaux formÃ©s par les vecteurs propres dÃ©crits prÃ©cÃ©demment.
+Nous utilisons maintenant une ACP 3D pour obtenir une représentation géométrique de la variabilité des deux jeux de données.
+Les deux représentations  sont obtenus par la projection des nuages de points des deux jeux de données sur les plans principaux formés par les vecteurs propres décrits précédemment.
 
 \begin{figure}[H]
 \fbox{\includegraphics[width=6cm]{cubedata.eps}}\hfill
 \fbox{\includegraphics[width=6cm]{cubegener.eps}}
-\caption{Projection du jeux de donnÃ©es initial et du jeux de 1000 valeurs dans le sous-espace munis du repÃ¨re $(\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs dans le sous-espace munis du repère $(\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel}
 \end{figure}
 
 
-Afin de mieux voir la proximitÃ© des deux jeux de donnÃ©es, nous projetons les deux nuages de points sur les 3 plans principaux formÃ© par les vecteurs $(\vec{x_ {1}},\vec{x_{2}},\vec{x_{3}})$:
+Afin de mieux voir la proximité des deux jeux de données, nous projetons les deux nuages de points sur les 3 plans principaux formé par les vecteurs $(\vec{x_ {1}},\vec{x_{2}},\vec{x_{3}})$:
 \begin{figure}[H]
 \includegraphics[width=6cm]{proj12data.eps}\hfill
 \includegraphics[width=6cm]{proj12gener.eps}
-\caption{Projection du jeux de donnÃ©es initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{2}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{2}})$}\label{fig:somefiglabel}
 \end{figure}
 
 \begin{figure}[H]
 \includegraphics[width=6cm]{proj13data.eps}\hfill
 \includegraphics[width=6cm]{proj13gener.eps}
-\caption{Projection du jeux de donnÃ©es initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{3}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{3}})$}\label{fig:somefiglabel}
 \end{figure}
 
 \begin{figure}[H]
 \includegraphics[width=5cm]{proj23data.eps}\hfill
 \includegraphics[width=5cm]{proj23gener.eps}
-\caption{Projection du jeux de donnÃ©es initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel}
 \end{figure}
 
 \newpage
 
-Le diagramme en boÃ®te des nuages de points pour les 5  dimensions sont  reprÃ©sentÃ©s ci-dessous:
+Le diagramme en boîte des nuages de points pour les 5  dimensions sont  représentés ci-dessous:
 \begin{figure}[H]
 \fbox{\includegraphics[width=6cm,height=5cm]{mousdata.eps}}\hfill
 \fbox{\includegraphics[width=6cm,height=5cm]{mousgener.eps}}
-\caption{ReprÃ©sentation par un diagramme en boÃ®te du jeux de donnÃ©es initial(gauche) et du jeux de donnÃ©es obtenu par gÃ©nÃ©ration de 1000 valeurs(droite)}\label{fig:somefiglabel}
+\caption{Représentation par un diagramme en boîte du jeux de données initial(gauche) et du jeux de données obtenu par génération de 1000 valeurs(droite)}\label{fig:somefiglabel}
 \end{figure}
 
 \begin{figure}[H]
 \fbox{\includegraphics[width=6cm,height=5cm]{boxplotzoomdata.eps}}\hfill
 \fbox{\includegraphics[width=6cm,height=5cm]{boxplotzoomgener.eps}}
-\caption{ReprÃ©sentation par un diagramme en boÃ®te du jeux de donnÃ©es initial(gauche) et du jeux de donnÃ©es obtenu par gÃ©nÃ©ration de 1000 valeurs(droite) avec un zoom }\label{fig:somefiglabel}
+\caption{Représentation par un diagramme en boîte du jeux de données initial(gauche) et du jeux de données obtenu par génération de 1000 valeurs(droite) avec un zoom }\label{fig:somefiglabel}
 \end{figure}
 
 
 
 
 \newpage
-\section{CrÃ©ation de jeux de donnÃ©es}
+\section{Création de jeux de données}
 
 \subsection{Introduction}
 
 Dasn cette section, nous retrouverons trois grandes partie.
 \begin{itemize}
-\item La premiÃ¨re section consistera Ã  exposer la modÃ©lisation mathÃ©matique (OLS) qui est utilisÃ©e pour gÃ©nÃ©rer nos donnÃ©es.
-Ce premier point se terminera par la prÃ©sentation du systÃ¨me de paramÃ©trisation d'un rÃ©seau.
+\item La première section consistera à exposer la modélisation mathématique (OLS) qui est utilisée pour générer nos données.
+Ce premier point se terminera par la présentation du système de paramétrisation d'un réseau.
 
-\item La deuxiÃ¨me section traitera l'ajustement des paramÃ¨tres d'un rÃ©seau. Comme nous l'avons dÃ©jÃ  dit, l'ajout de bruit brut sur un jeux de donnÃ©es est une mÃ©thode assez  laborieuse pour dÃ©corrÃ©ler les critÃ¨res . Il est plus aisÃ© d'agir sur les paramÃ¨tre du rÃ©seau, cette section nous montrera alors l'impact des ajustements des  paramÃ¨tres sur le bruitage des donnÃ©es.
+\item La deuxième section traitera l'ajustement des paramètres d'un réseau. Comme nous l'avons déjà dit, l'ajout de bruit brut sur un jeux de données est une méthode assez  laborieuse pour décorréler les critères . Il est plus aisé d'agir sur les paramètre du réseau, cette section nous montrera alors l'impact des ajustements des  paramètres sur le bruitage des données.
 
 
-\item La derniÃ¨re section consistera Ã  crÃ©er un jeux de donnÃ©es basÃ©e sur les donnÃ©es initial d'un petit jeux de donnÃ©es. 
-La crÃ©ation du jeux sera basÃ©e sur le problÃ¨me concernant l'achat d'une voiture Ã©tudiÃ© dans la section d'apprentissage.
-Un autre exemple est prÃ©sentÃ© en annexe \ref{creat_guitare}.
-Nous partirons du modÃ¨le de dÃ©pendance et d'indÃ©pendance du problÃ¨me pour aboutir Ã  la construction d'un rÃ©seaux permettant de gÃ©nÃ©rer des donnÃ©es rÃ©alistes. 
+\item La dernière section consistera à créer un jeux de données basée sur les données initial d'un petit jeux de données. 
+La création du jeux sera basée sur le problème concernant l'achat d'une voiture étudié dans la section d'apprentissage.
+Un autre exemple est présenté en annexe \ref{creat_guitare}.
+Nous partirons du modèle de dépendance et d'indépendance du problème pour aboutir à la construction d'un réseaux permettant de générer des données réalistes. 
 
 \end{itemize}
 
-A l'aide de la premiÃ¨re section on trouvera aussi   en annexe \ref{creat_stat} une maniÃ¨re de crÃ©er un jeux contraint Ã  rÃ©pondre Ã  des critÃ¨res statistiques prÃ©-Ã©tablit.
+A l'aide de la première section on trouvera aussi   en annexe \ref{creat_stat} une manière de créer un jeux contraint à répondre à des critères statistiques pré-établit.
 
-La construction d'un rÃ©seaux se fait en 3 points :
+La construction d'un réseaux se fait en 3 points :
 
 \begin{enumerate}
 
 
-\item  \underline{\textbf{ModÃ©lisation en formule de dÃ©pendances et d'indÃ©pendances mathÃ©matique}}: {\\}
+\item  \underline{\textbf{Modélisation en formule de dépendances et d'indépendances mathématique}}: {\\}
 
 
-La modÃ©lisation d'un problÃ¨me consiste Ã  mettre un ensemble de variables sous forme de relations de dÃ©pendances $\{\not\ci \}$ et d'indÃ©pendances $\{\ci\}$.
+La modélisation d'un problème consiste à mettre un ensemble de variables sous forme de relations de dépendances $\{\not\ci \}$ et d'indépendances $\{\ci\}$.
 
-Cela implique bien entendu que le problÃ¨me doit Ãªtre modÃ©lisable en \textbf{rÃ©seaux bayÃ©siens}.
-Il existe des cas oÃ¹ la modÃ©lisation n'est malheureusement pas possible.
+Cela implique bien entendu que le problème doit être modélisable en \textbf{réseaux bayésiens}.
+Il existe des cas où la modélisation n'est malheureusement pas possible.
 
 Ex:
 $$\left\lbrace 
@@ -1183,12 +1183,12 @@ A\not\ci B \Longrightarrow A\ci B|D\\
 A\ci D \Longrightarrow  A\not\ci D|E\\
 \end{array}\right.$$
 
-La premiÃ¨re relation impose que le triplet $(A,D,B)$ ne peut Ãªtre qu'une V-structure, il existe donc forcÃ©ment un arc $A \longrightarrow D$ ce qui est en contradiction avec la deuxiÃ¨me relation
-Nous dirons alors que:\textit{les relations sont incompatible en modÃ©lisation bayÃ©sienne.} 
+La première relation impose que le triplet $(A,D,B)$ ne peut être qu'une V-structure, il existe donc forcément un arc $A \longrightarrow D$ ce qui est en contradiction avec la deuxième relation
+Nous dirons alors que:\textit{les relations sont incompatible en modélisation bayésienne.} 
 
-Dans le cas oÃ¹ la modÃ©lisation bayÃ©sienne est rÃ©alisable, nous distinguons deux types de relations:
+Dans le cas où la modélisation bayésienne est réalisable, nous distinguons deux types de relations:
 \begin{itemize}
-\item \textbf{-Les relations directes} qui sont des relations binaires de dÃ©pendances ou d'indÃ©pendances du types:
+\item \textbf{-Les relations directes} qui sont des relations binaires de dépendances ou d'indépendances du types:
 
 \[
 \left\lbrace 
@@ -1213,93 +1213,93 @@ A\ci B \Longrightarrow A\not\ci B|C
 \end{itemize}
 
 
-\item  \underline{\textbf{ RÃ©alisation de la structure}}:{\\}
+\item  \underline{\textbf{ Réalisation de la structure}}:{\\}
 
-La premiÃ¨re remarque rÃ©side sur le fait que les diffÃ©rentes Ã©tapes de constructions ne pourront jamais introduire de cycles.
+La première remarque réside sur le fait que les différentes étapes de constructions ne pourront jamais introduire de cycles.
 
-Les relations directes seront dans un premier temps reprÃ©sentÃ©es par des arrÃªtes dans un graphe non-orientÃ©.
+Les relations directes seront dans un premier temps représentées par des arrêtes dans un graphe non-orienté.
 
-Les relations indirectes vont alors orienter le graphe en transformant les arrÃªtes $(A,B)$ en V-structures, structure sÃ©ries ou en structure divergentes de la faÃ§on suivante:
+Les relations indirectes vont alors orienter le graphe en transformant les arrêtes $(A,B)$ en V-structures, structure séries ou en structure divergentes de la façon suivante:
 \[
 \left\lbrace 
 \begin{array}{lcl} 
 \text{  V-structure  }\equiv\{ A\not\ci B \Longrightarrow A\ci B|C \}  \\  \\
-\text{ Structure sÃ©ries ou divergentes }\equiv \{ A\ci B \Longrightarrow A\not\ci B|C \}
+\text{ Structure séries ou divergentes }\equiv \{ A\ci B \Longrightarrow A\not\ci B|C \}
 \end{array}\right.
 \]
-Nous plaÃ§ons d'abord les V-structures dans le graphe car elle ne possÃ¨de aucun degrÃ© libertÃ©, ce qui n'est pas le cas d'une structure en sÃ©rie qui pourra souvent Ãªtre remplacÃ© par une structure divergente et rÃ©ciproquement.
+Nous plaçons d'abord les V-structures dans le graphe car elle ne possède aucun degré liberté, ce qui n'est pas le cas d'une structure en série qui pourra souvent être remplacé par une structure divergente et réciproquement.
 
-Nous dirons que le problÃ¨me est \textit{exacte} si le modÃ¨le des dÃ©pendances et d 'indÃ©pendances fige toutes les orientations du graphe.
+Nous dirons que le problème est \textit{exacte} si le modèle des dépendances et d 'indépendances fige toutes les orientations du graphe.
 
- Dans le cas contraire , nous aurons des degrÃ©s de libertÃ© sur le graphe rÃ©pondant au modÃ¨le et nous choisirons arbitrairement les orientations restantes.
+ Dans le cas contraire , nous aurons des degrés de liberté sur le graphe répondant au modèle et nous choisirons arbitrairement les orientations restantes.
 
-\item  \underline{\textbf{ ParamÃ©trisation du rÃ©seaux}}:{\\}
+\item  \underline{\textbf{ Paramétrisation du réseaux}}:{\\}
 
-Nous savons que la factorisation de Verma definit en \ref{factoverma} fait intervenir les probabilitÃ©s conditionelles.
-Un noeud $Y$ ayant pour parents $\{X_{1},...,X_{n}\}$ nous impose de connaÃ®tre une probabilitÃ© $P(Y|X_{1},...,X_{n})$, pour cela il faut dÃ©crire la variable $Y$ exogÃ¨ne comme Ã©tant la rÃ©ponse des variables $\{X_{1},...,X_{n}\}$ endogÃ¨nes.
+Nous savons que la factorisation de Verma definit en \ref{factoverma} fait intervenir les probabilités conditionelles.
+Un noeud $Y$ ayant pour parents $\{X_{1},...,X_{n}\}$ nous impose de connaître une probabilité $P(Y|X_{1},...,X_{n})$, pour cela il faut décrire la variable $Y$ exogène comme étant la réponse des variables $\{X_{1},...,X_{n}\}$ endogènes.
 
-Nous allons approcher $Y\approx f(X_{1},...,X_{n})$  par une rÃ©grÃ©ssion linÃ©aire du type
+Nous allons approcher $Y\approx f(X_{1},...,X_{n})$  par une régréssion linéaire du type
 
 $$Y\approx\sum_{i=1}^{n}a_{i}.X_{i}+b$$
 
 
-Les coefficients $a_{i=1..n}$ et $b_{i=1...n}$, Ã  paramÃ©trer,  sont respectivement les coefficients de rÃ©gressions et d'intercepetions de la rÃ©gression linÃ©aire.Un paramÃ¨tre d'Ã©cart-type $\eta(0,S_{d})$ provoquant le bruit autour de la rÃ©grÃ©ssion est aussi Ã  fixÃ©.
+Les coefficients $a_{i=1..n}$ et $b_{i=1...n}$, à paramétrer,  sont respectivement les coefficients de régressions et d'intercepetions de la régression linéaire.Un paramètre d'écart-type $\eta(0,S_{d})$ provoquant le bruit autour de la régréssion est aussi à fixé.
 
-Dans cette section nous exposerons deux maniÃ¨res  de paramÃ©triser le rÃ©seaux:
+Dans cette section nous exposerons deux manières  de paramétriser le réseaux:
 
 \begin{itemize}
-\item La premiÃ¨re paramÃ©trisation se fait en utilisant les paramÃ¨tres des rÃ©gression d'un petit jeux de donnÃ©es pour ensuite les transfÃ©rer dans un rÃ©seaux afin de gÃ©nÃ©rer des donnÃ©es rÃ©alistes. Cette paramÃ©trisation est prÃ©sentÃ© dans cette section.
+\item La première paramétrisation se fait en utilisant les paramètres des régression d'un petit jeux de données pour ensuite les transférer dans un réseaux afin de générer des données réalistes. Cette paramétrisation est présenté dans cette section.
 
-\item La deuxiÃ¨me paramÃ©trisation consistera Ã  exposer une technique mathÃ©matique permettant de paramÃ©triser un rÃ©seaux dont les donnÃ©es gÃ©nÃ©rÃ©s vÃ©rifieront les contraintes suivantes:
+\item La deuxième paramétrisation consistera à exposer une technique mathématique permettant de paramétriser un réseaux dont les données générés vérifieront les contraintes suivantes:
  
 
--Le jeux de donnÃ©es doit vÃ©rifier un modÃ¨le de dÃ©pendance et d'indÃ©pendance.
+-Le jeux de données doit vérifier un modèle de dépendance et d'indépendance.
 
--Chaque vecteurs colonnes du jeux de donnÃ©es aura une moyenne, un Ã©cart-type imposÃ©es.
+-Chaque vecteurs colonnes du jeux de données aura une moyenne, un écart-type imposées.
 
 
 
-Cette deuxiÃ¨me paramÃ©trisation est prÃ©sentÃ© en annexe \ref{creat_stat}.
+Cette deuxième paramétrisation est présenté en annexe \ref{creat_stat}.
 \end{itemize}
 
 \end{enumerate}
 \newpage
-\subsection{SystÃ¨me de paramÃ©trisation }
+\subsection{Système de paramétrisation }
 
 \subsubsection{Introduction}
-L'objectif de cette  partie est de prÃ©senter le systÃ¨me de paramÃ©trisation que nous allons utiliser en fin de section et en annexe \ref{creat_stat}.
+L'objectif de cette  partie est de présenter le système de paramétrisation que nous allons utiliser en fin de section et en annexe \ref{creat_stat}.
 
-Dans le point concernant l'apprentissage,  nous avons  gÃ©nÃ©rÃ© des valeurs Ã  l'aide d'une fonction automatique. La gÃ©nÃ©ration automatique dissimule la paramÃ©trisation du rÃ©seaux. Le but est alors ici d'exposer  le systÃ¨me qui dimensionne le rÃ©seaux bayÃ©sien. Le problÃ¨me d'ajustement sera lui prÃ©sentÃ© Ã  la section suivante.
+Dans le point concernant l'apprentissage,  nous avons  généré des valeurs à l'aide d'une fonction automatique. La génération automatique dissimule la paramétrisation du réseaux. Le but est alors ici d'exposer  le système qui dimensionne le réseaux bayésien. Le problème d'ajustement sera lui présenté à la section suivante.
 
 
 
-Rappelons tout d'abord qu'un ensemble de vecteurs alÃ©atoires gÃ©nÃ©rÃ©s $\vec{X_{1}},\vec{X_{2}},...,\vec{X_{n}}$ de longueur $k$ qui suit une distribution gaussienne multi-variable de moyenne $\vec{\mu}$ et de matrice variance-covariance $\Sigma$ vÃ©rifie le principe d'Ã©chantillonnage suivant:
+Rappelons tout d'abord qu'un ensemble de vecteurs aléatoires générés $\vec{X_{1}},\vec{X_{2}},...,\vec{X_{n}}$ de longueur $k$ qui suit une distribution gaussienne multi-variable de moyenne $\vec{\mu}$ et de matrice variance-covariance $\Sigma$ vérifie le principe d'échantillonnage suivant:
 
-Si $\overline{\overline{X}}$ et $S$ correspondent respectivement Ã  la moyenne et la matrice variance-covariance de l'Ã©chantillon alors :
+Si $\overline{\overline{X}}$ et $S$ correspondent respectivement à la moyenne et la matrice variance-covariance de l'échantillon alors :
 \begin{itemize}
   \item $\overline{\overline{X}}$ suit une normal multivariable $\eta(\overline{\mu},\frac{\Sigma}{n})$.
   \item $S$ suit une distribution de Wishart $Wish(\frac{S}{n-1},\Sigma)$
 \end{itemize}
 
-OÃ¹ $Wish(\frac{S}{n-1},\Sigma)$ est une distribution dite de \textit{Wishart} de $n$ degrÃ© de libertÃ© .Vous pourrez trouver plus d'information concernant cette distribution dans l'ouvrage de rÃ©fÃ©rence \textit{Optimal statistical dÃ©cision} de Morris H.De Groot.
-D'aprÃ¨s les expressions ci-dessus, il va de soi que nous ne gÃ©nÃ©rons jamais   un jeux possÃ©dant exactement la mÃªme moyenne et la mÃªme matrice variance-covariance  que la population, mais il y'a cependant  une convergence du vecteur moyenne et de la matrice variance-covariance de l'Ã©chantillon par rapport Ã  la propulation. On obtiendra de bonne valeurs pour une gÃ©nÃ©ration de 1000 individus.
+Où $Wish(\frac{S}{n-1},\Sigma)$ est une distribution dite de \textit{Wishart} de $n$ degré de liberté .Vous pourrez trouver plus d'information concernant cette distribution dans l'ouvrage de référence \textit{Optimal statistical décision} de Morris H.De Groot.
+D'après les expressions ci-dessus, il va de soi que nous ne générons jamais   un jeux possédant exactement la même moyenne et la même matrice variance-covariance  que la population, mais il y'a cependant  une convergence du vecteur moyenne et de la matrice variance-covariance de l'échantillon par rapport à la propulation. On obtiendra de bonne valeurs pour une génération de 1000 individus.
 
-Le systÃ¨me de paramÃ©trisation sera prÃ©sentÃ© sur base de la connaissance d'un vecteur moyenne  $\vec{\mu}$, d'Ã©cart-type $\vec{S_{d}}$ et d'une matrice variance-covariance $S$ associÃ©s au jeux de donnÃ©es. 
-
-
+Le système de paramétrisation sera présenté sur base de la connaissance d'un vecteur moyenne  $\vec{\mu}$, d'écart-type $\vec{S_{d}}$ et d'une matrice variance-covariance $S$ associés au jeux de données. 
 
 
 
 
-On considÃ¨re durant toute cette section que l'on a un jeux de donnÃ©es possÃ©dant $n$ critÃ¨res notÃ©s $\{C_{j}\}_{j=1,...,n}$
 
-Nous faisons l'hypothÃ¨se que la modÃ©lisation de dÃ©pendance et d'indÃ©pendance est forcÃ©ment \textit{compatible} en rÃ©seaux bayÃ©sien. 
-Le problÃ¨me possÃ¨de alors au moins une solution $B(C_{j},\xi)$ ( oÃ¹ les $\xi$ sont les arcs du rÃ©seaux bayÃ©sien).
+
+On considère durant toute cette section que l'on a un jeux de données possédant $n$ critères notés $\{C_{j}\}_{j=1,...,n}$
+
+Nous faisons l'hypothèse que la modélisation de dépendance et d'indépendance est forcément \textit{compatible} en réseaux bayésien. 
+Le problème possède alors au moins une solution $B(C_{j},\xi)$ ( où les $\xi$ sont les arcs du réseaux bayésien).
 
 \newpage
-\subsubsection{ModÃ¨le de dÃ©pendance et d'indÃ©pendance Ã  partir de donnÃ©es statistiques}
+\subsubsection{Modèle de dépendance et d'indépendance à partir de données statistiques}
 
-Nous avons Ã  notre disposition le problÃ¨me de dÃ©pendance et d'indÃ©pendance suivant:
+Nous avons à notre disposition le problème de dépendance et d'indépendance suivant:
 
 $\{C_{j}\}_{j=1,...,n}\Longrightarrow\left\lbrace 
 \begin{array}{lcl} 
@@ -1311,11 +1311,11 @@ C_{u}\ci C_{v} \Longrightarrow C_{u}\not\ci C_{v}|C_{w}\text{   avec } u\ne v\ne
 
 avec $\{k,l,m,n,p,q;u,v,w\}\in \{1,...,n\}$.
 
-Nous ne traitons pas le problÃ¨me de compatibilitÃ© car le systÃ¨me est supposÃ© \textit{compatible} par hypothÃ¨se.
- On obtient donc au minimum une solution bayÃ©sienne pour le modÃ¨le de dÃ©pendance et d'indÃ©pendance.
-Parmi les rÃ©seaux solutions, nous allons en choisir un et nous le notons $B(C_{j},\xi)$.
+Nous ne traitons pas le problème de compatibilité car le système est supposé \textit{compatible} par hypothèse.
+ On obtient donc au minimum une solution bayésienne pour le modèle de dépendance et d'indépendance.
+Parmi les réseaux solutions, nous allons en choisir un et nous le notons $B(C_{j},\xi)$.
 
-ConsidÃ©rons les donnÃ©es statistiques de dÃ©part dÃ©finis ci-dessous:
+Considérons les données statistiques de départ définis ci-dessous:
 
 $\left\lbrace 
 \begin{array}{lcl} 
@@ -1334,7 +1334,7 @@ $\left\lbrace
 \end{array}\right.$
 
 
-On peut exprimer sans problÃ¨me la matrice variance-covariance en fonction de nos donnÃ©es  :
+On peut exprimer sans problème la matrice variance-covariance en fonction de nos données  :
 
 
 
@@ -1350,40 +1350,40 @@ S_{c_{1}}^2&\ \ \rho_{c_{1}c_{2}}.S_{c_{1}}.S_{c_{2}}&\ \ \rho_{c_{1}c_{3}}.S_{c
 \end{pmatrix}$
 
 
-Cette matrice peut donc Ãªtre calculÃ© et nous pouvons obtenir les diffÃ©rentes covariances:
+Cette matrice peut donc être calculé et nous pouvons obtenir les différentes covariances:
 
 $$S_ {c_{i}c_{j}}=\rho_{c_{i}c_{j}}.S_{c_{i}}.S_{c_{j}}$$
 
-Les $S_ {c_{i}c_{j}}$ serviront  Ã  paramÃ©triser notre rÃ©seau.
+Les $S_ {c_{i}c_{j}}$ serviront  à paramétriser notre réseau.
 
 
 \newpage
-\subsubsection{ParamÃ©trisation du rÃ©seaux bayÃ©sien}
+\subsubsection{Paramétrisation du réseaux bayésien}
 
-La paramÃ©trisation consiste Ã  trouver les coefficients des rÃ©grÃ©ssions linÃ©aires: 
+La paramétrisation consiste à trouver les coefficients des régréssions linéaires: 
 $$ Y_{c_{k}}\approx f(X_{c_{i}})$$ 
-$C_{k}$ correspond Ã  un noeud ayant pour parents $C_{i}$ et $ Y_{c_{k}}$ sont les variables exogÃ¨nes expliquÃ©es par les variables endogÃ¨nes $X_{c_{i}}$. 
+$C_{k}$ correspond à un noeud ayant pour parents $C_{i}$ et $ Y_{c_{k}}$ sont les variables exogènes expliquées par les variables endogènes $X_{c_{i}}$. 
 
-$Y_{c_{k}}$ exprime donc les valeurs prises par les critÃ¨res $C_{k}$ en rÃ©ponse aux valeurs prises par $C_{i}$.
+$Y_{c_{k}}$ exprime donc les valeurs prises par les critères $C_{k}$ en réponse aux valeurs prises par $C_{i}$.
 
-Les  rÃ©gressions linÃ©aires seront du type constantes, simples ou multiples suivant respectivement que le noeud $Y_{c_{k}}$ ne possÃ¨de pas de parents, possÃ¨de un parent ou possÃ¨de deux parents.
+Les  régressions linéaires seront du type constantes, simples ou multiples suivant respectivement que le noeud $Y_{c_{k}}$ ne possède pas de parents, possède un parent ou possède deux parents.
 
-Nous allons maintenant expliciter les 3 diffÃ©rentes rÃ©gressions:
+Nous allons maintenant expliciter les 3 différentes régressions:
 
 \begin{enumerate}
-\item  \textbf{RÃ©gression constante associÃ© Ã  un noeud $C_{k}$ ne possÃ©dant pas de parents:}
+\item  \textbf{Régression constante associé à un noeud $C_{k}$ ne possédant pas de parents:}
 
-Dans ce cas la constante prise est la moyenne sur le critÃ¨re courant $C_{k}$:
+Dans ce cas la constante prise est la moyenne sur le critère courant $C_{k}$:
 
 $$Y_{c_{k}}\approx \mu_{c_{k}}$$
 
-\item \textbf{La rÃ©gression simple associÃ© Ã  un noeud $C_{k}$ possÃ©dant un parent $C_{i}$:}
+\item \textbf{La régression simple associé à un noeud $C_{k}$ possédant un parent $C_{i}$:}
 
 Dans ce cas on a une expression du type:
 
 $$Y_{c_{k}}\approx \alpha.X_{c_{i}}+\beta$$
 
-Les paramÃ¨tres $\alpha$ et $\beta$ seront Ã©valuÃ©s par: 
+Les paramètres $\alpha$ et $\beta$ seront évalués par: 
 \[
 \left\lbrace 
 \begin{array}{lcl}
@@ -1395,17 +1395,17 @@ S_{c_{k}c_{i}}=\rho_{c_{k}c_{i}}S_{c_{k}}S_{c_{i}}
 \end{array}\right.
 \]
 \newpage
-\item \textbf{La RÃ©gression linÃ©aire multiple Ã  deux variables associÃ© Ã  un noeud $C_{k}$ possÃ©dant deux parents $C_{i}$ et $C_{j}$}
+\item \textbf{La Régression linéaire multiple à deux variables associé à un noeud $C_{k}$ possédant deux parents $C_{i}$ et $C_{j}$}
 
 
 Nous avons ici typiquement une V-structure.
 
- $Y_{c_{k}}\approx f(X_{c_{i}})$ est Ã©valuÃ© de la faÃ§on suivante:
+ $Y_{c_{k}}\approx f(X_{c_{i}})$ est évalué de la façon suivante:
 
 $$Z_{c_{k}}\approx \alpha.X_{c_{i}}+\beta.Y_{c_{j}}+\gamma$$
 
 
-Nous admettons que la somme des moindres carrÃ©e Ã  deux variables pour $m$ individus impose de maniÃ¨re gÃ©nÃ©ral la relation suivante:
+Nous admettons que la somme des moindres carrée à deux variables pour $m$ individus impose de manière général la relation suivante:
 
 $\begin{pmatrix}
 \gamma\\ \\
@@ -1450,18 +1450,18 @@ S_{c_{j}c_{k}}\\ \\
 
 
 \newpage
-\subsubsection{SystÃ¨me de paramÃ©trisation}
+\subsubsection{Système de paramétrisation}
 \begin{itemize}
-\item Si on dÃ©finit les sous-ensembles $\{C_{j}^{(0)}\}$,  $\{C_{j}^{(1)}\}$ et $\{C_{j}^{(2)}\}$ de $\{C_{j}\}_{j=1,...,n}$ comme Ã©tant respectivement les sous-ensembles de noeuds de degrÃ©s incidents Ã©gale Ã  0, 1 et 2.
+\item Si on définit les sous-ensembles $\{C_{j}^{(0)}\}$,  $\{C_{j}^{(1)}\}$ et $\{C_{j}^{(2)}\}$ de $\{C_{j}\}_{j=1,...,n}$ comme étant respectivement les sous-ensembles de noeuds de degrés incidents égale à 0, 1 et 2.
 
-\item Si nous notons  $\pi_{1}(C_{j}^{(2)})$ et  $\pi_{2}(C_{j}^{(2)})$ comme Ã©tant respectivement le premier et le deuxiÃ¨me parents de $C_{j}^{(2)}$ 
+\item Si nous notons  $\pi_{1}(C_{j}^{(2)})$ et  $\pi_{2}(C_{j}^{(2)})$ comme étant respectivement le premier et le deuxième parents de $C_{j}^{(2)}$ 
 
-\item Si $\pi(C_{j}^{(1)})$ est notÃ© comme Ã©tant l'unique parent de $C_{j}^{(1)}$.
+\item Si $\pi(C_{j}^{(1)})$ est noté comme étant l'unique parent de $C_{j}^{(1)}$.
 
-\item Si nous notons  $\mu(C_{j})$, $S(C_{i},C_{j})$, $Y(C_{j})$ et $X(C_{j})$  Ã  la place respectivement de  $\mu_{c_{j}}$,$S_{c_{i},c_{j}}$, $Y_{c_{j}}$ et $X_{c_{j}}$.
+\item Si nous notons  $\mu(C_{j})$, $S(C_{i},C_{j})$, $Y(C_{j})$ et $X(C_{j})$  à la place respectivement de  $\mu_{c_{j}}$,$S_{c_{i},c_{j}}$, $Y_{c_{j}}$ et $X_{c_{j}}$.
 \end{itemize}
 
-Le \textbf{systÃ¨me de paramÃ©trisation} peut alors s'Ã©crire comme:
+Le \textbf{système de paramétrisation} peut alors s'écrire comme:
 
 $\left\lbrace 
 \begin{array}{lcl} 
@@ -1498,54 +1498,54 @@ S(\pi_{2}(C_{j}^{(2)}),C_{j})\\ \\
 
 
 \newpage
-\subsection{Ajustement des paramÃ¨tres d'un rÃ©seaux bayÃ©sien}
+\subsection{Ajustement des paramètres d'un réseaux bayésien}
 \subsubsection{Introduction}
-Le but de ce point est de proposer une mÃ©thode d'ajustement des  paramÃ¨tres d'un rÃ©seau afin que le jeux de donnÃ©es  gÃ©nÃ©rÃ©s ait une \textit{proximitÃ©} par rapport Ã  un jeux de donnÃ©es rÃ©aliste. La notion de \textit{proximitÃ©} entre deux jeux de donnÃ©es tient compte du fait que les deux jeux possÃ¨dent : 
+Le but de ce point est de proposer une méthode d'ajustement des  paramètres d'un réseau afin que le jeux de données  générés ait une \textit{proximité} par rapport à un jeux de données réaliste. La notion de \textit{proximité} entre deux jeux de données tient compte du fait que les deux jeux possèdent : 
 \begin{itemize}
-\item Les mÃªmes relations de dÃ©pendances et d'indÃ©pendances.
-\item Des corrÃ©lations du mÃªme ordre de grandeurs.
-\item Des moyennes $\vec{\mu}$ et des vecteurs Ã©carts-types $\vec{S_{d}}$ dont les composantes ont des valeurs assez proches.
+\item Les mêmes relations de dépendances et d'indépendances.
+\item Des corrélations du même ordre de grandeurs.
+\item Des moyennes $\vec{\mu}$ et des vecteurs écarts-types $\vec{S_{d}}$ dont les composantes ont des valeurs assez proches.
 
 \end{itemize}
  
-Ces critÃ¨res de \textit{proximitÃ©} dÃ©pendent bien entendu de l'exigence que nous attribuons au jeux que l'on veut obtenir. Nous dirons alors que plus le jeux gÃ©nÃ©rÃ©s est proche du jeux de donnÃ©es initiales plus il sera de bonne  \textit{qualitÃ©}.
+Ces critères de \textit{proximité} dépendent bien entendu de l'exigence que nous attribuons au jeux que l'on veut obtenir. Nous dirons alors que plus le jeux générés est proche du jeux de données initiales plus il sera de bonne  \textit{qualité}.
 
-En pratique il est conseillÃ© d'utiliser dans un premier temps le systÃ¨me de paramÃ©trisation du jeux de donnÃ©es initiales pour gÃ©nÃ©rer notre jeux artificiel.
+En pratique il est conseillé d'utiliser dans un premier temps le système de paramétrisation du jeux de données initiales pour générer notre jeux artificiel.
 
-Nous procÃ©dons si nÃ©cÃ©ssaire Ã  un ajustement provoquant la \textit{dilatation} ou la  \textit{contraction} des nuages de points obtenus autour des rÃ©gression suivants les cas ou nous voulons soit \textit{diminuer} ou \textit{augmenter} les corrÃ©lations.
+Nous procédons si nécéssaire à un ajustement provoquant la \textit{dilatation} ou la  \textit{contraction} des nuages de points obtenus autour des régression suivants les cas ou nous voulons soit \textit{diminuer} ou \textit{augmenter} les corrélations.
 
-Les opÃ©ration de \textit{dilatation} et de \textit{contraction} se font en jouant sur l'Ã©cart-type $\sigma$ intervenant dans le bruit $\eta(0,\sigma)$ des rÃ©gressions.
+Les opération de \textit{dilatation} et de \textit{contraction} se font en jouant sur l'écart-type $\sigma$ intervenant dans le bruit $\eta(0,\sigma)$ des régressions.
 
-Dans les points qui vont suivre, nous allons voir l'impact et l'accumulation des diffÃ©rents bruits $\eta(0,\sigma_{k})$ dans un rÃ©seau.
+Dans les points qui vont suivre, nous allons voir l'impact et l'accumulation des différents bruits $\eta(0,\sigma_{k})$ dans un réseau.
 
 
 \subsubsection{Fonction de transfert, dilatation et contraction}
 
-En partant d'un jeux de donnÃ©es de 1000 donnÃ©es gÃ©nÃ©rÃ©s reprenant les mÃªmes rÃ©gressions que le jeux de donnÃ©es initial.
-On obtient dÃ©jÃ  un jeux de donnÃ©e de bonne \textit{qualitÃ©}.
+En partant d'un jeux de données de 1000 données générés reprenant les mêmes régressions que le jeux de données initial.
+On obtient déjà un jeux de donnée de bonne \textit{qualité}.
 
-Les jeux diffÃ¨res souvent que sur l'ordre de grandeur des corrÃ©lations. Cette section analyse l'impact d'une modification du bruit $\eta(0,\sigma)$ sur les corrÃ©lations.
+Les jeux diffères souvent que sur l'ordre de grandeur des corrélations. Cette section analyse l'impact d'une modification du bruit $\eta(0,\sigma)$ sur les corrélations.
 
 
-Avant de parler de la  \textit{dilatation} et de \textit{contraction} du point de vue mathÃ©matique, nous devons dÃ©finir la fonction de transfert existante entre deux noeuds non-adjacents. 
+Avant de parler de la  \textit{dilatation} et de \textit{contraction} du point de vue mathématique, nous devons définir la fonction de transfert existante entre deux noeuds non-adjacents. 
 
-Nous prenons tout d'abord le cas d'un noeud $C_{1}$ de dÃ©part ne possÃ©dant  pas de parents et un noeud $C_{n}$ final ne possÃ©dant pas d'enfants.
+Nous prenons tout d'abord le cas d'un noeud $C_{1}$ de départ ne possédant  pas de parents et un noeud $C_{n}$ final ne possédant pas d'enfants.
 
-On s'intÃ©ressera par la suite Ã  l'ajout d'une V-structure ou d'une structure divergente en prÃ©sentant l'impact de celle-ci sur les corrÃ©lations.
+On s'intéressera par la suite à l'ajout d'une V-structure ou d'une structure divergente en présentant l'impact de celle-ci sur les corrélations.
 
 \begin{enumerate}
-\item \textbf{ Structure sÃ©rie en cascade:}
+\item \textbf{ Structure série en cascade:}
 
-ConsidÃ©rons la structure sÃ©rie en cascade:
+Considérons la structure série en cascade:
 
 $$C_{1}\longrightarrow C_{2} \longrightarrow C_{3} ..............\longrightarrow C_{n}$$	
 
-Dans cette situation, la fonction de transfert $H$ est dÃ©finis comme Ã©tant  la rÃ©gression globale $C_{m}=H(C_{n})$ .
-Nous n 'avons pas mis  $X(C_{m})\approx H(X(C_{n}))$ car le bruit $\eta(0,\sigma)$ est cette fois-ci inclus dans le systÃ¨me de paramÃ©trisation.
+Dans cette situation, la fonction de transfert $H$ est définis comme étant  la régression globale $C_{m}=H(C_{n})$ .
+Nous n 'avons pas mis  $X(C_{m})\approx H(X(C_{n}))$ car le bruit $\eta(0,\sigma)$ est cette fois-ci inclus dans le système de paramétrisation.
 
-Nous noterons pour Ã©viter d'alourdir les expressions $X_{n}$ Ã  la place de $X(C_{n})$ et $\eta(\sigma_{n})$ Ã  la place de $\eta(0,\sigma_{n})$
+Nous noterons pour éviter d'alourdir les expressions $X_{n}$ à la place de $X(C_{n})$ et $\eta(\sigma_{n})$ à la place de $\eta(0,\sigma_{n})$
 
-Nous devons maintenant  dÃ©velopper  cette fonction de transfert et pour cela nous allons partir du \textit{systÃ¨me de paramÃ©trisation} appliquÃ©e Ã  notre structure sÃ©rie en cascade:
+Nous devons maintenant  développer  cette fonction de transfert et pour cela nous allons partir du \textit{système de paramétrisation} appliquée à notre structure série en cascade:
 
 \[
 \left\lbrace 
@@ -1564,11 +1564,11 @@ X_{n+1}=\alpha_{n+1}.X_{n}+\beta_{n+1}+\eta(\sigma_{n+1})\\ \\
 
 
 
-AprÃ¨s quelques itÃ©rÃ©s, on peut se rendre compte que la fonction de transfert :
+Après quelques itérés, on peut se rendre compte que la fonction de transfert :
 
 $$X_{n}=H(X_{1})$$
 
-peut s'Ã©crire:
+peut s'écrire:
 
 \[
 \left\lbrace 
@@ -1580,7 +1580,7 @@ A_{k}=\Pi_{i=k}^{n-1} \ \rho_{i,i+1}\\ \\
 \beta_{k}=\mu_{k}-\mu_{k-1}.\frac{S_{k,k-1}}{S_{k-1}^{2}}\\
 \end{array}\right.
 \]
-L'expression prÃ©cÃ©dente nous donne donc l'Ã©quivalence des rÃ©gressions linÃ©aires entre deux noeuds adjacents et deux noeuds sÃ©parÃ©s par une structure sÃ©rie en cascade.
+L'expression précédente nous donne donc l'équivalence des régressions linéaires entre deux noeuds adjacents et deux noeuds séparés par une structure série en cascade.
 
 Le changement de variables est alors:
 \[
@@ -1598,37 +1598,37 @@ X_{n}=\overline{\overline{\rho_{n}}}. \frac{S_{n}}{S_{1}}.X_{1}+\overline{\overl
 \end{array}\right.
 \]
 
-Nous supposerons que  les valeurs gÃ©nÃ©rÃ©es dÃ©coulant de la gaussienne sont bornÃ©e:
+Nous supposerons que  les valeurs générées découlant de la gaussienne sont bornée:
 
 $$ \vert \eta(\sigma_{k})  \vert\le 4. \vert\sigma_{k} \vert$$
 
-Dans ce cas  on dÃ©finit la borne supÃ©rieur Ã  $\eta(\sigma_{n})$:
+Dans ce cas  on définit la borne supérieur à $\eta(\sigma_{n})$:
 
 $$\vert\eta(\overline{\overline{\sigma_{n}}})\vert\le 4.\{\sum_{k=2}^{n-1}\vert\frac{A_{k}.S_{n}}{S_{k}}\vert. \vert\sigma_{k}\vert\}+4.\vert \sigma_{n} \vert $$
 
-Il va de soit que la plage de valeurs $\vert\eta(\sigma_{n})\vert$ sera plus contrainte et la corrÃ©lation sera plus Ã©levÃ©e si la borne supÃ©rieur est d'autant plus petite.
+Il va de soit que la plage de valeurs $\vert\eta(\sigma_{n})\vert$ sera plus contrainte et la corrélation sera plus élevée si la borne supérieur est d'autant plus petite.
 
-Le seul problÃ¨me de la borne est que nous ne savons  pas encore la maniÃ¨re dont Ã©volue $\vert\frac{A_{k}.S_{n}}{S_{k}} \vert=f(\sigma_{k})$ .
+Le seul problème de la borne est que nous ne savons  pas encore la manière dont évolue $\vert\frac{A_{k}.S_{n}}{S_{k}} \vert=f(\sigma_{k})$ .
 
-Des reprÃ©sentations de $\vert\frac{A_{k}.S_{n}}{S_{k}} \vert=f(\sigma_{k})$  sont donnÃ©s en annexe \ref{representation_coef}. 
+Des représentations de $\vert\frac{A_{k}.S_{n}}{S_{k}} \vert=f(\sigma_{k})$  sont donnés en annexe \ref{representation_coef}. 
 
-En observant les courbes de la fonction $f(\sigma_{k})$ dÃ©croissante, on peut utiliser une sÃ©cante joignant les points ($max(\vert\frac{A_{k}.S_{n}}{S_{k}} \vert);min(\sigma_{k})$)  et ( $min(\vert\frac{A_{k}.S_{n}}{S_{k}} \vert);max(\sigma_{k}))$ qui subordonne les reprÃ©sentations $\vert\frac{A_{k}.S_{n}}{S_{k}} \vert=f(\sigma_{k})$.
+En observant les courbes de la fonction $f(\sigma_{k})$ décroissante, on peut utiliser une sécante joignant les points ($max(\vert\frac{A_{k}.S_{n}}{S_{k}} \vert);min(\sigma_{k})$)  et ( $min(\vert\frac{A_{k}.S_{n}}{S_{k}} \vert);max(\sigma_{k}))$ qui subordonne les représentations $\vert\frac{A_{k}.S_{n}}{S_{k}} \vert=f(\sigma_{k})$.
 
-Au final la borne supÃ©rieur qui \textit{contracte} ou qui \textit{dilatte} la plage de valeurs $\eta(\overline{\overline{\sigma_{n}}})$ est exprimÃ© comme:
+Au final la borne supérieur qui \textit{contracte} ou qui \textit{dilatte} la plage de valeurs $\eta(\overline{\overline{\sigma_{n}}})$ est exprimé comme:
 
 $$\eta(\overline{\overline{\sigma_{n}}})\le4. \{\sum_{k=2}^{n-1} \{\frac{ max(\vert\frac{A_{k}.S_{n}}{S_{k}} \vert)- min(\vert\frac{A_{k}.S_{n}}{S_{k}} \vert)}{min(\sigma_{k})- max(\sigma_{k})}.\sigma_{k}^{2}+ max(\vert\frac{A_{k}.S_{n}}{S_{k}} \vert                     . \vert\sigma_{k}\vert\}\}+4.\vert \sigma_{n} \vert $$
 
-Nous pouvons Ã  partir de lÃ , dÃ©crire  3 mÃ©thodes d'ajustements pou une structure sÃ©rie en cascade:
+Nous pouvons à partir de là, décrire  3 méthodes d'ajustements pou une structure série en cascade:
 
 \begin{itemize}
 
-\item En se basant sur la borne supÃ©rieur.
-Cette borne constitue une premiÃ¨re mÃ©thode d'ajustement des paramÃ¨tres, car si nous voulons, suivant un chemin en sÃ©rie, \textit{diminuer} ou\textit{ augmenter} la corrÃ©lation entre les deux noeuds extrÃªmes du chemin, il faudra respectivement \textit{augmenter} ou \textit{diminuer} le borne supÃ©rieur.
+\item En se basant sur la borne supérieur.
+Cette borne constitue une première méthode d'ajustement des paramètres, car si nous voulons, suivant un chemin en série, \textit{diminuer} ou\textit{ augmenter} la corrélation entre les deux noeuds extrêmes du chemin, il faudra respectivement \textit{augmenter} ou \textit{diminuer} le borne supérieur.
 
 
 \item En se basant sur les courbes du types :$$\rho_{n,1}=f(\sigma_{1})$$
 
-L'Ã©volution de la corrÃ©lation Fig.\ref{corrsigma1} $\rho_{n,1}=f(\sigma_{1})$ est rÃ©alisÃ© en bruitant $\sigma_{1}$  et en fixant les autres $\sigma_{k}$ Ã  1.
+L'évolution de la corrélation Fig.\ref{corrsigma1} $\rho_{n,1}=f(\sigma_{1})$ est réalisé en bruitant $\sigma_{1}$  et en fixant les autres $\sigma_{k}$ à 1.
 
 \begin{figure}[H]
 \centering
@@ -1638,39 +1638,39 @@ L'Ã©volution de la corrÃ©lation Fig.\ref{corrsigma1} $\rho_{n,1}=f(\sigma_{1})$ 
 \end{figure}
 
 
-\item En ajustant par tÃ¢tonnement:
+\item En ajustant par tâtonnement:
 
-Par exemple si on dÃ©sire   diminuer la corrÃ©lation sur un chemin en sÃ©rie, on amincit progressivement le nuage  sur la rÃ©gression globale en augmentant les $\sigma_{k}$ associÃ©s aux bruits des noeuds $X_{k}$ appartenant au chemin en sÃ©rie.
+Par exemple si on désire   diminuer la corrélation sur un chemin en série, on amincit progressivement le nuage  sur la régression globale en augmentant les $\sigma_{k}$ associés aux bruits des noeuds $X_{k}$ appartenant au chemin en série.
 
 \end{itemize}
 
 
-\item \textbf{ Structure sÃ©rie en cascade comprenant une V-structure:}
+\item \textbf{ Structure série en cascade comprenant une V-structure:}
 
 Focalisons nous  sur un triplet en V-structure :
 
 $$X_{A}\longrightarrow X_{B}\longleftarrow X_{C}$$
 
-La corrÃ©lation $\rho_{CA}$ en fonction de $\sigma_{A}$ pour une plage de valeurs $0\le \sigma_{A} \le 10$ est reprÃ©sentÃ© ci-dessous:
+La corrélation $\rho_{CA}$ en fonction de $\sigma_{A}$ pour une plage de valeurs $0\le \sigma_{A} \le 10$ est représenté ci-dessous:
 \begin{figure}[H]
 \centering
 \fbox{\includegraphics[width=6cm,height=5cm]{vstructabc.eps}}
 \caption{   $\rho_{CA}=f(\sigma_{A})$ }
 \end{figure}
 
-Nous remarquons que $\rho_{CA}$ n'a pas de dÃ©pendance par rapport aux variations de $\sigma_{A}$, ceci n'est pas Ã©tonnant Ã©tant donnÃ©  que nous avons une V-structure.
+Nous remarquons que $\rho_{CA}$ n'a pas de dépendance par rapport aux variations de $\sigma_{A}$, ceci n'est pas étonnant étant donné  que nous avons une V-structure.
 
-En consÃ©quence dans un cas gÃ©nÃ©ral, si une chaÃ®ne allant de $A$ Ã  $B$ sont les noeuds extrÃªmes d'une structure sÃ©rie  en cascade dans laquelle il y'a un ensemble de V-structures.
+En conséquence dans un cas général, si une chaîne allant de $A$ à $B$ sont les noeuds extrêmes d'une structure série  en cascade dans laquelle il y'a un ensemble de V-structures.
 
-La modification de la corrÃ©lation $\rho_{AB}$ pourra se faire qu'Ã  partir de la derniÃ¨re V-structure croisÃ©e dans la chaÃ®ne $A-B$.
+La modification de la corrélation $\rho_{AB}$ pourra se faire qu'à partir de la dernière V-structure croisée dans la chaîne $A-B$.
 
-\item \textbf{Structure sÃ©rie en cascade comprenant une structure divergente:}
+\item \textbf{Structure série en cascade comprenant une structure divergente:}
 
-ConsidÃ©rons le triplet divergent  suivant:
+Considérons le triplet divergent  suivant:
 
 $$X_{A}\longleftarrow X_{B}\longrightarrow X_{C}$$
 
-La corrÃ©lation $\rho_{CA}$ en fonction de $\sigma_{A}$, pour $0\le \sigma_{A} \le 10$,   est donnÃ©  ci-dessous:
+La corrélation $\rho_{CA}$ en fonction de $\sigma_{A}$, pour $0\le \sigma_{A} \le 10$,   est donné  ci-dessous:
 
 \begin{figure}[H]
 \centering
@@ -1678,9 +1678,9 @@ La corrÃ©lation $\rho_{CA}$ en fonction de $\sigma_{A}$, pour $0\le \sigma_{A} \
 \caption{   $\rho_{CA}=f(\sigma_{A})$ }\label{fig:somefiglabel}
 \end{figure}
 
-Dans ce cas si la structure divergente se trouve au extrÃ©mitÃ© d'une chaÃ®ne, elle ne fera pas apparaÃ®tre de V-structure et la corrÃ©lation diminuera dans la partie divergente pour ensuite augmenter dans la partie en sÃ©rie.
+Dans ce cas si la structure divergente se trouve au extrémité d'une chaîne, elle ne fera pas apparaître de V-structure et la corrélation diminuera dans la partie divergente pour ensuite augmenter dans la partie en série.
 
-Si la structure divergente remplace un triplet en sÃ©rie  ailleurs qu'aux extrÃ©mitÃ©s alors nous faisons apparaÃ®tre une V-structure et on revient au cas prÃ©cÃ©dent. 
+Si la structure divergente remplace un triplet en série  ailleurs qu'aux extrémités alors nous faisons apparaître une V-structure et on revient au cas précédent. 
 \end{enumerate}
 
 
@@ -1761,13 +1761,13 @@ Si la structure divergente remplace un triplet en sÃ©rie  ailleurs qu'aux extrÃ©
 
 
 \newpage
-\subsection{CrÃ©ation d'un jeux de donnÃ©es basÃ© sur un jeux de donnÃ©es rÃ©aliste}
+\subsection{Création d'un jeux de données basé sur un jeux de données réaliste}
 \label{jeux_data}
-Nous allons partir ici d'une modÃ©lisation de dÃ©pendance et d'indÃ©pendance similaire Ã  celui qui pourrait Ãªtre Ã©tablit pour le problÃ¨me de l'achat de la voiture. Le modÃ¨le de dÃ©pendances et d'indÃ©pendances dÃ©coulent des test statistiques qui ont Ã©tÃ© rÃ©alisÃ© au prÃ©alable.
+Nous allons partir ici d'une modélisation de dépendance et d'indépendance similaire à celui qui pourrait être établit pour le problème de l'achat de la voiture. Le modèle de dépendances et d'indépendances découlent des test statistiques qui ont été réalisé au préalable.
  
-Si nous considÃ©rons cette modÃ©lisation, c'est pour la simple et bonne raison que nous allons en fin de section montrer le rÃ©alisme des valeurs gÃ©nÃ©rÃ©s en les comparant aux valeurs rÃ©alistes.
+Si nous considérons cette modélisation, c'est pour la simple et bonne raison que nous allons en fin de section montrer le réalisme des valeurs générés en les comparant aux valeurs réalistes.
 
-Supposons que nous avons Ã  notre disposition uniquement le modÃ¨le de dÃ©pendance et d'indÃ©pendance suivant:
+Supposons que nous avons à notre disposition uniquement le modèle de dépendance et d'indépendance suivant:
 
 \[
 \left\lbrace 
@@ -1783,69 +1783,69 @@ C\not\ci D \Longrightarrow C\ci D|B\\
 \end{array}\right.
 \]
 
-Les variables $(A,B,C,D,E)$ jouent le mÃªme rÃ´le, respectivement, que les variables $(Cost,accel.,Pick.up,Braking.holding)$.
+Les variables $(A,B,C,D,E)$ jouent le même rôle, respectivement, que les variables $(Cost,accel.,Pick.up,Braking.holding)$.
 
 
-\subsubsection{Relation directes et graphe non-orientÃ©}
+\subsubsection{Relation directes et graphe non-orienté}
 
-La reprÃ©sentation des relations directes $A \not\ci B,\  B \not\ci C,\  B \not\ci D$ et $D \not\ci E$ nous donne le graphe non-orientÃ© suivant:
+La représentation des relations directes $A \not\ci B,\  B \not\ci C,\  B \not\ci D$ et $D \not\ci E$ nous donne le graphe non-orienté suivant:
 
 \begin{figure}[H] 
     \center 
     \includegraphics[width=6cm]{creatgraph.eps} 
-    \caption{ReprÃ©sentation des relations directes.} 
+    \caption{Représentation des relations directes.} 
 \end{figure} 
 
-\subsubsection{Relations indirectes et graphe orientÃ©}
+\subsubsection{Relations indirectes et graphe orienté}
 \begin{itemize}
 
-\item La relation indirecte $B \ci E \Longrightarrow B\not\ci E|D$ impose que le triplet $(B,D,E)$ ne peut Ãªtre qu'une V-structure.
+\item La relation indirecte $B \ci E \Longrightarrow B\not\ci E|D$ impose que le triplet $(B,D,E)$ ne peut être qu'une V-structure.
 
-\item La relation indirecte $A\not\ci C \Longrightarrow A\ci C|B$ impose que le triplet $(A,B,C)$ peut Ãªtre \textbf{une} structure divergente ou \textbf{deux}  structure en sÃ©rie.
+\item La relation indirecte $A\not\ci C \Longrightarrow A\ci C|B$ impose que le triplet $(A,B,C)$ peut être \textbf{une} structure divergente ou \textbf{deux}  structure en série.
 
-\item La relation indirecte $A\not\ci D \Longrightarrow A\ci D|B$ impose que le triplet $(A,B,D)$ peut Ãªtre \textbf{une} structure divergente ou \textbf{une} structure en sÃ©rie.
+\item La relation indirecte $A\not\ci D \Longrightarrow A\ci D|B$ impose que le triplet $(A,B,D)$ peut être \textbf{une} structure divergente ou \textbf{une} structure en série.
 
-\item La relation indirecte $C\not\ci D \Longrightarrow C\ci D|B$ implique que le triplet $(C,B,D)$ peut Ãªtre  \textbf{une} structure divergente ou \textbf{une} structure en sÃ©rie.
+\item La relation indirecte $C\not\ci D \Longrightarrow C\ci D|B$ implique que le triplet $(C,B,D)$ peut être  \textbf{une} structure divergente ou \textbf{une} structure en série.
 \end{itemize}
-Les  trois solutions vÃ©rifiant le modÃ¨le de dÃ©pendance et d'indÃ©pendance sont donc les suivantes:
+Les  trois solutions vérifiant le modèle de dépendance et d'indépendance sont donc les suivantes:
 
 
 \begin{figure}[H]
 \centering
-\subfigure[Solution nÂ°1]{%
+\subfigure[Solution n°1]{%
 \fbox{\includegraphics[width=0.4\textwidth]{sol1.eps}}%
   }
 $\quad$
-\subfigure[Solution nÂ°2]{
+\subfigure[Solution n°2]{
 
  \fbox{ \includegraphics[width=0.4\textwidth]{sol2.eps}}%
 }   
 \\
-\subfigure[Solution nÂ°3]{
+\subfigure[Solution n°3]{
 
 \fbox{ \includegraphics[width=0.4\textwidth]{sol3.eps}}%
  }
 
 \end{figure}
 
-La solution nÂ°2 correspond au rÃ©seaux bayÃ©sien appris par la BIC-mÃ©trique(cf.Fig.\ref{bicmetric} )dans la section prÃ©cÃ©dente, nous allons maintenant considÃ©rer cette solution pour gÃ©nÃ©rer nos valeurs.
-Cette solution n Â°2 va nous permettre ultÃ©rieurement de valider le rÃ©alisme des donnÃ©es gÃ©nÃ©rÃ©s.
+La solution n°2 correspond au réseaux bayésien appris par la BIC-métrique(cf.Fig.\ref{bicmetric} )dans la section précédente, nous allons maintenant considérer cette solution pour générer nos valeurs.
+Cette solution n °2 va nous permettre ultérieurement de valider le réalisme des données générés.
 
 
 
 
-\subsubsection{CrÃ©ation du rÃ©seaux bayÃ©sien}
+\subsubsection{Création du réseaux bayésien}
 
-Une paramÃ©trisation en $R$ Ã  l'aide de la librairie "bnlearn" est dÃ©crite en annexe \ref{parametrisation}.
+Une paramétrisation en $R$ à l'aide de la librairie "bnlearn" est décrite en annexe \ref{parametrisation}.
 
-En utilisant les rÃ©gressions associÃ©s au jeux de donnÃ©es de 14 alternatives, on obtient le systÃ¨me de paramÃ©trisation suivant:
+En utilisant les régressions associés au jeux de données de 14 alternatives, on obtient le système de paramétrisation suivant:
 
 
 \begin{figure}[H]
 \begin{center}
 \begin{tabular}{|l|c|r|}
   \hline
-Interception de la rÃ©gression&Premier coefficient de rÃ©gression&DeuxiÃ¨me coefficient rÃ©gression  \\
+Interception de la régression&Premier coefficient de régression&Deuxième coefficient régression  \\
   \hline
 A\ \ 17229 &   &   \\ 
 B\ \ 33.9289046 &-0.0002551&\\ 
@@ -1855,23 +1855,23 @@ E\ \ 2.232&0.5839544  & \\
 \hline
 \end{tabular}
 \end{center}
-\caption{ParamÃ©trisation du rÃ©seaux}
+\caption{Paramétrisation du réseaux}
 \end{figure}
  
-On fixe les Ã©carts-types $\sigma$ intervenant dans les bruits $\eta(0,\sigma)$ comme Ã©tant  les Ã©carts-types des vecteurs colonnes du jeux de donnÃ©es initial:
+On fixe les écarts-types $\sigma$ intervenant dans les bruits $\eta(0,\sigma)$ comme étant  les écarts-types des vecteurs colonnes du jeux de données initial:
 
  $$\vec{S_{di}}\equiv (S_{dA}; S_{dB}; S_{dC}; S_{dD}; S_{dE})\equiv(2025.0149803  ;  0.8208402 ;   1.7847338;    0.3808695 ;   0.5839544)$$
 
-Un Ã©chantillon de valeurs gÃ©nÃ©rÃ©s par le rÃ©seaux est  prÃ©sentÃ© en annexe \ref{creat_gener}
+Un échantillon de valeurs générés par le réseaux est  présenté en annexe \ref{creat_gener}
 
 
 \newpage
-\subsubsection{Validation des donnÃ©es gÃ©nÃ©rÃ©s}
-La validation est faite en validant le modÃ¨le de dÃ©pendance et d'indÃ©pendance, une ACP et un diagramme en boÃ®te.
+\subsubsection{Validation des données générés}
+La validation est faite en validant le modèle de dépendance et d'indépendance, une ACP et un diagramme en boîte.
 \begin{enumerate}
-\item \textbf{ Validation du modÃ¨le de dÃ©pendance et d'indÃ©pendance :}
+\item \textbf{ Validation du modèle de dépendance et d'indépendance :}
 
-Si le jeux de donnÃ©es gÃ©nÃ©rÃ©s est correcte, $\{A,B,C,D,E\}$ doit normalement vÃ©rifier le systÃ¨me suivant:
+Si le jeux de données générés est correcte, $\{A,B,C,D,E\}$ doit normalement vérifier le système suivant:
 \[
 \left\lbrace 
 \begin{array}{lcl}
@@ -1887,14 +1887,14 @@ C\not\ci D \Longrightarrow C\ci D|B\\
 \]
 
 
-Le jeux de donnÃ©es gÃ©nÃ©rÃ©s vÃ©rifient bien statistiquement le modÃ¨le de dÃ©pendance et d'indÃ©pendance:
+Le jeux de données générés vérifient bien statistiquement le modèle de dépendance et d'indépendance:
 
 
 \begin{figure}[H]
 \begin{center}
 \begin{tabular}{|l|c|r|}
   \hline
-  Relation & CorrÃ©lation & P-value \\
+  Relation & Corrélation & P-value \\
   \hline
   
 \hline \hline \\
@@ -1923,9 +1923,9 @@ $C\cap D|B$&-0.0591&0.16184\\
 
 \newpage
 
-\item \textbf{Validation du rÃ©alisme des donnÃ©es gÃ©nÃ©rÃ©s}
+\item \textbf{Validation du réalisme des données générés}
 
-Notre de jeux de donnÃ©es crÃ©Ã©e possÃ¨de le centre de gravitÃ© $\vec{G}$ (moyenne) et le vecteur Ã©cart-type suivant:
+Notre de jeux de données créée possède le centre de gravité $\vec{G}$ (moyenne) et le vecteur écart-type suivant:
 \[
 \left\lbrace 
 \begin{array}{lcl} 
@@ -1934,10 +1934,10 @@ Notre de jeux de donnÃ©es crÃ©Ã©e possÃ¨de le centre de gravitÃ© $\vec{G}$ (moye
 \end{array}\right.
 \]
 
-On constate une bonne proximitÃ© des moyennes et des Ã©carts-types.
+On constate une bonne proximité des moyennes et des écarts-types.
 
 
-Les valeurs propres , les vecteurs propres normÃ©es obtenus Ã  partir d'une ACP normÃ©e  sont les suivants:
+Les valeurs propres , les vecteurs propres normées obtenus à partir d'une ACP normée  sont les suivants:
 
 \[
 \left\lbrace 
@@ -1949,19 +1949,19 @@ Les valeurs propres , les vecteurs propres normÃ©es obtenus Ã  partir d'une ACP 
 \lambda_{5}=0.2903041 &&\vec{x_{5}}\equiv ( -0.4579677; -0.7247158;  0.1361791; -0.42180879;  0.2618877)\\
 \end{array}\right.
 \]
-Nous avons la qualitÃ© d'information en 3D suivante:
+Nous avons la qualité d'information en 3D suivante:
 $$\delta=\frac{(\lambda_{1}+\lambda_{2}+\lambda_{3})}{(\lambda_{1}+\lambda_{2}+\lambda_{3}+\lambda_{4}+\lambda_{5})}=0.8763989$$
 
-La projection des individus dans le sous-espace munis du repÃ¨re ($\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}}$) est donnÃ©e ci-dessous :
+La projection des individus dans le sous-espace munis du repère ($\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}}$) est donnée ci-dessous :
 
 
 \begin{figure}[H]
 \centering
 \fbox{\includegraphics[width=8cm]{cubecreat.eps}}
-\caption{Projection du nuage de points sur sous-espace munis du repÃ¨re ($\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}}$)}\label{fig:somefiglabel}
+\caption{Projection du nuage de points sur sous-espace munis du repère ($\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}}$)}\label{fig:somefiglabel}
 \end{figure}
 \newpage
-En projetant les nuages de points associÃ©s aux deux jeux  sur les plans principaux : 
+En projetant les nuages de points associés aux deux jeux  sur les plans principaux : 
 
 \begin{figure}[H]
 \fbox{\includegraphics[width=5cm]{proj12data.eps}}\hfill
@@ -2076,33 +2076,33 @@ En projetant les nuages de points associÃ©s aux deux jeux  sur les plans princip
 
 \newpage
 
-\section{Apprentissage: Implantation d'une usine de traitement de dÃ©chet}
+\section{Apprentissage: Implantation d'une usine de traitement de déchet}
 
 \label{apprentissage_usine}
-Le problÃ¨me consiste Ã  optimiser le meilleure emplacement d'une usine.
+Le problème consiste à optimiser le meilleure emplacement d'une usine.
 
-les critÃ¨res intervenants dans le choix de l'emplacement sont repris dans le tableaux ci-dessous:
+les critères intervenants dans le choix de l'emplacement sont repris dans le tableaux ci-dessous:
 \begin{figure}[H] 
     \center 
     \includegraphics[width=10cm,height=5cm]{CasMaystr.eps} 
-    \caption{Jeux de donnÃ©es} 
+    \caption{Jeux de données} 
 \end{figure} 
 
 
-\subsubsection{Utilisation de la BIC-mÃ©trique}
-En appliquant la BIC-mÃ©trique sur notre jeux de donnÃ©es:
+\subsubsection{Utilisation de la BIC-métrique}
+En appliquant la BIC-métrique sur notre jeux de données:
 
 \begin{figure}[H] 
     \center
     \includegraphics[width=5cm]{grapheterrain.eps} 
-    \caption{RÃ©seaux obtenu avec l'utilisation de la BIC-mÃ©trique} 
+    \caption{Réseaux obtenu avec l'utilisation de la BIC-métrique} 
 \end{figure} 
 \newpage
-En effectuant des test statistiques sur le jeux de donnÃ©es des 7 valeurs initiales  et du jeux de donnÃ©es obtenus par gÃ©nÃ©ration de 1000 valeurs:
+En effectuant des test statistiques sur le jeux de données des 7 valeurs initiales  et du jeux de données obtenus par génération de 1000 valeurs:
 \begin{center}
 \begin{tabular}{|l|c|r|}
   \hline
-  Relation & CorrÃ©lation & P-value \\
+  Relation & Corrélation & P-value \\
   \hline
    $Crit2 \cap  Crit3$& 0.8661& $<$=0.01171  \\
       $ Crit2 \cap Crit3 | Crit1$       & 0.075                    & = 0.8877   \\
@@ -2124,7 +2124,7 @@ $Crit2 \cap Crit5 |Crit3$ &   0.1778& =0.736 \\
 \begin{center}
 \begin{tabular}{|l|c|r|}
   \hline
-  Relation & CorrÃ©lation & P-value \\
+  Relation & Corrélation & P-value \\
   \hline
    $Crit2 \cap  Crit3$& 0.8541& $<$2.2e-16  \\
       $ Crit2 \cap Crit3 | Crit1$       & -0.0184                      & = 0.5614   \\
@@ -2144,16 +2144,16 @@ $Crit2 \cap Crit5 |Crit3$ &   0.0015& =0.9614 \\
 \end{figure}
 \textbf{Commentaires}:
 \begin{itemize}
-\item Le triplet $(Crit2,Crit1,Crit3)$ a une structure divergente et nous avons bien une dÃ©gradation de la corrÃ©lation par le conditionnement de $Crit1$.
+\item Le triplet $(Crit2,Crit1,Crit3)$ a une structure divergente et nous avons bien une dégradation de la corrélation par le conditionnement de $Crit1$.
 
-\item Le triplet $(Crit1,Crit3,Crit5)$ a une structure en sÃ©rie et la dÃ©gradation de la corrÃ©lation est aussi visible par conditionnement de $Crit3$.
+\item Le triplet $(Crit1,Crit3,Crit5)$ a une structure en série et la dégradation de la corrélation est aussi visible par conditionnement de $Crit3$.
 
-\item Pour ce qui en est du chemin reliant le $Crit2$ au $Crit5$,nous voyons que les deux sous-structures Ã  l'interstice de $Crit2$ et $Crit5$ se comportent comme des sous-structures divergente et en  sÃ©rie.{\\}
+\item Pour ce qui en est du chemin reliant le $Crit2$ au $Crit5$,nous voyons que les deux sous-structures à l'interstice de $Crit2$ et $Crit5$ se comportent comme des sous-structures divergente et en  série.{\\}
 
 \end{itemize}
 \newpage
-\subsubsection{BGE mÃ©trique}
-Nous allons, comme pour l'exemple des voitures, comparer les deux mÃ©triques:
+\subsubsection{BGE métrique}
+Nous allons, comme pour l'exemple des voitures, comparer les deux métriques:
 
 \begin{figure}[H] 
     \center 
@@ -2161,16 +2161,16 @@ Nous allons, comme pour l'exemple des voitures, comparer les deux mÃ©triques:
     \caption{Tabu avec BGE-metric} 
 \end{figure} 
 
-Les deux rÃ©seaux $RB_1 \equiv RB_2$ sont Ã©quivalents, par consÃ©quent ils vÃ©rifient les mÃªmes relations de dÃ©pendances et d'indÃ©pendances.Les commentaires statistiques seront alors similaires Ã  ceux qui ont Ã©tÃ© fait pour la BIC-mÃ©trique.
+Les deux réseaux $RB_1 \equiv RB_2$ sont équivalents, par conséquent ils vérifient les mêmes relations de dépendances et d'indépendances.Les commentaires statistiques seront alors similaires à ceux qui ont été fait pour la BIC-métrique.
 
 
-\subsubsection{Normalisation, ACP 2D et tableaux des corrÃ©lations}
-Le tableaux normalisÃ©, la matrice des corrÃ©lations ainsi que l'ACP 2D sont donnÃ© par:
+\subsubsection{Normalisation, ACP 2D et tableaux des corrélations}
+Le tableaux normalisé, la matrice des corrélations ainsi que l'ACP 2D sont donné par:
 
 \begin{figure}[H]
 \begin{tabular}{llllll}
   \hline
-AltÃ©rnatives&  Crit1& Crit2 & Crit3&Crit4&Crit5 \\
+Altérnatives&  Crit1& Crit2 & Crit3&Crit4&Crit5 \\
   \hline
 1& 0.20512821 &0.06175255 &0.13513514 &0.08433735 &0.1395349\\
 2 &0.25641026 &0.05849098 &0.05405405 &0.10843373 &0.1860465\\
@@ -2183,7 +2183,7 @@ AltÃ©rnatives&  Crit1& Crit2 & Crit3&Crit4&Crit5 \\
 \hline
 
 \end{tabular}
-\caption{Jeux de donnÃ©es normalisÃ©s}
+\caption{Jeux de données normalisés}
 \end{figure}
 
 
@@ -2201,33 +2201,33 @@ Crit5  &0.6771882 &-0.5874959 &-0.7465923 &-0.5825127 & 1.0000000\\
 \hline
 
 \end{tabular}
-\caption{Tableaux des corrÃ©lations}
+\caption{Tableaux des corrélations}
 \end{figure}
 
 
 \begin{figure}[H] 
     \center 
     \includegraphics[width=8cm]{ACP_TERRAIN.eps} 
-    \caption{ReprÃ©sentation ACP 2D} 
+    \caption{Représentation ACP 2D} 
 \end{figure} 
 
 
 
 
-\subsubsection{AttÃ©nuation de la corrÃ©lation par grand bruitage du jeux de donnÃ©}
+\subsubsection{Atténuation de la corrélation par grand bruitage du jeux de donné}
 
-Nous allons profiter de cette exemple pour montrer que la mÃ©thode des grands bruitages permet de dÃ©corrÃ©ller de maniÃ¨re significative pair Ã  pair toutes  les variables d'un jeux de donnÃ©e. Mais cette exemple montrera clairement que la mÃ©thode est laborieuse.
+Nous allons profiter de cette exemple pour montrer que la méthode des grands bruitages permet de décorréller de manière significative pair à pair toutes  les variables d'un jeux de donnée. Mais cette exemple montrera clairement que la méthode est laborieuse.
 
-Si nous observons l'ACP 2D et la matrice des corrÃ©lation du jeux original, nous constatons que les critÃ¨res $Crit2,Crit3, Crit4$ sont trop corrÃ©lÃ©e.
+Si nous observons l'ACP 2D et la matrice des corrélation du jeux original, nous constatons que les critères $Crit2,Crit3, Crit4$ sont trop corrélée.
 
 Nous allons donc ,dans un premier temps, appliquer un bruitage de  $Crit2/Crit4.$
 
-AprÃ¨s l'application d'un ajout de grand bruit, on obtient le tableaux de donnÃ©es Fig. \ref{tab3}, la matrice des corrÃ©lations Fig.\ref{matcorr3} et l'ACP 2D Fig.\ref{acp3} suivantes:
+Après l'application d'un ajout de grand bruit, on obtient le tableaux de données Fig. \ref{tab3}, la matrice des corrélations Fig.\ref{matcorr3} et l'ACP 2D Fig.\ref{acp3} suivantes:
 
 \begin{figure}[H]
 \begin{tabular}{llllll}
   \hline
-AltÃ©rnatives&  Crit1& Crit2 & Crit3&Crit4&Crit5 \\
+Altérnatives&  Crit1& Crit2 & Crit3&Crit4&Crit5 \\
   \hline
 1 &0.20512821 &0.002545604 &0.13513514 &0.08433735& 0.1395349\\
 2 &0.25641026 &0.447382979 &0.05405405 &0.10843373 &0.1860465\\
@@ -2240,7 +2240,7 @@ AltÃ©rnatives&  Crit1& Crit2 & Crit3&Crit4&Crit5 \\
 \hline
 
 \end{tabular}
-\caption{Jeux de donnÃ©es normalisÃ© aprÃ¨s un fort bruitage.ParamÃ¨tre=(data,2,4,0.2,100,500)}
+\caption{Jeux de données normalisé après un fort bruitage.Paramètre=(data,2,4,0.2,100,500)}
 \label{tab3}
 \end{figure}
 
@@ -2259,7 +2259,7 @@ Crit5  &0.6771882  &0.658987764 &-0.7465923 &-0.582512704  &1.0000000\\
 \hline
 
 \end{tabular}
-\caption{Tableaux des corrÃ©lations aprÃ¨s bruitage}
+\caption{Tableaux des corrélations après bruitage}
 \label{matcorr3}
 \end{figure}
 
@@ -2267,16 +2267,16 @@ Crit5  &0.6771882  &0.658987764 &-0.7465923 &-0.582512704  &1.0000000\\
 \begin{figure}[H] 
     \center 
     \includegraphics[width=8cm]{ACP_TERRIAN_BRUIT_FORT1.eps} 
-    \caption{ReprÃ©sentation ACP 2D aprÃ¨s bruitage} 
+    \caption{Représentation ACP 2D après bruitage} 
 \label{acp3}
 \end{figure} 
 
-Si nous supposons que la corrÃ©lation entre $ Crit3$ et $Crit1$ est trop importante, nous pouvons Ã  nouveaux appliquer la mÃ©thode pour un bruitage sur $Crit3$ par rapport au Crit1. On obtient alors les nouvelles  caractÃ©ristiques suivantes:
+Si nous supposons que la corrélation entre $ Crit3$ et $Crit1$ est trop importante, nous pouvons à nouveaux appliquer la méthode pour un bruitage sur $Crit3$ par rapport au Crit1. On obtient alors les nouvelles  caractéristiques suivantes:
 
 \begin{figure}[H]
 \begin{tabular}{llllll}
   \hline
-AltÃ©rnatives&  Crit1& Crit2 & Crit3&Crit4&Crit5 \\
+Altérnatives&  Crit1& Crit2 & Crit3&Crit4&Crit5 \\
   \hline
 1 &0.20512821 &0.002545604 &0.11821624 &0.08433735 &0.1395349\\
 2 &0.25641026 &0.447382979 &0.12152874 &0.10843373 &0.1860465\\
@@ -2287,7 +2287,7 @@ AltÃ©rnatives&  Crit1& Crit2 & Crit3&Crit4&Crit5 \\
 7 &0.07692308 &0.010425481 &0.30355154 &0.20481928 &0.1007752\\
 \hline
 \end{tabular}
-\caption{Jeux de donnÃ© normalisÃ© aprÃ¨s un fort bruitage.ParamÃ¨tre=(Newdata,3,1,0.5,100,500)}
+\caption{Jeux de donné normalisé après un fort bruitage.Paramètre=(Newdata,3,1,0.5,100,500)}
 \end{figure}
 \begin{figure}[H]
 \begin{tabular}{llllll}
@@ -2302,22 +2302,22 @@ Crit5  &0.6771882  &0.658987764 &-0.3772684 &-0.582512704  &1.0000000\\
 \hline
 
 \end{tabular}
-\caption{Tableaux des corrÃ©lations aprÃ¨s bruitage}
+\caption{Tableaux des corrélations après bruitage}
 \end{figure}
 
 \begin{figure}[H] 
     \center 
     \includegraphics[width=8cm]{ACP_BRUIT_FORT_TERRAIN2.eps} 
-    \caption{ReprÃ©sentaion ACP 2D aprÃ¨s bruitage} 
+    \caption{Représentaion ACP 2D après bruitage} 
 \end{figure} 
-Comme nous l'avons dit en dÃ©but de section, nous allons dÃ©corrÃ©lÃ©e  pas Ã  pas les variables paire Ã  paire.
+Comme nous l'avons dit en début de section, nous allons décorrélée  pas à pas les variables paire à paire.
 
-Nous n'allons pas expliciter toutes les itÃ©rations mais aprÃ¨s avoir utilisÃ© les attÃ©nuations suivantes  :
+Nous n'allons pas expliciter toutes les itérations mais après avoir utilisé les atténuations suivantes  :
 
 
 Crit4/Crit1,Crit5/Crit1,Crit2/Crit1,Crit3/Crit5 et Crit1/Crit3:
 
-Nous obtenons le jeux de donnÃ©es Fig. \ref{tab4} la matrice des corrÃ©lations Fig. \ref{matcorr4} suivantes:
+Nous obtenons le jeux de données Fig. \ref{tab4} la matrice des corrélations Fig. \ref{matcorr4} suivantes:
 
 \begin{figure}[H]
 \begin{tabular}{llllll}
@@ -2332,14 +2332,14 @@ Crit5 &-0.4052730 &-0.08815628 &-0.15816836 &-0.2811477 & 1.00000000\\
 \hline
 
 \end{tabular}
-\caption{Tableaux des corrÃ©lations final}
+\caption{Tableaux des corrélations final}
 \label{tab4}
 \end{figure}
 
 \begin{figure}[H]
 \begin{tabular}{llllll}
   \hline
-AltÃ©rnatives&  Crit1& Crit2 & Crit3&Crit4&Crit5 \\
+Altérnatives&  Crit1& Crit2 & Crit3&Crit4&Crit5 \\
   \hline
 1 &0.15918958 &0.005101735& -0.05358094 &0.19585608 &0.20447272\\
 2 &0.40808353 &0.228050314 &-0.06069470 &0.15734412 &0.04501011 \\
@@ -2350,12 +2350,12 @@ AltÃ©rnatives&  Crit1& Crit2 & Crit3&Crit4&Crit5 \\
 7 &0.14968871 &0.122668323  &0.43325178 &0.13051168 &0.05790469\\
 \hline
 \end{tabular}
-\caption{Jeux de donnÃ©es normalisÃ© final}
+\caption{Jeux de données normalisé final}
 \label{matcorr4}
 \end{figure}
-\subsubsection{Validation des valeurs gÃ©nÃ©rÃ©s}
+\subsubsection{Validation des valeurs générés}
 
-La qualitÃ© d'information $\delta$ d'une ACP 3D appliquÃ©e au jeux de 1000 donnÃ©e  est exprimÃ© ci-dessous:
+La qualité d'information $\delta$ d'une ACP 3D appliquée au jeux de 1000 donnée  est exprimé ci-dessous:
 
 $$\delta=\frac{(\lambda_{1}+\lambda_{2}+\lambda_{3})}{(\lambda_{1}+\lambda_{2}+\lambda_{3}+\lambda_{4}+\lambda_{5})}=0.9665694$$
 
@@ -2364,36 +2364,36 @@ L'ACP 3D donne:
 \begin{figure}[H]
 \fbox{\includegraphics[width=6cm]{cubedataex1.eps}}\hfill
 \fbox{\includegraphics[width=6cm]{cubegenerex1.eps}}
-\caption{Projection du jeux de donnÃ©es initial et du jeux de 1000 valeurs sur le sous-espace munis du repÃ¨re $(\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le sous-espace munis du repère $(\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel}
 \end{figure}
 
 
-Afin de mieux voir la proximitÃ© des individus, nous projetons le nuage de points sur les plans principaux (voir Fig.\ref{planprincip1}, Fig.\ref{planprincip2} et    Fig.\ref{planprincip3}    )      :
+Afin de mieux voir la proximité des individus, nous projetons le nuage de points sur les plans principaux (voir Fig.\ref{planprincip1}, Fig.\ref{planprincip2} et    Fig.\ref{planprincip3}    )      :
 \begin{figure}[H]
 \includegraphics[width=6cm]{projdataex12.eps}\hfill
 \includegraphics[width=6cm]{projgenerex12.eps}
-\caption{Projection du jeux de donnÃ©es initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{2}})$}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{2}})$}
  \label{planprincip1}  
 \end{figure}
 \begin{figure}[H]
 \includegraphics[width=6cm]{projgenerex13.eps}\hfill
 \includegraphics[width=6cm]{projdataex13.eps}
-\caption{Projection du jeux de donnÃ©es initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{3}})$}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{3}})$}
  \label{planprincip2}  
 \end{figure}
 \begin{figure}[H]
 \includegraphics[width=6cm]{projdataex23.eps}\hfill
 \includegraphics[width=6cm]{projgenerex23.eps}
-\caption{Projection du jeux de donnÃ©es initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{2}},\vec{x_{3}})$}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{2}},\vec{x_{3}})$}
  \label{planprincip3}  
 \end{figure}
 
-On obtient pour l'ensemble des points, dans les 5 dimensions, le diagramme en boÃ®te suivant:
+On obtient pour l'ensemble des points, dans les 5 dimensions, le diagramme en boîte suivant:
 
 \begin{figure}[H]
 \fbox{\includegraphics[width=6cm]{boxdataex1.eps}}\hfill
 \fbox{\includegraphics[width=6cm]{boxgenerex1.eps}}
-\caption{Diagramme en boÃ®te pour le jeux initial (gauche) et le jeux obtenu aprÃ¨s avoir gÃ©nÃ©rÃ©1000 valeurs }\label{fig:somefiglabel}
+\caption{Diagramme en boîte pour le jeux initial (gauche) et le jeux obtenu après avoir généré1000 valeurs }\label{fig:somefiglabel}
 \end{figure}
 
 
@@ -2405,11 +2405,11 @@ On obtient pour l'ensemble des points, dans les 5 dimensions, le diagramme en bo
 \section{Apprentissage: Achat d'une guitare}
 
 \label{apprentissage_guitare}
-Le tableaux ci-dessous est un tableaux normalisÃ© provenant d'un jeux de donnÃ©es reprenant diffÃ©rentes guitares comme alternatives et diffÃ©rents critÃ¨res.
+Le tableaux ci-dessous est un tableaux normalisé provenant d'un jeux de données reprenant différentes guitares comme alternatives et différents critères.
 \begin{figure}[H]
 \begin{tabular}{llllll}
   \hline
-AltÃ©rnatives&  Crit1& Crit2 & Crit3&Crit4&Crit5 \\
+Altérnatives&  Crit1& Crit2 & Crit3&Crit4&Crit5 \\
   \hline
 1  &0.08715403 &0.09661836 &0.11627907 &0.10416667 &0.09615385\\
 2  &0.11912173 &0.09661836 &0.11627907 &0.10416667 &0.07692308\\
@@ -2424,13 +2424,13 @@ AltÃ©rnatives&  Crit1& Crit2 & Crit3&Crit4&Crit5 \\
 11 &0.06724433 &0.08695652 &0.06976744 &0.06250000 &0.07692308\\
 \hline
 \end{tabular}
-\caption{Jeux de donnÃ©es normalisÃ© }
+\caption{Jeux de données normalisé }
 \end{figure}
  $\left\lbrace 
 \begin{array}{lcl}
 \text{Crit1=Prix.}\\
 \text{Crit2=Audiofanzine}.\\
-\text{Crit3=NotoriÃ©tÃ©}.\\
+\text{Crit3=Notoriété}.\\
 \text{Crit4=Son}.\\
 \text{Crit5=Manche}.\\
 \text{Crit6=Forme}.\\
@@ -2446,7 +2446,7 @@ AltÃ©rnatives&  Crit1& Crit2 & Crit3&Crit4&Crit5 \\
 \begin{center}
 \begin{tabular}{|l|c|r|}
   \hline
-  Relation & CorrÃ©lation & P-value \\
+  Relation & Corrélation & P-value \\
   \hline
 $Crit1 \cap Crit5$&0.3001&$=0.3699 $\\
 $Crit1 \cap Crit5 | Crit4$&-0.1928&0.5935 \\
@@ -2468,7 +2468,7 @@ $Crit1 \cap Crit3 |Crit4$&  -0.2031&$=0.5736$\\
 \begin{center}
 \begin{tabular}{|l|c|r|}
   \hline
-  Relation & CorrÃ©lation & P-value \\
+  Relation & Corrélation & P-value \\
   \hline
 $Crit1 \cap Crit5$&0.2772&$<2.2.10^{-16} $\\
 $Crit1 \cap Crit5 | Crit4$&0.0521&0.09963 \\
@@ -2484,27 +2484,27 @@ $Crit1 \cap Crit3 |Crit4$&  0.0187&$<0.5541$\\
 \textbf{Commentaires:}
 
 \begin{itemize}
-\item Le triplet $(Crit1,Crit4,Crit5)$  est une structure en sÃ©rie, ce qui implique que le conditionnement de $Crit4$ diminue la corrÃ©lation.
-\item Le triplet $(Crit5,Crit4,Crit3)$ est une V-structure , ce qui implique la diminution de la corrÃ©lation par conditionnement de $Crit4$.
-\item Le triplet $(Crit1,Crit4,Crit3)$ est aussi une structure en sÃ©rie , nous sommes donc bien dans la mÃªme situation que le premier exemple.
+\item Le triplet $(Crit1,Crit4,Crit5)$  est une structure en série, ce qui implique que le conditionnement de $Crit4$ diminue la corrélation.
+\item Le triplet $(Crit5,Crit4,Crit3)$ est une V-structure , ce qui implique la diminution de la corrélation par conditionnement de $Crit4$.
+\item Le triplet $(Crit1,Crit4,Crit3)$ est aussi une structure en série , nous sommes donc bien dans la même situation que le premier exemple.
 
 \end{itemize}
 
 
-\subsubsection{Application de la BGE-mÃ©trique}
+\subsubsection{Application de la BGE-métrique}
 \begin{figure}[H] 
     \center 
     \includegraphics[width=5cm]{GUITARE_GRAPHE_BGE.eps} 
-    \caption{Application de la BGE-mÃ©trique } 
+    \caption{Application de la BGE-métrique } 
 \end{figure} 
 
-Regardons ce qu'il se passe  du point de vue statistique pour notre jeux de dÃ©part:
+Regardons ce qu'il se passe  du point de vue statistique pour notre jeux de départ:
 
 \begin{figure}[H]
 \begin{center}
 \begin{tabular}{|l|c|r|}
   \hline
-  Relation & CorrÃ©lation & P-value \\
+  Relation & Corrélation & P-value \\
   \hline
 $Crit1 \cap Crit5$&0.3001&$=0.3699 $\\
 $Crit1 \cap Crit5 | Crit4$&-0.1928&0.5935 \\
@@ -2518,49 +2518,49 @@ $Crit1 \cap Crit3 |Crit4$&  -0.2031&$=0.5736$\\
 \caption{Test statistiques pour les 11 alternatives }
 \end{figure}
 
-Le triplet $(Crit1,Crit4,Crit5)$ joue bien le rÃ´le d'une V-structure. De plus il n'y pas de corrÃ©lation entre $Crit5$ et $Crit3$ car la P-value est de  0.3287.
+Le triplet $(Crit1,Crit4,Crit5)$ joue bien le rôle d'une V-structure. De plus il n'y pas de corrélation entre $Crit5$ et $Crit3$ car la P-value est de  0.3287.
 
-La BIC-mÃ©trique, nous donne encore le rÃ©seaux le plus vraisemblable.
+La BIC-métrique, nous donne encore le réseaux le plus vraisemblable.
 
-\subsubsection{Validation des donnÃ©es du jeux gÃ©nÃ©rÃ©s}
+\subsubsection{Validation des données du jeux générés}
 
-La qualitÃ© d'information $\delta$ de l'ACP 3D appliquÃ©e au jeux de 1000 donnÃ©es gÃ©nÃ©rÃ©s vaut  :
+La qualité d'information $\delta$ de l'ACP 3D appliquée au jeux de 1000 données générés vaut  :
 
 $$\delta=\frac{(\lambda_{1}+\lambda_{2}+\lambda_{3})}{(\lambda_{1}+\lambda_{2}+\lambda_{3}+\lambda_{4}+\lambda_{5})}=0.9070546$$
 
-Projection dans le sous-espace munis du repÃ¨re $(\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}})$ :
+Projection dans le sous-espace munis du repère $(\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}})$ :
 
  \begin{figure}[H]
 \fbox{\includegraphics[width=6cm]{cubeex3.eps}}\hfill
 \fbox{\includegraphics[width=6cm]{cubeex3g.eps}}
-\caption{Projection du jeux de donnÃ©es initial et du jeux de 1000 valeurs sur sous-espace munis du repÃ¨re $(\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur sous-espace munis du repère $(\vec{G},\vec{x_{1}},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel}
 \end{figure}
 
-Les projections du jeux initial et du jeux de donnÃ©es gÃ©nÃ©rÃ©s sur les plans principaux sont les suivantes:
+Les projections du jeux initial et du jeux de données générés sur les plans principaux sont les suivantes:
 
 \begin{figure}[H]
 \includegraphics[width=6cm]{prdata12ex3.eps}\hfill
 \includegraphics[width=6cm]{prgener12ex3.eps}
-\caption{Projection du jeux de donnÃ©es initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{2}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{2}})$}\label{fig:somefiglabel}
 \end{figure}
 
 
 \begin{figure}[H]
 \includegraphics[width=6cm]{prdata13ex3.eps}\hfill
 \includegraphics[width=6cm]{prgener13ex3.eps}
-\caption{Projection du jeux de donnÃ©es initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{3}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{1}},\vec{x_{3}})$}\label{fig:somefiglabel}
 \end{figure}
 
 \begin{figure}[H]
 \includegraphics[width=6cm]{prdata23ex3.eps}\hfill
 \includegraphics[width=6cm]{prgener23ex3.eps}
-\caption{Projection du jeux de donnÃ©es initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel}
+\caption{Projection du jeux de données initial et du jeux de 1000 valeurs sur le plan $(\vec{G},\vec{x_{2}},\vec{x_{3}})$}\label{fig:somefiglabel}
 \end{figure}
 
  \begin{figure}[H] 
     \center 
    \fbox{ \includegraphics[width=5cm]{boitedifin.eps} }
-    \caption{Diagramme en boÃ®te } 
+    \caption{Diagramme en boîte } 
 \label{newboxplot}
 \end{figure} 
 
@@ -2603,19 +2603,19 @@ Les projections du jeux initial et du jeux de donnÃ©es gÃ©nÃ©rÃ©s sur les plans 
 
 
 \newpage
-\section{ParamÃ©trisation d'un rÃ©seaux  en $R$ avec l'utilisation de la librairie "bnlearn"}
+\section{Paramétrisation d'un réseaux  en $R$ avec l'utilisation de la librairie "bnlearn"}
 \label{parametrisation}
-Nous prÃ©sentons ici la maniÃ¨re dont rentre les paramÃ¨tres d'un rÃ©seaux en  $R$
+Nous présentons ici la manière dont rentre les paramètres d'un réseaux en  $R$
 
-Pour le rÃ©seaux dÃ©crits ci-dessous:
+Pour le réseaux décrits ci-dessous:
 
 \begin{figure}[H] 
     \center 
     \includegraphics[width=5cm,height=5cm]{expara.eps} 
-    \caption{RÃ©seaux Ã  paramÃ©trer} 
+    \caption{Réseaux à paramétrer} 
 \end{figure} 
 
-La paramÃ©trisation se fait dans un exÃ©cutable de la faÃ§on suivante: 
+La paramétrisation se fait dans un exécutable de la façon suivante: 
 
 
 \begin{figure}[H] 
@@ -2626,11 +2626,11 @@ La paramÃ©trisation se fait dans un exÃ©cutable de la faÃ§on suivante:
 
 
 \newpage
-\section{CrÃ©ation d'un jeux de donnÃ©e inspirÃ©e du problÃ¨me concernant l'achat d'une guitare}
+\section{Création d'un jeux de donnée inspirée du problème concernant l'achat d'une guitare}
 \label{creat_guitare}
-\subsubsection{ModÃ©lisation du problÃ¨me}
-Nous allons nous inspirer de problÃ¨me \ref{apprentissage_guitare}
-En s'inspirant des testes statistiques, nous remarquons les dÃ©pendances et les indÃ©pendances qui suivent:
+\subsubsection{Modélisation du problème}
+Nous allons nous inspirer de problème \ref{apprentissage_guitare}
+En s'inspirant des testes statistiques, nous remarquons les dépendances et les indépendances qui suivent:
 
  \begin{figure}[H]
 \begin{center}
@@ -2647,42 +2647,42 @@ $C1 \ci C3 |C4$\\
 \hline
 \end{tabular}
 \end{center}
-\caption{ProblÃ¨me nÂ°3}
+\caption{Problème n°3}
 \end{figure}
 
-\subsubsection{ModÃ©lisation des relations directes et indirectes}
+\subsubsection{Modélisation des relations directes et indirectes}
 
 \begin{itemize}
 
 \item \textbf{Relation directe}:
 
--En utilisant les relations directes,nous sommes amenÃ© Ã  poser les arrÃªtes suivantes:
+-En utilisant les relations directes,nous sommes amené à poser les arrêtes suivantes:
 
 $$(C1,C5),(C5,C3) \text{  et  } (C1,C3).$$
 
-Nous obtenons alors le graphe non-orientÃ© suivant:
+Nous obtenons alors le graphe non-orienté suivant:
 
 \begin{figure}[H] 
     \center 
    \fbox{ \includegraphics[width=5cm]{ETAPE__1_BUILD.eps} }
-    \caption{Graphe non-orientÃ©} 
+    \caption{Graphe non-orienté} 
 \end{figure} 
 
 \item \textbf{relation indirecte}:
 
 -Nous avons $$C5 \ci C3 \Longrightarrow   C5 \not\ci C3|C4 $${\\}
-On a donc une V-structure pour le triplet $(C5,C4,C3)$ et on fait disparaÃ®tre l'arrÃªte $(C5,C3)$.
+On a donc une V-structure pour le triplet $(C5,C4,C3)$ et on fait disparaître l'arrête $(C5,C3)$.
 
 -Nous avons $$C1 \not\ci C5 \text{  et  } C1 \ci C5|C4 $$
 
-On a donc le choix entre une structure divergente ou une  en sÃ©rie  pour le triplet $(C1,C4,C5)$ et on fait disparaÃ®tre l'arrÃªte (C1,C5).
+On a donc le choix entre une structure divergente ou une  en série  pour le triplet $(C1,C4,C5)$ et on fait disparaître l'arrête (C1,C5).
 
 -Nous avons $$C1 \not\ci C3 et C1 \ci C3|C4 $${\\}
-On a donc le choix entre une structure divergente ou une  en sÃ©rie  pour le triplet (C1,C4,C3) en faisant disparaÃ®tre l'arrÃªte (C1,C3).{\\}
-Nous faisons  le choix arbitraire de considÃ©rÃ© les triplets (C1,C4,C5) et (C1,C4,C3) en sÃ©rie.
+On a donc le choix entre une structure divergente ou une  en série  pour le triplet (C1,C4,C3) en faisant disparaître l'arrête (C1,C3).{\\}
+Nous faisons  le choix arbitraire de considéré les triplets (C1,C4,C5) et (C1,C4,C3) en série.
 
 
-Le noeud C2 sera isolÃ© car il n'interagit avec aucun autre noeud.
+Le noeud C2 sera isolé car il n'interagit avec aucun autre noeud.
 \end{itemize}
 
 On obtient au bilan le graphe suivant:
@@ -2690,18 +2690,18 @@ On obtient au bilan le graphe suivant:
 \begin{figure}[H] 
     \center 
    \fbox{ \includegraphics[width=5cm]{EXEMPLE_ARTIF_RESEAUX.eps} }
-    \caption{RÃ©seaux bayÃ©sien associÃ© au modÃ¨le de dÃ©pendance et d'indÃ©pendance } 
+    \caption{Réseaux bayésien associé au modèle de dépendance et d'indépendance } 
 \end{figure}
  
 \newpage
-\subsubsection{ParamÃ©trisation du rÃ©seaux}
+\subsubsection{Paramétrisation du réseaux}
 
-Nous allons utiliser les rÃ©gressions du jeux de l'achat des guitares pour paramÃ©triser notre rÃ©seaux:
+Nous allons utiliser les régressions du jeux de l'achat des guitares pour paramétriser notre réseaux:
 
 \begin{figure}[H]
 \begin{tabular}{llll}
   \hline
-  Variables              & Interception&Premier coefficient& DeuxiÃ¨me coefficient \\
+  Variables              & Interception&Premier coefficient& Deuxième coefficient \\
   \hline
 A  &0.02418& 0.734&\\
 B &0.09091 && \\
@@ -2717,15 +2717,15 @@ avec
 
 $$\vec{S_{d}}=(0.016758796; 0.005943475; 0.026422833; 0.016854997; 0.008982680)$$
 
-Nous pouvons maintenant gÃ©nÃ©rer 1000 valeurs et nous obtenons le diagramme en boÃ®te suivant:
+Nous pouvons maintenant générer 1000 valeurs et nous obtenons le diagramme en boîte suivant:
 
  \begin{figure}[H] 
     \center 
    \fbox{ \includegraphics[width=5cm]{guitbox.eps} }
-    \caption{Diagramme en boÃ®te } 
+    \caption{Diagramme en boîte } 
 \end{figure} 
 
-Ce diagramme est similaire Ã  celui de la Fig.\ref{newboxplot}  lors de la validation. Les valeurs sont nÃ©anmoins ici plus concentrÃ© autour de la mÃ©diane.
+Ce diagramme est similaire à celui de la Fig.\ref{newboxplot}  lors de la validation. Les valeurs sont néanmoins ici plus concentré autour de la médiane.
 
 
 
@@ -2760,28 +2760,28 @@ Ce diagramme est similaire Ã  celui de la Fig.\ref{newboxplot}  lors de la valid
 
 \newpage
 
-\section{CrÃ©ation d'un jeux de donnÃ©es basÃ© sur les moyennes $\vec{G}$, les Ã©carts-types $\vec{Sd}$, la matrice des corrÃ©lations $\overline{\rho}$ et le modÃ¨le de dÃ©pendance et d'indÃ©pendance d'un jeux de donnÃ©es rÃ©alistes}
+\section{Création d'un jeux de données basé sur les moyennes $\vec{G}$, les écarts-types $\vec{Sd}$, la matrice des corrélations $\overline{\rho}$ et le modèle de dépendance et d'indépendance d'un jeux de données réalistes}
 \label{creat_stat}
-On va considÃ©rer une jeux artificiel  de 6 variables intervenants dans une modÃ©lisation qui est aussi artificiel.
+On va considérer une jeux artificiel  de 6 variables intervenants dans une modélisation qui est aussi artificiel.
 
-Jusqu'Ã  prÃ©sent les jeux qui ont Ã©tÃ© gÃ©nÃ©rÃ©s ont Ã©tÃ© paramÃ©trÃ© Ã  l'aide d'un jeux de donnÃ©es initial existant.
+Jusqu'à présent les jeux qui ont été générés ont été paramétré à l'aide d'un jeux de données initial existant.
 
-Dans l'exemple qui suivra nous gÃ©nÃ©rons des valeurs Ã  partir de donnÃ©es statistiques.
+Dans l'exemple qui suivra nous générons des valeurs à partir de données statistiques.
 
-Nous supposerons que nous avons Ã  notre disposition les donnÃ©es statistiques suivantes:
+Nous supposerons que nous avons à notre disposition les données statistiques suivantes:
 
 \begin{itemize}
 
 
-\item Le modÃ¨le de dÃ©pendance et d'indÃ©pendance. 
+\item Le modèle de dépendance et d'indépendance. 
 \item Les vecteurs $\vec{G}$ et $\vec{S_{d}}$ .
-\item La matrice $\overline{{\rho}}$ des corrÃ©lations.
+\item La matrice $\overline{{\rho}}$ des corrélations.
 \end{itemize}
-A partir de lÃ , nous voulons crÃ©er un jeux de donnÃ©e qui rÃ©pond Ã  toute les contraintes d'entrÃ©e.
+A partir de là, nous voulons créer un jeux de donnée qui répond à toute les contraintes d'entrée.
 
-Nous modÃ©liserons en graphe orientÃ© le modÃ¨le de dÃ©pendance et d'indÃ©pendance, ensuite nous ferons intervenir les contraintes initiales  
+Nous modéliserons en graphe orienté le modèle de dépendance et d'indépendance, ensuite nous ferons intervenir les contraintes initiales  
 
-\subsubsection{ModÃ©lisation de dÃ©pendance et d'indÃ©pendance du problÃ¨me}
+\subsubsection{Modélisation de dépendance et d'indépendance du problème}
 $\{ A,B,C,D,E,F \}\Longrightarrow\left\lbrace 
 \begin{array}{lcl} 
 A\not\ci B \\
@@ -2795,7 +2795,7 @@ E\not\ci F\Longrightarrow E\ci F|C\\
 \end{array}\right.$
 
 
-\subsubsection{ModÃ©lisation des relations directes et indirectes}
+\subsubsection{Modélisation des relations directes et indirectes}
 \begin{itemize}
 \item \textbf{Relation directes}:
 
@@ -2803,7 +2803,7 @@ $$(A,B),(A,D),(B,C),(C,E),(F,E),(C,F)$$
 \begin{figure}[H] 
     \center 
     \includegraphics[width=5cm]{SKELETON_EX2_BUILD.eps} 
-    \caption{Graphe non-orientÃ© } 
+    \caption{Graphe non-orienté } 
 \end{figure} 
 
 
@@ -2811,20 +2811,20 @@ $$(A,B),(A,D),(B,C),(C,E),(F,E),(C,F)$$
 $$A \ci C \Longrightarrow A\not\ci C |B  $$
 $$  E\not\ci F\Longrightarrow E\ci F|C$$
 
-- L'arrÃªte $(A,C)$ devient une V-structure $(A,B,C)$.
+- L'arrête $(A,C)$ devient une V-structure $(A,B,C)$.
 
--L'arrÃªte $(E,F)$ peut devenir une structure sÃ©rie ou divergente.
+-L'arrête $(E,F)$ peut devenir une structure série ou divergente.
 \end{itemize}
 
-En faisant les opÃ©rations prÃ©cÃ©dentes, nous remarquons  qu'il nous reste un degrÃ©s de libertÃ© sur l'arrÃªte (A,D), On peut l'orienter arbitrairement car nous ne faisons en aucun cas apparaitre de V-Structure:
+En faisant les opérations précédentes, nous remarquons  qu'il nous reste un degrés de liberté sur l'arrête (A,D), On peut l'orienter arbitrairement car nous ne faisons en aucun cas apparaitre de V-Structure:
 
 \begin{figure}[H] 
     \center 
     \includegraphics[width=5cm]{GRAPHE_BAYesien_EX2.eps} 
-    \caption{Graphe associÃ© au modÃ¨le de dÃ©pendance et d'indÃ©pendance } 
+    \caption{Graphe associé au modèle de dépendance et d'indépendance } 
 \end{figure} 
 
- \subsubsection{Contraintes du problÃ¨mes}
+ \subsubsection{Contraintes du problèmes}
 
 \[
 \left\lbrace 
@@ -2835,9 +2835,9 @@ En faisant les opÃ©rations prÃ©cÃ©dentes, nous remarquons  qu'il nous reste un d
 \]
 
 
-La matrice des corrÃ©lations doit bien entendu Ãªtre en cohÃ©rence avec le graphe orientÃ© et le principe des D-sÃ©parations.
+La matrice des corrélations doit bien entendu être en cohérence avec le graphe orienté et le principe des D-séparations.
 
-On choisit dans ce cas la matrice des corrÃ©lations ci-dessous:
+On choisit dans ce cas la matrice des corrélations ci-dessous:
 
 
 $$\overline{\rho_{ABCDEF}}=\begin{pmatrix}
@@ -2850,7 +2850,7 @@ $$\overline{\rho_{ABCDEF}}=\begin{pmatrix}
 \end{pmatrix}$$
 
 \newpage
-\subsubsection{ParamÃ©trisation Ã  partir des donnÃ©es}
+\subsubsection{Paramétrisation à partir des données}
 
 La matrice variance-covariance peut s'exprimer comme:
 
@@ -2864,7 +2864,7 @@ S_{A}^2 &\ \ \rho_{AB}S_{A}S_{B} &\ \ \rho_{AC}S_{A}S_{C} &\ \ \rho_{AD}S_{A}S_{
  \rho_{FA}S_{F}S_{A}&\ \  \rho_{FB}S_{F}S_{B}&\ \  \rho_{FC}S_{F}S_{C}&\ \  \rho_{FD}S_{F}S_{D}&\ \  \rho_{FE}S_{F}S_{E}&\ \ S_{F}^2\\ \\
 \end{pmatrix}$$
 
-A partir du vecteur $\vec{S_{d}}$ et de la matrice $\overline{\rho_{ABCDEF}}$ des corrÃ©lations , on en dÃ©duit la matrice variance-covariance:
+A partir du vecteur $\vec{S_{d}}$ et de la matrice $\overline{\rho_{ABCDEF}}$ des corrélations , on en déduit la matrice variance-covariance:
 
 
 $$\Sigma=\begin{pmatrix}
@@ -2877,7 +2877,7 @@ $$\Sigma=\begin{pmatrix}
 \end{pmatrix}$$
 \newpage
 
-\underline{Le systÃ¨me de paramÃ©trisation s'Ã©crit}:
+\underline{Le système de paramétrisation s'écrit}:
 
 $\left\lbrace 
 \begin{array}{lcl}
@@ -2891,7 +2891,7 @@ Y_{F}\approx \mu_{F}\\
 \end{array}\right.$
 
 
-Les paramÃ¨tres $\alpha$, $\beta$ et $\gamma$ se calculent par le produit matriciel ci-dessous:
+Les paramètres $\alpha$, $\beta$ et $\gamma$ se calculent par le produit matriciel ci-dessous:
 
 $\begin{pmatrix}
 \gamma\\ \\
@@ -2915,12 +2915,12 @@ S_{CB}\\ \\
 
 
 
-La paramÃ©trisation rÃ©sultant du systÃ¨me de paramÃ©trisation et du produit matriciel dÃ©crit prÃ©cÃ©demment est reprise dans le tableaux ci-dessous:
+La paramétrisation résultant du système de paramétrisation et du produit matriciel décrit précédemment est reprise dans le tableaux ci-dessous:
 
 \begin{figure}[H]
 \begin{tabular}{llll}
   \hline
-  Variables              & Interception&Premier coefficient& DeuxiÃ¨me coefficient \\
+  Variables              & Interception&Premier coefficient& Deuxième coefficient \\
   \hline
 A  &1000& &\\
 B &-1.8711 &0.0866 &1.4830 \\
@@ -2932,9 +2932,9 @@ F  &5 & & \\
 
 \end{tabular}
 \end{figure}
-\subsubsection{Validation des donnÃ©es gÃ©nÃ©rÃ©s} 
+\subsubsection{Validation des données générés} 
 
-Nous allons voir maintenant si le jeux de donnÃ©es gÃ©nÃ©rÃ©s rÃ©pond bien aux donnÃ©es initiales du problÃ¨me. 
+Nous allons voir maintenant si le jeux de données générés répond bien aux données initiales du problème. 
 
 
 
@@ -2944,15 +2944,15 @@ $\left\lbrace
 \vec{Sd}\equiv (410.278669;  72.438760;  27.232977;  11.069773;  11.581012;   3.073252)\\ \\ 
 \end{array}\right.$
 
-Nous remarquons une proximitÃ© des moyennes et des Ã©carts-types par rapport Ã  ceux prÃ©-Ã©tablit.
+Nous remarquons une proximité des moyennes et des écarts-types par rapport à ceux pré-établit.
 
 \begin{figure}[H]
 \fbox{\includegraphics[width=6cm]{boxplot1zoom.eps}}\hfill
 \fbox{\includegraphics[width=6cm]{boxplot2zoom.eps}}
-\caption{Diagramme en boÃ®te du problÃ¨me}\label{fig:somefiglabel}
+\caption{Diagramme en boîte du problème}\label{fig:somefiglabel}
 \end{figure}
 
-La matrice de corrÃ©lation du jeux de valeurs gÃ©nÃ©rÃ© est :
+La matrice de corrélation du jeux de valeurs généré est :
 
 
 $$\overline{\rho_{ABCDEF}}=\begin{pmatrix}
@@ -2965,14 +2965,14 @@ $$\overline{\rho_{ABCDEF}}=\begin{pmatrix}
 \end{pmatrix}$$
 
   
-si la convergence est jugÃ©e insuffisante, cette matrice peut encore Ãªtre ajustÃ© en jouant sur les  $\sigma_{k}$ intervenant dans le bruit $\eta(0,\sigma_{k})$.
+si la convergence est jugée insuffisante, cette matrice peut encore être ajusté en jouant sur les  $\sigma_{k}$ intervenant dans le bruit $\eta(0,\sigma_{k})$.
 
 
 
 
-Il nous reste Ã  voir si le jeux de donnÃ©es gÃ©nÃ©rÃ©s de 1000 valeurs vÃ©rifie statistiquement le modÃ¨le de dÃ©pendance et d'indÃ©pendance:
+Il nous reste à voir si le jeux de données générés de 1000 valeurs vérifie statistiquement le modèle de dépendance et d'indépendance:
 
-\textbf{ModÃ¨le de dÃ©pendance et d'indÃ©pendance}:
+\textbf{Modèle de dépendance et d'indépendance}:
 
 $\{ A,B,C,D,E,F \}\Longrightarrow\left\lbrace 
 \begin{array}{lcl} 
@@ -2987,10 +2987,10 @@ E\not\ci F\Longrightarrow E\ci F|C\\
 \end{array}\right.$
 
 
-Les relations directes $A\not\ci B,A\not\ci D,B\not\ci C,C\not\ci E$ et $C\not\ci F$ sont validÃ©es en observant simplement la matrice des corrÃ©lations. 
+Les relations directes $A\not\ci B,A\not\ci D,B\not\ci C,C\not\ci E$ et $C\not\ci F$ sont validées en observant simplement la matrice des corrélations. 
 
 
-Il nous reste Ã  vÃ©rifier les relations indirectes intervenant dans le modÃ¨le de dÃ©pendance et d'indÃ©pendance.
+Il nous reste à vérifier les relations indirectes intervenant dans le modèle de dépendance et d'indépendance.
 
 
 
@@ -2998,7 +2998,7 @@ Il nous reste Ã  vÃ©rifier les relations indirectes intervenant dans le modÃ¨le 
 \begin{center}
 \begin{tabular}{|l|c|r|}
   \hline
-  Relation & CorrÃ©lation & P-value \\
+  Relation & Corrélation & P-value \\
   \hline
   A$\cap C$&  -0.0182 & 0.5661\\
 A$\cap C|B$&  -0.3389 & $<2.2.10^{-16}$\\
@@ -3024,11 +3024,11 @@ E$\cap F|C$&-0.0404&0.202\\
 
 
 \newpage
-\section{Echantillon des 50 individus pris dans le jeux de donnÃ©es de 1000 valeurs gÃ©nÃ©rÃ©s}
+\section{Echantillon des 50 individus pris dans le jeux de données de 1000 valeurs générés}
 \begin{figure}[H]
 \begin{tabular}{lllllll}
   \hline
-AltÃ©rnatives&  A&B& C&D&E&F \\
+Altérnatives&  A&B& C&D&E&F \\
   \hline
 1   &416.8338 &451.8076 &264.2734 &107.08188 &28.97666  &7.6039971\\
 2   &946.7822 &508.3381 &323.3536  &90.23312 &49.11728 &12.6857797\\
@@ -3082,21 +3082,21 @@ AltÃ©rnatives&  A&B& C&D&E&F \\
 50 &1483.3272 &536.9739 &253.2219 & 86.93610 &19.71546  &3.2727844\\
 \hline
 \end{tabular}
-\caption{Jeux de donnÃ© du problÃ¨me annexe 8}
+\caption{Jeux de donné du problème annexe 8}
 \end{figure}
 
-\section{ReprÃ©sentation des coefficients $\vert\frac{A_{k}.S_{n}}{S_{k}}\vert$ en fonction du bruit $\sigma_{k}$ pour une structure sÃ©rie en cascade}
+\section{Représentation des coefficients $\vert\frac{A_{k}.S_{n}}{S_{k}}\vert$ en fonction du bruit $\sigma_{k}$ pour une structure série en cascade}
 \label{representation_coef}
 
-ConsidÃ©rons la structure sÃ©rie en cascade:
+Considérons la structure série en cascade:
 
 \begin{figure}[H] 
     \center 
     \includegraphics[width=8cm]{annexe_serie_cascade.eps} 
-    \caption{ReprÃ©sentation de la strycture sÃ©rie en cascade} 
+    \caption{Représentation de la strycture série en cascade} 
 \end{figure} 
 
-Les reprÃ©sentations de $\vert\frac{A_{k}.S_{n}}{S_{k}}\vert=f(\sigma_{k})$ sont Ã©valuÃ© par le systÃ¨eme de paramÃ©trisation suivante:
+Les représentations de $\vert\frac{A_{k}.S_{n}}{S_{k}}\vert=f(\sigma_{k})$ sont évalué par le systèeme de paramétrisation suivante:
 
 
 $\left\lbrace 
@@ -3114,7 +3114,7 @@ X(H)=X(G)+1+   \eta(0,1)                  \\ \\
 \end{array}\right.$
 
 
-A partir de la paramÃ©trisation \ref{param} , nous faisons Ã©voluer $\eta(\sigma_{k})$  avec $0 \le \sigma_{k} \ge 6$ par pas de 0.001.
+A partir de la paramétrisation \ref{param} , nous faisons évoluer $\eta(\sigma_{k})$  avec $0 \le \sigma_{k} \ge 6$ par pas de 0.001.
 
 \begin{figure}[H]
 \fbox{\includegraphics[width=5cm]{coefficient_annexe1.eps}}\hfill
@@ -3143,13 +3143,13 @@ A partir de la paramÃ©trisation \ref{param} , nous faisons Ã©voluer $\eta(\sigma
 
 \newpage
 
-\subsection{Echantillon de 50 individus pris dans le jeux de 1000 valeurs associÃ© au problÃ¨me \ref{jeux_data}}
+\subsection{Echantillon de 50 individus pris dans le jeux de 1000 valeurs associé au problème \ref{jeux_data}}
 \label{creat_gener}
 
 \begin{figure}[H]
 \begin{tabular}{llllll}
   \hline
-AltÃ©rnatives&  A&B& C&D&E \\
+Altérnatives&  A&B& C&D&E \\
   \hline
 1  &16256.52 &30.55067 &38.26223 &1.8239476 &2.481457\\
 2  &18082.28 &30.02490 &40.37770 &1.5694535 &2.259308\\
@@ -3206,7 +3206,7 @@ AltÃ©rnatives&  A&B& C&D&E \\
 
 \hline
 \end{tabular}
-\caption{Jeux de donnÃ© du problÃ¨me 5.2  }
+\caption{Jeux de donné du problème 5.2  }
 \end{figure}
 
 
