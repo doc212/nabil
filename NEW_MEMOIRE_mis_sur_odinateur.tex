@@ -44,8 +44,8 @@ Il existe différentes méthodes pour évaluer la meilleure prise de décision telle
 
 Quand on propose de nouvelles méthodes, on souhaite tester leurs propriétés. Pour que les propriétés soient statistiquement significatives, nous devons utiliser de grands jeux de données, or les jeux de données rencontrés dans les problèmes d\textquotesingle aide à la décision sont de petites tailles. Il faut alors les créer artificiellement. 
 
-Nous pourrions générer les jeux aléatoirement mais les résultats seraient peu réalistes. En effet dans les jeux de données multicritères réalistes, nous retrouvons des corrélations: par exemple, la voiture la plus chère est souvent la plus rapide et la plus confortable.
-L\textquotesingle objectifs final de ce travail est alors de générer des grands jeux de données corrélées qui ressemblent à des données multicritères réaliste.
+Nous pourrions générer les jeux aléatoirement mais les résultats seraient peu réalistes. En effet dans les jeux de données multicritères réalistes, nous retrouvons des cor\-ré\-la\-tions: par exemple, la voiture la plus chère est souvent la plus rapide et la plus confortable.
+L\textquotesingle objectif final de ce travail est alors de générer des grands jeux de données corrélées qui ressemblent à des données multicritères réalistes.
 
 
 
@@ -53,14 +53,14 @@ L\textquotesingle objectifs final de ce travail est alors de générer des grands 
 \textbf{Comment faire ?}
 
 \begin{itemize}
-\item On pourrait analyser la matrice des corrélations et puis générer aléatoirement des variables corrélées deux à deux  mais il est difficile de reconstituer  totalement la matrice de départ.
+\item On pourrait analyser la matrice des corrélations, puis générer aléatoirement des variables corrélées deux à deux, mais il est difficile de reconstituer  totalement la matrice de départ.
 
 
-\item L\textquotesingle analyse en composante principale donne aussi une indication sur les dépendances mais elle  ne donne aucune piste pour générer des valeurs.
-Dans le cadre de ce travail, nous opterons de générer nos jeux de données multicritèreres à l'aide des réseaux bayésiens.
+\item L\textquotesingle analyse en composantes principales donne aussi une indication sur les dépendances mais elle ne donne aucune piste pour générer des valeurs.
+Dans le cadre de ce travail, nous choisirons de générer nos jeux de données multicritèreres à l'aide des réseaux bayésiens.
 
 \end{itemize}
-Les réseaux Bayésiens possèdent de nos jours  un champ d'application assez vaste, par exemple:
+Les réseaux Bayésiens possèdent de nos jours un champ d'application assez vaste, par exemple:
 
 \begin{enumerate}
   \item Diagnostic médical et industriel.
@@ -74,7 +74,7 @@ Les réseaux Bayésiens possèdent de nos jours  un champ d'application assez vaste
 
 
 \newpage
-Le modèle mathématique attribué à un jeux de données expliquant les dépendances inter-critères  sera une application d'un ensemble de critères $C_{i=1..m}$ via un système relationnel du type:
+Le modèle mathématique attribué à un jeu de données expliquant les dépendances inter-critères sera une application d'un ensemble de critères $C_{i=1..m}$ via un système relationnel du type:
 
 \[
 \{C_{1},C{2},...,C_{m}\}\Longrightarrow\left\lbrace 
@@ -86,7 +86,7 @@ Le modèle mathématique attribué à un jeux de données expliquant les dépendances 
 \end{array}\right.
 \]
 
-Ce modèle sera appelée \textit{modèle de dépendance $\not\ci$ et d'indépendance $\ci$}
+Ce modèle sera appelé \textit{modèle de dépendance $\not\ci$ et d'indépendance $\ci$}
 
 Une représentation Bayésienne sera alors associée aux relations.
 Nous pourrons alors générer des jeux de données et la validation des données  se fera de manière statistique.
